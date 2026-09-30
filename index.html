@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini 英文怎麼說 | 互動式精選學習工具</title>
+  
+  <!-- 初始化主題與偏好設定 -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('gemini_en_theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-body: #0b0f19;
+      --bg-card: #111827;
+      --bg-subtle: #1f2937;
+      --text-main: #f9fafb;
+      --text-sub: #9ca3af;
+      --border-panel: rgba(255, 255, 255, 0.08);
+      --border-accent: #6366f1;
+    }
+    html:not(.dark) {
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --border-panel: rgba(0, 0, 0, 0.08);
+      --border-accent: #4f46e5;
+    }
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+    .glass-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-panel);
+      backdrop-filter: blur(16px);
+    }
+    /* 3D 翻牌專用樣式 */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+    .card-flipped {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      top: 0;
+      left: 0;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+    }
+    /* 正在朗讀的句子高亮發光動畫 */
+    .active-speaking {
+      border-color: #6366f1 !important;
+      background-color: rgba(99, 102, 241, 0.15) !important;
+      box-shadow: 0 0 15px rgba(99, 102, 241, 0.35);
+      transform: scale(1.01);
+      transition: all 0.25s ease;
+    }
+    /* 純英文模式隱藏中文樣式 */
+    .english-only-mode .zh-translation {
+      filter: blur(4px);
+      user-select: none;
+      transition: filter 0.2s ease;
+    }
+    .english-only-mode .zh-translation:hover {
+      filter: none;
+      cursor: pointer;
+    }
+    /* 滾動條美化 */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4b5563;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6b7280;
+    }
+    .pulse-glow {
+      animation: pulse-border 1.5s infinite;
+    }
+    @keyframes pulse-border {
+      0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.6); }
+      70% { box-shadow: 0 0 0 10px rgba(99, 102, 241, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- 頂部導航列 -->
+  <header class="sticky top-0 z-40 border-b border-white/10 dark:border-white/10 border-slate-200 glass-card">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-lg font-bold tracking-tight bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
+            Gemini 英文怎麼說
+          </h1>
+          <p class="text-xs text-slate-400">道地口語 & 職場句型互動學習工具</p>
+        </div>
+      </div>
+
+      <!-- 功能標籤頁按鈕 -->
+      <div class="flex items-center space-x-1 sm:space-x-2 bg-slate-800/60 dark:bg-slate-800/80 p-1 rounded-xl border border-white/5">
+        <button onclick="switchView('flashcards')" id="tab-flashcards" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition flex items-center gap-1.5 bg-indigo-600 text-white shadow">
+          <span>🎴</span>
+          <span class="hidden sm:inline">3D 卡牌抽測</span>
+        </button>
+        <button onclick="switchView('list')" id="tab-list" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition flex items-center gap-1.5 text-slate-400 hover:text-white">
+          <span>📑</span>
+          <span class="hidden sm:inline">精華手冊總覽</span>
+        </button>
+        <button onclick="switchView('quiz')" id="tab-quiz" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition flex items-center gap-1.5 text-slate-400 hover:text-white">
+          <span>🎯</span>
+          <span class="hidden sm:inline">實戰隨堂測驗</span>
+        </button>
+      </div>
+
+      <!-- 右側動作列 -->
+      <div class="flex items-center space-x-2">
+        <!-- 單獨英文模式開關 -->
+        <button onclick="toggleEnglishOnlyMode()" id="btn-english-only-nav" title="切換純英文模式（隱藏中文/純英文沉浸）" class="px-2.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 bg-slate-800 text-slate-300 hover:text-white border border-white/10 transition">
+          <span id="nav-en-icon">🔤</span>
+          <span class="hidden md:inline" id="nav-en-text">單獨英文：關</span>
+        </button>
+
+        <!-- 語音設定選單觸發按鈕 -->
+        <button onclick="toggleVoiceModal()" title="語音朗讀與自動播放設定" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 border border-white/5 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+          </svg>
+        </button>
+
+        <!-- 暗黑/明亮切換 -->
+        <button onclick="toggleTheme()" title="切換色彩模式" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 border border-white/5 transition">
+          <span id="theme-icon" class="text-base">🌙</span>
+        </button>
+
+        <!-- 匯出按鈕 -->
+        <button onclick="toggleExportModal()" title="匯出資料 (Markdown / Anki)" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 border border-white/5 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主容器 -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- 頂部進度與控制看板 -->
+    <div class="mb-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="glass-card p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400">收錄主題數</p>
+          <p class="text-xl font-bold text-indigo-400" id="stat-total">12</p>
+        </div>
+        <div class="text-2xl">💡</div>
+      </div>
+
+      <div class="glass-card p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400">已精通標記</p>
+          <p class="text-xl font-bold text-emerald-400" id="stat-mastered">0</p>
+        </div>
+        <div class="text-2xl">🏆</div>
+      </div>
+
+      <div class="glass-card p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400">星號重點標記</p>
+          <p class="text-xl font-bold text-amber-400" id="stat-starred">0</p>
+        </div>
+        <div class="text-2xl">⭐</div>
+      </div>
+
+      <div class="glass-card p-3 rounded-2xl flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400">學習掌握率</p>
+          <p class="text-xl font-bold text-purple-400" id="stat-progress">0%</p>
+        </div>
+        <div class="text-2xl">📈</div>
+      </div>
+    </div>
+
+    <!-- 視圖 1: 3D 卡牌抽測模式 (Flashcards View) -->
+    <section id="view-flashcards" class="view-panel block">
+      <div class="max-w-2xl mx-auto flex flex-col items-center">
+        
+        <!-- 自動播放與卡牌輔助工具列 -->
+        <div class="w-full flex flex-wrap items-center justify-between gap-2 mb-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30" id="card-category-badge">
+              成語俗諺 / 職場應對
+            </span>
+            <span class="text-xs text-slate-400" id="card-index-indicator">
+              1 / 12
+            </span>
+          </div>
+
+          <!-- 自動播放核心控制群組 -->
+          <div class="flex items-center gap-2">
+            <!-- 播放模式切換：單獨純英文 vs 雙語翻牌 -->
+            <div class="inline-flex rounded-xl bg-slate-800/80 p-0.5 border border-white/10">
+              <button onclick="setAutoPlayMode('english_only')" id="mode-btn-en" class="px-2.5 py-1 text-xs font-medium rounded-lg transition bg-indigo-600 text-white shadow" title="自動播放時只看/聽純英文，逐句朗讀核心詞與4組例句">
+                🔤 單獨英文
+              </button>
+              <button onclick="setAutoPlayMode('bilingual_flip')" id="mode-btn-bi" class="px-2.5 py-1 text-xs font-medium rounded-lg transition text-slate-400 hover:text-white" title="正面看情境思考 ➔ 翻面朗讀英文 ➔ 切換下一題">
+                🔄 雙語翻牌
+              </button>
+            </div>
+
+            <!-- 自動播放啟動/暫停按鈕 -->
+            <button id="btn-autoplay" onclick="toggleAutoPlay()" class="px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white shadow-md transition active:scale-95">
+              <span id="autoplay-icon">▶️</span>
+              <span id="autoplay-text">自動播放</span>
+            </button>
+
+            <!-- 收藏星號 -->
+            <button id="btn-star" onclick="toggleStarCurrent()" class="p-1.5 rounded-xl text-slate-400 hover:text-amber-400 bg-slate-800 border border-white/10 transition" title="標記星號">
+              <svg id="star-icon" class="w-5 h-5 fill-none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+              </svg>
+            </button>
+
+            <!-- 標記精通 -->
+            <button id="btn-master" onclick="toggleMasterCurrent()" class="px-2.5 py-1.5 rounded-xl text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 border border-white/10 transition flex items-center gap-1">
+              <span id="master-icon">⚪</span>
+              <span id="master-text">未精通</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3D 卡牌主體 (固定高度 470px) -->
+        <div class="perspective-1000 w-full h-[470px] cursor-pointer" onclick="flipCard()">
+          <div id="flashcard-inner" class="card-inner w-full h-full">
+
+            <!-- 卡牌正面：提問、使用情境、思考指引 -->
+            <div class="card-front glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl border border-white/10 hover:border-indigo-500/40 transition">
+              <div>
+                <div class="flex items-center justify-between text-xs text-indigo-400 font-semibold mb-3">
+                  <span class="flex items-center gap-1.5">
+                    <span class="inline-block w-2 h-2 rounded-full bg-indigo-400 animate-ping"></span>
+                    Gemini 詢問提問
+                  </span>
+                  <span class="text-slate-400">點擊任意處翻轉查看英文 ↻</span>
+                </div>
+                
+                <h2 id="card-query-front" class="text-2xl sm:text-3xl font-extrabold text-white mb-4 tracking-tight leading-snug">
+                  事後諸葛的英文
+                </h2>
+
+                <div class="bg-indigo-950/40 border border-indigo-500/20 rounded-2xl p-4 mb-4">
+                  <h3 class="text-xs uppercase tracking-wider text-indigo-300 font-bold mb-1.5 flex items-center gap-1">
+                    <span>💡</span> 使用情境與語境
+                  </h3>
+                  <p id="card-context-front" class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                    用於描述事情發生後才明白當初應該怎麼做，常見於後悔或事後檢討的情境中。
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-800/40 border border-white/5">
+                  <h4 class="text-xs text-slate-400 mb-2 font-medium">💭 換成你會怎麼說？試著開口講講看關鍵字：</h4>
+                  <div class="flex flex-wrap gap-2" id="card-keywords-front">
+                    <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-white/5">hindsight</span>
+                    <span class="px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-white/5">20/20</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between pt-4 border-t border-white/10 text-xs text-slate-400">
+                <span>[空白鍵] 翻牌 | [← / →] 上下一題</span>
+                <span class="font-medium text-indigo-400">翻轉看道地英文 ➔</span>
+              </div>
+            </div>
+
+            <!-- 卡牌背面：道地英文、核心片語、實用例句與語音朗讀 -->
+            <div class="card-back glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl border border-indigo-500/30 overflow-y-auto">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs font-bold text-emerald-400 flex items-center gap-1">
+                      <span>✨</span> 道地英文解答
+                    </span>
+                    <span id="playing-status-badge" class="hidden text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-500 text-white animate-pulse">
+                      🎧 英文朗讀中
+                    </span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <button onclick="event.stopPropagation(); playAllEnglishCurrentCard()" title="依序連續朗讀本頁所有英文句子" class="px-2.5 py-1 rounded-xl bg-purple-600/80 hover:bg-purple-600 text-white text-xs font-semibold flex items-center gap-1 transition shadow">
+                      <span>▶️</span>
+                      <span>連讀全頁英文</span>
+                    </button>
+                    <button onclick="event.stopPropagation(); speakSingleText(document.getElementById('card-core-back').innerText)" class="px-2.5 py-1 rounded-xl bg-indigo-600/80 hover:bg-indigo-600 text-white text-xs font-semibold flex items-center gap-1 transition shadow">
+                      <span>🔊</span>
+                      <span>朗讀核心詞</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mb-3 p-3 rounded-2xl bg-indigo-950/40 border border-indigo-500/20" id="card-core-container">
+                  <h2 id="card-core-back" class="text-xl sm:text-2xl font-black text-indigo-300 mb-1 leading-tight tracking-wide">
+                    Hindsight is 20/20
+                  </h2>
+                  <p id="card-explanation-back" class="text-xs text-slate-300 leading-relaxed zh-translation">
+                    「事後諸葛」最道地的美式片語是「Hindsight is 20/20」（20/20 代表視力完美）。
+                  </p>
+                </div>
+
+                <!-- 精選例句區（單獨英文模式下中文會隱藏/模糊化，滑鼠懸停顯示） -->
+                <div class="space-y-2 mb-2" id="card-examples-back">
+                  <!-- 動態注入例句 -->
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                <span onclick="event.stopPropagation(); flipCard();" class="text-indigo-400 hover:underline cursor-pointer">
+                  ↺ 翻回提問情境
+                </span>
+                <span class="text-slate-500">提示：滑鼠移至模糊處可查看中文翻譯</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 底部切換控制按鈕組 -->
+        <div class="flex items-center gap-4 mt-6">
+          <button onclick="prevCard()" class="px-5 py-2.5 rounded-2xl glass-card hover:bg-slate-800 text-white font-medium text-sm flex items-center gap-2 transition active:scale-95">
+            <span>←</span>
+            <span>上一題</span>
+          </button>
+          
+          <button onclick="flipCard()" class="px-6 py-2.5 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 transition active:scale-95">
+            <span>翻轉卡牌</span>
+          </button>
+
+          <button onclick="nextCard()" class="px-5 py-2.5 rounded-2xl glass-card hover:bg-slate-800 text-white font-medium text-sm flex items-center gap-2 transition active:scale-95">
+            <span>下一題</span>
+            <span>→</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 視圖 2: 精華手冊條列總覽 (List View) -->
+    <section id="view-list" class="view-panel hidden">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+        <div>
+          <h2 class="text-xl font-bold text-white">12 大核心英文問答完整手冊</h2>
+          <p class="text-sm text-slate-400">情境解析、4 組真實例句對照、同義替換與日常/商務語境</p>
+        </div>
+
+        <!-- 搜尋與篩選列 -->
+        <div class="flex flex-wrap items-center gap-2">
+          <div class="relative">
+            <input type="text" id="search-input" oninput="filterList()" placeholder="搜尋關鍵字 / 中文 / 英文..." class="w-64 pl-9 pr-4 py-2 rounded-xl text-sm bg-slate-800/80 border border-white/10 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <svg class="w-4 h-4 text-slate-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+
+          <select id="category-filter" onchange="filterList()" class="px-3 py-2 rounded-xl text-sm bg-slate-800/80 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="ALL">所有分類</option>
+            <option value="成語俗諺 / 職場應對">成語俗諺 / 職場應對</option>
+            <option value="職場溝通 / 說話藝術">職場溝通 / 說話藝術</option>
+            <option value="評價評語 / 正式書面">評價評語 / 正式書面</option>
+            <option value="生活哲理 / 職場日常">生活哲理 / 職場日常</option>
+            <option value="情緒表達 / 生動口語">情緒表達 / 生動口語</option>
+            <option value="理財智慧 / 生活哲學">理財智慧 / 生活哲學</option>
+            <option value="健康運動 / 日常生活">健康運動 / 日常生活</option>
+            <option value="產品設計 / 價值觀念">產品設計 / 價值觀念</option>
+            <option value="人際處世 / 職場智慧">人際處世 / 職場智慧</option>
+            <option value="心理學認知 / 邏輯思維">心理學認知 / 邏輯思維</option>
+            <option value="情緒心理 / 記憶感受">情緒心理 / 記憶感受</option>
+            <option value="論辯邏輯 / 人格批評">論辯邏輯 / 人格批評</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 條列式卡片清單 -->
+      <div id="list-container" class="space-y-6">
+        <!-- 動態渲染 12 條詳細內容 -->
+      </div>
+    </section>
+
+    <!-- 視圖 3: 實戰隨堂測驗 (Quiz View) -->
+    <section id="view-quiz" class="view-panel hidden">
+      <div class="max-w-2xl mx-auto glass-card rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/10">
+        
+        <!-- 測驗進度標頭 -->
+        <div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-indigo-400 font-bold">隨堂實力測驗</span>
+            <h3 class="text-lg font-bold text-white" id="quiz-question-counter">第 1 / 10 題</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-400">目前得分:</span>
+            <span class="text-base font-extrabold text-emerald-400" id="quiz-score">0 分</span>
+          </div>
+        </div>
+
+        <!-- 題目卡 -->
+        <div class="mb-6">
+          <div class="mb-2">
+            <span class="text-xs px-2.5 py-1 rounded-full bg-indigo-900/60 text-indigo-300 border border-indigo-500/20" id="quiz-badge">
+              中翻英挑戰
+            </span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-white mb-3" id="quiz-prompt">
+            當你想表達「不要對真相擦脂抹粉，請直說」時，最道地的說法是？
+          </h2>
+          <p class="text-sm text-slate-400" id="quiz-hint">情境提示：用於描述對事實進行過度美化，要求誠實面對。</p>
+        </div>
+
+        <!-- 選項列表 -->
+        <div class="space-y-3 mb-6" id="quiz-options">
+          <!-- 動態注入選項按鈕 -->
+        </div>
+
+        <!-- 回饋解析面板 -->
+        <div id="quiz-feedback" class="hidden p-4 rounded-2xl mb-6 text-sm border">
+          <!-- 注入正確/錯誤提示 -->
+        </div>
+
+        <!-- 測驗控制按鈕 -->
+        <div class="flex items-center justify-between">
+          <button onclick="startNewQuiz()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium border border-white/10 transition">
+            重新開始
+          </button>
+          <button id="btn-quiz-next" onclick="nextQuizQuestion()" class="hidden px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition shadow-lg shadow-indigo-600/30">
+            下一題 ➔
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 語音與自動播放設定 Modal -->
+  <div id="modal-voice" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="glass-card max-w-md w-full rounded-3xl p-6 shadow-2xl border border-white/10">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>🔊</span> 語音與自動播放設定
+        </h3>
+        <button onclick="toggleVoiceModal()" class="text-slate-400 hover:text-white">✕</button>
+      </div>
+
+      <div class="space-y-4 text-sm">
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">自動播放模式 (Auto-Play Mode)</label>
+          <select id="cfg-autoplay-mode" onchange="setAutoPlayMode(this.value)" class="w-full px-3 py-2 rounded-xl bg-slate-800 border border-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="english_only">🔤 單獨英文連續朗讀（停留在英文面，依序朗讀例句磨耳朵）</option>
+            <option value="bilingual_flip">🔄 雙語思考翻牌輪播（正面思考 ➔ 翻面朗讀 ➔ 切換下一題）</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs text-slate-400 mb-1">語音嗓音 (Voice)</label>
+          <select id="voice-select" class="w-full px-3 py-2 rounded-xl bg-slate-800 border border-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <!-- 動態填充可用英美語音 -->
+          </select>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-xs text-slate-400 mb-1">
+            <span>語速 (Speed)</span>
+            <span id="rate-value" class="text-indigo-400 font-bold">1.0x</span>
+          </div>
+          <input type="range" id="voice-rate" min="0.6" max="1.4" step="0.1" value="1.0" oninput="updateRateLabel(this.value)" class="w-full accent-indigo-500">
+        </div>
+
+        <div>
+          <div class="flex justify-between text-xs text-slate-400 mb-1">
+            <span>單句朗讀間隔 (秒)</span>
+            <span id="interval-value" class="text-indigo-400 font-bold">1.2 秒</span>
+          </div>
+          <input type="range" id="autoplay-interval" min="0.5" max="4.0" step="0.1" value="1.2" oninput="updateIntervalLabel(this.value)" class="w-full accent-indigo-500">
+        </div>
+
+        <div class="pt-4 border-t border-white/10 flex justify-between items-center">
+          <button onclick="testSpeech()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium border border-white/10 transition">
+            試聽發音
+          </button>
+          <button onclick="toggleVoiceModal()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs transition">
+            儲存完成
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 匯出 Modal -->
+  <div id="modal-export" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="glass-card max-w-lg w-full rounded-3xl p-6 shadow-2xl border border-white/10">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>📤</span> 匯出學習資料
+        </h3>
+        <button onclick="toggleExportModal()" class="text-slate-400 hover:text-white">✕</button>
+      </div>
+
+      <div class="space-y-3 text-sm">
+        <p class="text-slate-300 text-xs">您可以將這 12 組完整的英文問答例句匯出為您喜愛的格式，隨時在各個筆記軟體或記憶卡中使用：</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+          <button onclick="exportMarkdown()" class="p-3 rounded-2xl bg-slate-800/80 hover:bg-slate-700 text-left border border-white/5 transition group">
+            <p class="font-bold text-indigo-400 group-hover:text-indigo-300 mb-1">📝 Markdown 筆記</p>
+            <p class="text-xs text-slate-400">適用於 Obsidian, Notion, Logseq 等知識庫</p>
+          </button>
+
+          <button onclick="exportAnkiCSV()" class="p-3 rounded-2xl bg-slate-800/80 hover:bg-slate-700 text-left border border-white/5 transition group">
+            <p class="font-bold text-emerald-400 group-hover:text-emerald-300 mb-1">📇 Anki 牌組 CSV</p>
+            <p class="text-xs text-slate-400">可直接匯入 Anki 進行間隔重複記憶</p>
+          </button>
+
+          <button onclick="exportJSON()" class="p-3 rounded-2xl bg-slate-800/80 hover:bg-slate-700 text-left border border-white/5 transition group">
+            <p class="font-bold text-purple-400 group-hover:text-purple-300 mb-1">📦 JSON 結構資料</p>
+            <p class="text-xs text-slate-400">標準 JSON 格式，便於程式擴展整合</p>
+          </button>
+
+          <button onclick="resetUserData()" class="p-3 rounded-2xl bg-red-950/40 hover:bg-red-900/40 text-left border border-red-500/20 transition group">
+            <p class="font-bold text-red-400 mb-1">🔄 重設學習記錄</p>
+            <p class="text-xs text-slate-400">清除已精通標記與星號收藏</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 資料與核心 JavaScript 邏輯 -->
+  <script>
+    const TOPICS_DATA = [
+  {
+    "id": 1,
+    "query": "事後諸葛的英文",
+    "category": "成語俗諺 / 職場應對",
+    "core_expression": "Hindsight is 20/20 / Monday-morning quarterback",
+    "keywords": [
+      "hindsight",
+      "20/20",
+      "judge",
+      "approach"
+    ],
+    "context": "用於描述事情發生後才明白當初應該怎麼做，常見於後悔或事後檢討的情境中。",
+    "explanation": "「事後諸葛」最道地的美式片語是「Hindsight is 20/20」（20/20 代表視力完美，事情過後看總是無比清晰）。美式口語中也常說「Monday-morning quarterback」（週一早上的四分衛，指週末美式足球賽打完後，週一在辦公室指手畫腳的球迷）。",
+    "synonyms": [
+      {
+        "en": "In hindsight",
+        "zh": "事後看來、回想起來"
+      },
+      {
+        "en": "Monday-morning quarterback",
+        "zh": "事後放馬後炮的人"
+      },
+      {
+        "en": "With the benefit of hindsight",
+        "zh": "憑藉事後的理解"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Hindsight is 20/20.",
+        "zh": "事後看事情總是很清楚。（千金難買早知道）",
+        "note": "最常獨立成句的成語說法"
+      },
+      {
+        "en": "In hindsight, we should have taken a different approach.",
+        "zh": "事後看來，我們應該採取不同的做法。",
+        "note": "檢討會議常用句"
+      },
+      {
+        "en": "It's easy to judge with the benefit of hindsight.",
+        "zh": "事後諸葛總是容易評斷。",
+        "note": "反駁別人放馬後炮時必備"
+      },
+      {
+        "en": "Don't be a Monday-morning quarterback; make your suggestions before the project launches!",
+        "zh": "別當事後諸葛放馬後炮，有建議在專案上線前就該提出來！",
+        "note": "職場口語進階用法"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "query": "修飾過度 擦脂抹粉英文",
+    "category": "職場溝通 / 說話藝術",
+    "core_expression": "Sugarcoat / Gild the lily / Put lipstick on a pig",
+    "keywords": [
+      "sugarcoat",
+      "truth",
+      "conflict",
+      "financial troubles"
+    ],
+    "context": "用於描述對事實進行過度包裝、美化，常用來提醒說話要誠實，不要刻意掩飾負面消息。",
+    "explanation": "動詞「sugarcoat」（在苦藥上包糖衣）最能生動體現「擦脂抹粉、粉飾太平」。「Don't sugarcoat it」意思是「有話直說，別拐彎抹角美化」。口語中若指對劣質品硬做美化，可用俚語「put lipstick on a pig」（給豬塗口紅）。",
+    "synonyms": [
+      {
+        "en": "Sugarcoat the truth",
+        "zh": "粉飾真相、擦脂抹粉"
+      },
+      {
+        "en": "Gloss over",
+        "zh": "草率掩蓋、掩飾問題"
+      },
+      {
+        "en": "Put lipstick on a pig",
+        "zh": "劣質事物強行美化"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Don't sugarcoat the truth.",
+        "zh": "不要對真相擦脂抹粉（直說無妨）。",
+        "note": "極簡有力的祈使句"
+      },
+      {
+        "en": "She tends to sugarcoat problems to avoid conflict.",
+        "zh": "她常常美化問題來避免衝突。",
+        "note": "描述溝通風格"
+      },
+      {
+        "en": "The report sugarcoated the company's financial troubles.",
+        "zh": "這份報告對公司的財務問題過度美化了。",
+        "note": "商業與財報語境"
+      },
+      {
+        "en": "Let's give the leadership the real numbers without any sugarcoating.",
+        "zh": "我們直接給主管層真實數據，不要有任何粉飾修飾。",
+        "note": "專案回報實用句"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "query": "無可後非（無可指責／無可非議）",
+    "category": "評價評語 / 正式書面",
+    "core_expression": "Beyond reproach / Above suspicion / Unimpeachable",
+    "keywords": [
+      "beyond reproach",
+      "conduct",
+      "integrity",
+      "investigation"
+    ],
+    "context": "形容某人或某事完全無法挑剔，行為或表現無可指責、品德高尚。",
+    "explanation": "「Beyond reproach」是極高評價的正式表達，「reproach」為責備、非議之意，超越非議即「無可非議、無懈可擊」。常搭配 conduct（操行）、integrity（廉潔/誠信）、behavior（表現）。",
+    "synonyms": [
+      {
+        "en": "Beyond reproach",
+        "zh": "無可挑剔、無懈可擊"
+      },
+      {
+        "en": "Above reproach",
+        "zh": "清白無瑕、受人敬重"
+      },
+      {
+        "en": "Unimpeachable",
+        "zh": "無可質疑的、無可批駁的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "It is beyond reproach.",
+        "zh": "這是無可指責的。",
+        "note": "表達絕對肯定"
+      },
+      {
+        "en": "His conduct during the investigation was beyond reproach.",
+        "zh": "他在調查期間的行為無可指責。",
+        "note": "合規與審查語境"
+      },
+      {
+        "en": "Her integrity is beyond reproach.",
+        "zh": "她的操守無可挑剔。",
+        "note": "評價專業道德"
+      },
+      {
+        "en": "The quality of their engineering deliverables has always been beyond reproach.",
+        "zh": "他們的工程交付成果品質向來是無可挑剔的。",
+        "note": "科技專案驗收讚譽"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "query": "免不了，英文",
+    "category": "生活哲理 / 職場日常",
+    "core_expression": "Inevitable / Bound to happen / Unavoidable",
+    "keywords": [
+      "inevitable",
+      "conflict",
+      "change",
+      "team"
+    ],
+    "context": "描述某件事無法避免、遲早會發生、理所當然會碰到的狀況。",
+    "explanation": "形容詞「Inevitable」表示「不可避免的、必然發生的」；動詞片語「cannot be avoided」或「bound to happen」也很常用。「It's inevitable」簡短好記，直接表達「免不了的啦」。",
+    "synonyms": [
+      {
+        "en": "Inevitable",
+        "zh": "必然的、免不了的"
+      },
+      {
+        "en": "Bound to happen",
+        "zh": "遲早會發生的"
+      },
+      {
+        "en": "Unavoidable",
+        "zh": "無法避免的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "It's inevitable.",
+        "zh": "這是免不了的。",
+        "note": "日常感嘆萬用句"
+      },
+      {
+        "en": "Some degree of conflict is inevitable in any team.",
+        "zh": "在任何團隊中某種程度的衝突是難以避免的。",
+        "note": "團隊管理溝通"
+      },
+      {
+        "en": "Change is inevitable in life.",
+        "zh": "人生中變化是無法避免的。",
+        "note": "哲理名言風格"
+      },
+      {
+        "en": "When stepping into a new industry, making a few mistakes is bound to happen.",
+        "zh": "跨入新領域時，犯點小錯是免不了的。",
+        "note": "安慰與自我勉勵"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "query": "大暴走的英文怎麼說",
+    "category": "情緒表達 / 生動口語",
+    "core_expression": "Go on a rampage / Go ballistic / Fly off the handle",
+    "keywords": [
+      "rampage",
+      "smashed",
+      "attacker",
+      "chaos"
+    ],
+    "context": "描述某人因情緒爆發、理智斷線或壓力過大而做出失控、暴怒或破壞性的行為。",
+    "explanation": "「Go on a rampage」強調像暴風雨般四處橫衝直撞破壞。「Go ballistic」像飛彈升空爆炸，指瞬間暴怒氣炸。「Fly off the handle」指斧頭脫柄飛出，形容脾氣突然失控大發雷霆。",
+    "synonyms": [
+      {
+        "en": "Go on a rampage",
+        "zh": "大暴走、橫衝直撞造成混亂"
+      },
+      {
+        "en": "Go ballistic",
+        "zh": "理智線斷掉、大抓狂"
+      },
+      {
+        "en": "Fly off the handle",
+        "zh": "勃然大怒、暴跳如雷"
+      }
+    ],
+    "examples": [
+      {
+        "en": "He went on a rampage.",
+        "zh": "他大暴走了。",
+        "note": "簡明生動敘述"
+      },
+      {
+        "en": "After being fired, he went on a rampage and smashed everything in sight.",
+        "zh": "被解雇後，他暴走了，把看到的東西都砸了。",
+        "note": "描述具體脫序行為"
+      },
+      {
+        "en": "The attacker went on a rampage, causing chaos in the city.",
+        "zh": "攻擊者大暴走，在城市裡造成混亂。",
+        "note": "新聞社會事件報導"
+      },
+      {
+        "en": "When the server crashed during the product demo, the manager totally went ballistic.",
+        "zh": "產品展示期間伺服器當機時，經理整個人徹底大抓狂暴走。",
+        "note": "現代科技職場真實情境"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "query": "量入為出英文",
+    "category": "理財智慧 / 生活哲學",
+    "core_expression": "Live within one's means / Cut one's coat according to one's cloth",
+    "keywords": [
+      "live within your means",
+      "financial stability",
+      "save money"
+    ],
+    "context": "指根據自己的收入來控制日常支出與消費，避免入不敷出、過度借貸。",
+    "explanation": "「means」在此處指「財力、經濟能力」。「Live within one's means」字面是生活在自身財力之內，即「量入為出」。英國傳統諺語也有「Cut your coat according to your cloth」（看布料多少來剪裁衣服）。",
+    "synonyms": [
+      {
+        "en": "Live within your means",
+        "zh": "量入為出、量力而行"
+      },
+      {
+        "en": "Make ends meet",
+        "zh": "收支平衡、維持生計"
+      },
+      {
+        "en": "Practice fiscal discipline",
+        "zh": "維持財務紀律"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Live within your means.",
+        "zh": "量入為出。",
+        "note": "理財金句"
+      },
+      {
+        "en": "You need to live within your means if you want to save money.",
+        "zh": "如果你想存錢，就得量入為出。",
+        "note": "日常給朋友的真誠建議"
+      },
+      {
+        "en": "Living within your means is a key to financial stability.",
+        "zh": "量入為出是財務穩定的關鍵。",
+        "note": "個人理財專欄常見句"
+      },
+      {
+        "en": "No matter how high your salary rises, the golden rule is always to live within your means.",
+        "zh": "無論薪水漲得多高，黃金法則永遠是量入為出。",
+        "note": "長遠財富管理觀念"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "query": "隨時補充水份英文",
+    "category": "健康運動 / 日常生活",
+    "core_expression": "Stay hydrated at all times / Drink plenty of fluids",
+    "keywords": [
+      "stay hydrated",
+      "run",
+      "water regularly",
+      "fluids"
+    ],
+    "context": "提醒人在運動、跑步、烈日炎夏或戶外活動時要隨時多喝水、保持身體水分充足。",
+    "explanation": "英文不只說「drink water」，更地道、更專業的健康用語是「stay hydrated」（維持水分充足）。「Hydration」是名詞水分補給，「Dehydration」則是脫水。",
+    "synonyms": [
+      {
+        "en": "Stay hydrated",
+        "zh": "保持水分充足、補充水分"
+      },
+      {
+        "en": "Keep well-hydrated",
+        "zh": "時刻補充充足水分"
+      },
+      {
+        "en": "Replenish fluids",
+        "zh": "補充電解質與水分"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Stay hydrated at all times.",
+        "zh": "隨時補充水分。",
+        "note": "運動教練基本口號"
+      },
+      {
+        "en": "Make sure you stay hydrated during your run.",
+        "zh": "跑步時一定要記得補充水分。",
+        "note": "慢跑/馬拉松情境"
+      },
+      {
+        "en": "Drink water regularly to stay hydrated.",
+        "zh": "定期喝水以保持水分。",
+        "note": "日常保健提醒"
+      },
+      {
+        "en": "During high-intensity workouts in hot weather, it is vital to stay hydrated and replace lost electrolytes.",
+        "zh": "在大熱天進行高強度鍛鍊時，及時補充水分與流失的電解質至關重要。",
+        "note": "專業健身與長跑情境"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "query": "注重 功能性而非奢華 英文",
+    "category": "產品設計 / 價值觀念",
+    "core_expression": "Prioritize functionality over luxury / Function over form",
+    "keywords": [
+      "functionality",
+      "luxury",
+      "functional",
+      "fancy"
+    ],
+    "context": "強調實用性、效能優先於外表的奢華包裝，常見於工業設計、極簡生活或產品選型。",
+    "explanation": "句型為「Prioritize A over B」（重視 A 勝於 B）。名言諺語「Function over form」（功能重於形式）是現代包浩斯（Bauhaus）與實用主義極簡哲學的核心。",
+    "synonyms": [
+      {
+        "en": "Function over form",
+        "zh": "實用重於外在形式"
+      },
+      {
+        "en": "Practical rather than flashy",
+        "zh": "務實而不浮誇"
+      },
+      {
+        "en": "Utilitarian design",
+        "zh": "講究功用實效的設計"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Prioritize functionality over luxury.",
+        "zh": "注重功能性而非奢華。",
+        "note": "設計與採購原則"
+      },
+      {
+        "en": "We chose a car that prioritizes functionality over luxury.",
+        "zh": "我們選了一台注重實用性的車，而不是奢華名牌車。",
+        "note": "消費決策對話"
+      },
+      {
+        "en": "The apartment is not fancy, but it’s functional.",
+        "zh": "這間公寓不奢華，但很實用。",
+        "note": "形容空間與居家"
+      },
+      {
+        "en": "Our software design philosophy is simple: prioritize functionality and speed over unnecessary visual fluff.",
+        "zh": "我們的軟體設計哲學很單純：速度與實用功能第一，捨棄不必要的視覺花巧。",
+        "note": "軟體與工程產品設計"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "query": "置身事外的英文",
+    "category": "人際處世 / 職場智慧",
+    "core_expression": "Remain aloof from / Stay out of / Keep one's distance",
+    "keywords": [
+      "aloof",
+      "stay out of",
+      "drama",
+      "argument"
+    ],
+    "context": "形容某人對紛爭、爭吵、政治角力或事件保持距離，不介入、不捲入其中、袖手旁觀。",
+    "explanation": "「Aloof」帶有冷眼旁觀、超然獨立的色彩。「Remain aloof from the situation」是標準優雅的說法。口語直接說「Stay out of it!」（別插手管這檔事！）。",
+    "synonyms": [
+      {
+        "en": "Remain aloof from",
+        "zh": "對...超然置身事外"
+      },
+      {
+        "en": "Stay out of it",
+        "zh": "不插手、別攪和進去"
+      },
+      {
+        "en": "Keep at arm's length",
+        "zh": "保持距離、不惹禍上身"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Remain aloof from the situation.",
+        "zh": "對情勢置身事外。",
+        "note": "優雅客觀的陳述"
+      },
+      {
+        "en": "He remained aloof from the family drama.",
+        "zh": "他對家族鬧劇完全置身事外。",
+        "note": "人際衝突情境"
+      },
+      {
+        "en": "She tried to stay out of the argument.",
+        "zh": "她試著不捲入爭執中。",
+        "note": "生活高頻實用口語"
+      },
+      {
+        "en": "When office politics get messy, the smartest move is often to remain aloof and focus on results.",
+        "zh": "當辦公室政治變得複雜時，最聰明的做法往往是置身事外，專注於工作成果。",
+        "note": "職場生存金句"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "query": "後見之明英文",
+    "category": "心理學認知 / 邏輯思維",
+    "core_expression": "With the benefit of hindsight / Hindsight bias",
+    "keywords": [
+      "benefit of hindsight",
+      "hindsight shows",
+      "mistake"
+    ],
+    "context": "在事情塵埃落定之後，才回頭看清因果道理或做出判斷；或指心理學上的「後見之明偏誤」。",
+    "explanation": "「With the benefit of hindsight」意思是站在已經知道結果的有利角度回看。心理學專業術語「Hindsight bias」（後見之明偏誤 / 我早就知道了現象）正是描述人類總在事後誤以為自己早已預測到結果。",
+    "synonyms": [
+      {
+        "en": "With the benefit of hindsight",
+        "zh": "站在事後理解的角度"
+      },
+      {
+        "en": "Hindsight bias",
+        "zh": "後見之明偏差（心理學術語）"
+      },
+      {
+        "en": "Looking back",
+        "zh": "回頭審視"
+      }
+    ],
+    "examples": [
+      {
+        "en": "With the benefit of hindsight...",
+        "zh": "事後諸葛地來看……（事後回想）",
+        "note": "句首開場白"
+      },
+      {
+        "en": "Hindsight shows we should have acted sooner.",
+        "zh": "事後來看，我們應該更早行動。",
+        "note": "回顧決策時機"
+      },
+      {
+        "en": "In hindsight, that was a mistake.",
+        "zh": "事後看，那是一個錯誤。",
+        "note": "坦率承認決策失誤"
+      },
+      {
+        "en": "Beware of hindsight bias; decisions must be evaluated based on what was known at the time.",
+        "zh": "要提防後見之明偏誤；評估決策應基於當時所掌握的資訊，而非事後結果。",
+        "note": "商業與投資決策思維"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "query": "陰魂不散，英文",
+    "category": "情緒心理 / 記憶感受",
+    "core_expression": "Keep haunting someone / Cast a long shadow / Linger on",
+    "keywords": [
+      "haunting",
+      "memory",
+      "decision",
+      "haunt"
+    ],
+    "context": "比喻過去的失敗、不愉快的陰影、執念或某個人事始終擺脫不掉，長久困擾內心。",
+    "explanation": "動詞「haunt」原指鬼魂出沒，引申為回憶、悔恨、惡夢像幽靈一樣一直纏著不走。「It keeps haunting me」生動傳達了「陰魂不散、揮之不去」的心情。",
+    "synonyms": [
+      {
+        "en": "Keep haunting me",
+        "zh": "一直陰魂不散地纏著我"
+      },
+      {
+        "en": "Cast a long shadow",
+        "zh": "籠罩在揮之不去的陰影下"
+      },
+      {
+        "en": "Linger in the mind",
+        "zh": "久久盤旋在腦海揮之不去"
+      }
+    ],
+    "examples": [
+      {
+        "en": "It keeps haunting me.",
+        "zh": "它陰魂不散地纏著我。",
+        "note": "直白情緒抒發"
+      },
+      {
+        "en": "The memory of that night keeps haunting me.",
+        "zh": "那晚的記憶一直纏著我。",
+        "note": "描述創傷或悔恨"
+      },
+      {
+        "en": "That decision continues to haunt him to this day.",
+        "zh": "那個決定直到今天仍困擾著他。",
+        "note": "描述深遠的負面影響"
+      },
+      {
+        "en": "Past failures won't stop haunting you until you make peace with them and move on.",
+        "zh": "過去的失敗會像陰魂不散般纏著你，除非你選擇與之和解並繼續前行。",
+        "note": "心理勵志與釋懷"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "query": "你這個人不主觀也不客觀英文怎麼說",
+    "category": "論辯邏輯 / 人格批評",
+    "core_expression": "Neither subjective nor objective / Lacking coherent stance",
+    "keywords": [
+      "neither subjective nor objective",
+      "logic",
+      "confusing",
+      "caught in between"
+    ],
+    "context": "形容對方論點混亂、缺乏中心思想與依據，既沒有自己的主見（不主觀），又沒有依照事實數據（不客觀），讓人摸不著頭緒。",
+    "explanation": "使用「neither... nor...」（既不...也不...）句型。「You're neither subjective nor objective」精確對應中文；亦可補充「Your reasoning makes no sense / You're all over the place」（你的論點四無著落、東拼西湊）。",
+    "synonyms": [
+      {
+        "en": "Neither subjective nor objective",
+        "zh": "既不主觀也不客觀"
+      },
+      {
+        "en": "All over the place",
+        "zh": "邏輯散亂、前後矛盾"
+      },
+      {
+        "en": "Muddled thinking",
+        "zh": "思維混亂沒有準則"
+      }
+    ],
+    "examples": [
+      {
+        "en": "You're neither subjective nor objective.",
+        "zh": "你這個人既不主觀也不客觀。",
+        "note": "原味精準翻譯"
+      },
+      {
+        "en": "Your logic is neither subjective nor objective—it’s just confusing.",
+        "zh": "你的邏輯既不主觀也不客觀，簡直讓人困惑。",
+        "note": "指出對方推理問題"
+      },
+      {
+        "en": "He's caught in between, neither being objective nor personal.",
+        "zh": "他卡在中間，既不客觀也不帶個人色彩。",
+        "note": "第三人稱客觀描寫"
+      },
+      {
+        "en": "Without a clear viewpoint or factual evidence, an argument ends up being neither subjective nor objective—just meaningless noise.",
+        "zh": "如果既沒有鮮明觀點，又缺乏事實佐證，爭論最後只會變成既不主觀也不客觀的無意義雜訊。",
+        "note": "深度邏輯批判"
+      }
+    ]
+  }
+];
+
+    // 本地持久化資料存儲 Key
+    const STORAGE_KEY_MASTERED = 'gemini_en_mastered_v1';
+    const STORAGE_KEY_STARRED = 'gemini_en_starred_v1';
+    const STORAGE_KEY_ENGLISH_ONLY = 'gemini_en_english_only_v1';
+    const STORAGE_KEY_PLAY_MODE = 'gemini_en_play_mode_v1';
+
+    let userMastered = JSON.parse(localStorage.getItem(STORAGE_KEY_MASTERED) || '[]');
+    let userStarred = JSON.parse(localStorage.getItem(STORAGE_KEY_STARRED) || '[]');
+    let isEnglishOnlyMode = (localStorage.getItem(STORAGE_KEY_ENGLISH_ONLY) === 'true');
+    let autoPlayMode = localStorage.getItem(STORAGE_KEY_PLAY_MODE) || 'english_only'; // 'english_only' | 'bilingual_flip'
+
+    let currentCardIndex = 0;
+    let isFlipped = false;
+    let isAutoPlaying = false;
+    let autoPlayTimeoutId = null;
+    let sentenceDelaySec = 1.2;
+
+    // 語音合成語音清單
+    let availableVoices = [];
+    let selectedVoice = null;
+    let speechRate = 1.0;
+
+    // 初始化
+    window.addEventListener('DOMContentLoaded', () => {
+      initVoices();
+      applyEnglishOnlyUI();
+      renderStats();
+      renderCurrentCard();
+      renderList(TOPICS_DATA);
+      startNewQuiz();
+      updatePlayModeUI();
+
+      // 鍵盤快捷鍵
+      window.addEventListener('keydown', (e) => {
+        const activeView = document.querySelector('.view-panel:not(.hidden)')?.id;
+        if (activeView === 'view-flashcards') {
+          if (e.code === 'Space') {
+            e.preventDefault();
+            flipCard();
+          } else if (e.code === 'ArrowRight') {
+            e.preventDefault();
+            nextCard();
+          } else if (e.code === 'ArrowLeft') {
+            e.preventDefault();
+            prevCard();
+          }
+        }
+      });
+    });
+
+    // 切換純英文模式（視覺上遮罩/模糊中文翻譯，建立純英文浸潤感）
+    function toggleEnglishOnlyMode() {
+      isEnglishOnlyMode = !isEnglishOnlyMode;
+      localStorage.setItem(STORAGE_KEY_ENGLISH_ONLY, isEnglishOnlyMode);
+      applyEnglishOnlyUI();
+    }
+
+    function applyEnglishOnlyUI() {
+      const navBtn = document.getElementById('btn-english-only-nav');
+      const navText = document.getElementById('nav-en-text');
+      if (isEnglishOnlyMode) {
+        document.body.classList.add('english-only-mode');
+        if (navBtn) {
+          navBtn.classList.add('bg-indigo-600', 'text-white', 'border-indigo-400');
+          navBtn.classList.remove('bg-slate-800', 'text-slate-300');
+        }
+        if (navText) navText.innerText = '單獨英文：開 (純英)';
+      } else {
+        document.body.classList.remove('english-only-mode');
+        if (navBtn) {
+          navBtn.classList.remove('bg-indigo-600', 'text-white', 'border-indigo-400');
+          navBtn.classList.add('bg-slate-800', 'text-slate-300');
+        }
+        if (navText) navText.innerText = '單獨英文：關';
+      }
+    }
+
+    // 自動播放模式設定
+    function setAutoPlayMode(mode) {
+      autoPlayMode = mode;
+      localStorage.setItem(STORAGE_KEY_PLAY_MODE, mode);
+      updatePlayModeUI();
+      const cfgSelect = document.getElementById('cfg-autoplay-mode');
+      if (cfgSelect) cfgSelect.value = mode;
+
+      // 如果正在播放中，重新啟動以應用新模式
+      if (isAutoPlaying) {
+        stopAutoPlay();
+        startAutoPlay();
+      }
+    }
+
+    function updatePlayModeUI() {
+      const btnEn = document.getElementById('mode-btn-en');
+      const btnBi = document.getElementById('mode-btn-bi');
+      if (autoPlayMode === 'english_only') {
+        btnEn.className = 'px-2.5 py-1 text-xs font-semibold rounded-lg transition bg-indigo-600 text-white shadow';
+        btnBi.className = 'px-2.5 py-1 text-xs font-medium rounded-lg transition text-slate-400 hover:text-white';
+      } else {
+        btnBi.className = 'px-2.5 py-1 text-xs font-semibold rounded-lg transition bg-indigo-600 text-white shadow';
+        btnEn.className = 'px-2.5 py-1 text-xs font-medium rounded-lg transition text-slate-400 hover:text-white';
+      }
+    }
+
+    // 視圖切換
+    function switchView(viewName) {
+      document.querySelectorAll('.view-panel').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-indigo-600', 'text-white', 'shadow');
+        btn.classList.add('text-slate-400');
+      });
+
+      const target = document.getElementById(`view-${viewName}`);
+      const tab = document.getElementById(`tab-${viewName}`);
+      if (target) target.classList.remove('hidden');
+      if (tab) {
+        tab.classList.add('bg-indigo-600', 'text-white', 'shadow');
+        tab.classList.remove('text-slate-400');
+      }
+
+      // 如果離開卡牌視圖，停止自動播放
+      if (viewName !== 'flashcards' && isAutoPlaying) {
+        stopAutoPlay();
+      }
+    }
+
+    // 主題切換
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.classList.contains('dark');
+      const icon = document.getElementById('theme-icon');
+      if (isDark) {
+        html.classList.remove('dark');
+        localStorage.setItem('gemini_en_theme', 'light');
+        if (icon) icon.innerText = '☀️';
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('gemini_en_theme', 'dark');
+        if (icon) icon.innerText = '🌙';
+      }
+    }
+
+    // 語音初始化
+    function initVoices() {
+      if (!('speechSynthesis' in window)) return;
+      const populate = () => {
+        availableVoices = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+        const select = document.getElementById('voice-select');
+        if (select) {
+          select.innerHTML = '';
+          availableVoices.forEach((v, idx) => {
+            const opt = document.createElement('option');
+            opt.value = idx;
+            opt.innerText = `${v.name} (${v.lang})`;
+            if ((v.lang === 'en-US' && v.name.includes('Google')) || (v.lang === 'en-US' && v.default) || idx === 0) {
+              opt.selected = true;
+              selectedVoice = v;
+            }
+            select.appendChild(opt);
+          });
+          select.onchange = (e) => {
+            selectedVoice = availableVoices[e.target.value];
+          };
+        }
+      };
+      populate();
+      if (window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = populate;
+      }
+    }
+
+    // 單句朗讀 Promise 封裝（供自動輪播連續呼叫）
+    function speakPromise(text) {
+      return new Promise((resolve) => {
+        if (!('speechSynthesis' in window)) {
+          resolve();
+          return;
+        }
+        window.speechSynthesis.cancel();
+        const clean = text.replace(/\[.*?\]/g, '').replace(/[\/\]/g, ', ').trim();
+        const utter = new SpeechSynthesisUtterance(clean);
+        utter.rate = speechRate;
+        if (selectedVoice) utter.voice = selectedVoice;
+        else utter.lang = 'en-US';
+
+        utter.onend = () => {
+          resolve();
+        };
+        utter.onerror = () => {
+          resolve();
+        };
+
+        window.speechSynthesis.speak(utter);
+      });
+    }
+
+    function speakSingleText(text) {
+      if (!('speechSynthesis' in window)) {
+        alert('您的瀏覽器不支援語音合成功能。');
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const clean = text.replace(/\[.*?\]/g, '').replace(/[\/\]/g, ', ').trim();
+      const utter = new SpeechSynthesisUtterance(clean);
+      utter.rate = speechRate;
+      if (selectedVoice) utter.voice = selectedVoice;
+      else utter.lang = 'en-US';
+      window.speechSynthesis.speak(utter);
+    }
+
+    function updateRateLabel(val) {
+      speechRate = parseFloat(val);
+      document.getElementById('rate-value').innerText = `${speechRate.toFixed(1)}x`;
+    }
+
+    function updateIntervalLabel(val) {
+      sentenceDelaySec = parseFloat(val);
+      document.getElementById('interval-value').innerText = `${sentenceDelaySec.toFixed(1)} 秒`;
+    }
+
+    function testSpeech() {
+      speakSingleText('Hindsight is twenty twenty. Knowledge is power.');
+    }
+
+    function toggleVoiceModal() {
+      const m = document.getElementById('modal-voice');
+      m.classList.toggle('hidden');
+    }
+
+    function toggleExportModal() {
+      const m = document.getElementById('modal-export');
+      m.classList.toggle('hidden');
+    }
+
+    // 統計數據
+    function renderStats() {
+      const total = TOPICS_DATA.length;
+      const mastered = userMastered.length;
+      const starred = userStarred.length;
+      const pct = Math.round((mastered / total) * 100);
+
+      document.getElementById('stat-total').innerText = total;
+      document.getElementById('stat-mastered').innerText = mastered;
+      document.getElementById('stat-starred').innerText = starred;
+      document.getElementById('stat-progress').innerText = `${pct}%`;
+    }
+
+    // 卡牌翻轉
+    function flipCard() {
+      const inner = document.getElementById('flashcard-inner');
+      isFlipped = !isFlipped;
+      if (isFlipped) {
+        inner.classList.add('card-flipped');
+      } else {
+        inner.classList.remove('card-flipped');
+        clearSpeakingHighlights();
+      }
+    }
+
+    function nextCard() {
+      clearAutoPlayTimers();
+      if (isFlipped && autoPlayMode !== 'english_only') flipCard();
+      currentCardIndex = (currentCardIndex + 1) % TOPICS_DATA.length;
+      renderCurrentCard();
+      if (isAutoPlaying) {
+        runAutoPlayCycle();
+      }
+    }
+
+    function prevCard() {
+      clearAutoPlayTimers();
+      if (isFlipped && autoPlayMode !== 'english_only') flipCard();
+      currentCardIndex = (currentCardIndex - 1 + TOPICS_DATA.length) % TOPICS_DATA.length;
+      renderCurrentCard();
+      if (isAutoPlaying) {
+        runAutoPlayCycle();
+      }
+    }
+
+    function renderCurrentCard() {
+      const topic = TOPICS_DATA[currentCardIndex];
+      if (!topic) return;
+
+      document.getElementById('card-category-badge').innerText = topic.category;
+      document.getElementById('card-index-indicator').innerText = `${currentCardIndex + 1} / ${TOPICS_DATA.length}`;
+
+      // 正面
+      document.getElementById('card-query-front').innerText = topic.query;
+      document.getElementById('card-context-front').innerText = topic.context;
+      
+      const kwBox = document.getElementById('card-keywords-front');
+      kwBox.innerHTML = '';
+      topic.keywords.forEach(kw => {
+        const span = document.createElement('span');
+        span.className = 'px-2.5 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-white/5 font-mono';
+        span.innerText = kw;
+        kwBox.appendChild(span);
+      });
+
+      // 背面
+      document.getElementById('card-core-back').innerText = topic.core_expression;
+      document.getElementById('card-explanation-back').innerText = topic.explanation;
+
+      const exBox = document.getElementById('card-examples-back');
+      exBox.innerHTML = '';
+      topic.examples.forEach((ex, idx) => {
+        const item = document.createElement('div');
+        item.id = `example-item-${idx}`;
+        item.className = 'example-card-item p-2.5 rounded-2xl bg-slate-800/60 border border-white/5 flex items-start justify-between gap-3 group hover:border-indigo-500/30 transition';
+        item.innerHTML = `
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-0.5">
+              <span class="text-xs font-bold text-indigo-400">${idx + 1}.</span>
+              <p class="text-xs sm:text-sm font-semibold text-white tracking-wide leading-snug">${ex.en}</p>
+            </div>
+            <p class="text-xs text-slate-300 pl-4 zh-translation">${ex.zh}</p>
+            ${ex.note ? `<p class="text-[11px] text-slate-500 pl-4 mt-0.5">📌 ${ex.note}</p>` : ''}
+          </div>
+          <button onclick="event.stopPropagation(); speakSingleText('${ex.en.replace(/'/g, "\'")}')" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-700 transition" title="朗讀此句">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+            </svg>
+          </button>
+        `;
+        exBox.appendChild(item);
+      });
+
+      // 更新收藏與精通狀態按鈕
+      const isMastered = userMastered.includes(topic.id);
+      const isStarred = userStarred.includes(topic.id);
+
+      const masterIcon = document.getElementById('master-icon');
+      const masterText = document.getElementById('master-text');
+      if (isMastered) {
+        masterIcon.innerText = '🟢';
+        masterText.innerText = '已精通';
+      } else {
+        masterIcon.innerText = '⚪';
+        masterText.innerText = '未精通';
+      }
+
+      const starIcon = document.getElementById('star-icon');
+      if (isStarred) {
+        starIcon.classList.add('fill-amber-400', 'text-amber-400');
+        starIcon.classList.remove('fill-none');
+      } else {
+        starIcon.classList.remove('fill-amber-400', 'text-amber-400');
+        starIcon.classList.add('fill-none');
+      }
+    }
+
+    function toggleStarCurrent() {
+      const topic = TOPICS_DATA[currentCardIndex];
+      const idx = userStarred.indexOf(topic.id);
+      if (idx >= 0) userStarred.splice(idx, 1);
+      else userStarred.push(topic.id);
+      localStorage.setItem(STORAGE_KEY_STARRED, JSON.stringify(userStarred));
+      renderStats();
+      renderCurrentCard();
+    }
+
+    function toggleMasterCurrent() {
+      const topic = TOPICS_DATA[currentCardIndex];
+      const idx = userMastered.indexOf(topic.id);
+      if (idx >= 0) userMastered.splice(idx, 1);
+      else userMastered.push(topic.id);
+      localStorage.setItem(STORAGE_KEY_MASTERED, JSON.stringify(userMastered));
+      renderStats();
+      renderCurrentCard();
+    }
+
+    // 高亮朗讀中的句子
+    function highlightSpeaking(elementId) {
+      clearSpeakingHighlights();
+      const el = document.getElementById(elementId);
+      if (el) {
+        el.classList.add('active-speaking');
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    function clearSpeakingHighlights() {
+      document.querySelectorAll('.active-speaking').forEach(el => {
+        el.classList.remove('active-speaking');
+      });
+    }
+
+    function clearAutoPlayTimers() {
+      if (autoPlayTimeoutId) {
+        clearTimeout(autoPlayTimeoutId);
+        autoPlayTimeoutId = null;
+      }
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      clearSpeakingHighlights();
+    }
+
+    // 連續朗讀當前卡片所有英文句子（手動觸發）
+    async function playAllEnglishCurrentCard() {
+      const topic = TOPICS_DATA[currentCardIndex];
+      if (!topic) return;
+
+      document.getElementById('playing-status-badge').classList.remove('hidden');
+
+      // 1. 核心表達
+      highlightSpeaking('card-core-container');
+      await speakPromise(topic.core_expression);
+      await sleep(sentenceDelaySec * 1000);
+
+      // 2. 四句例句依序朗讀
+      for (let i = 0; i < topic.examples.length; i++) {
+        highlightSpeaking(`example-item-${i}`);
+        await speakPromise(topic.examples[i].en);
+        await sleep(sentenceDelaySec * 1000);
+      }
+
+      clearSpeakingHighlights();
+      document.getElementById('playing-status-badge').classList.add('hidden');
+    }
+
+    // ==========================================
+    // 自動播放連續輪播核心引擎
+    // ==========================================
+    function toggleAutoPlay() {
+      if (isAutoPlaying) {
+        stopAutoPlay();
+      } else {
+        startAutoPlay();
+      }
+    }
+
+    function startAutoPlay() {
+      isAutoPlaying = true;
+      const btn = document.getElementById('btn-autoplay');
+      document.getElementById('autoplay-icon').innerText = '⏸️';
+      document.getElementById('autoplay-text').innerText = '暫停播放';
+      btn.classList.add('pulse-glow');
+      document.getElementById('playing-status-badge').classList.remove('hidden');
+
+      runAutoPlayCycle();
+    }
+
+    function stopAutoPlay() {
+      isAutoPlaying = false;
+      clearAutoPlayTimers();
+      const btn = document.getElementById('btn-autoplay');
+      document.getElementById('autoplay-icon').innerText = '▶️';
+      document.getElementById('autoplay-text').innerText = '自動播放';
+      btn.classList.remove('pulse-glow');
+      document.getElementById('playing-status-badge').classList.add('hidden');
+      clearSpeakingHighlights();
+    }
+
+    async function runAutoPlayCycle() {
+      if (!isAutoPlaying) return;
+      const topic = TOPICS_DATA[currentCardIndex];
+      if (!topic) return;
+
+      if (autoPlayMode === 'english_only') {
+        // 【單獨純英文模式】：卡片固定停留在英文面，連續朗讀核心詞與4組英文例句，然後自動切換下一題
+        if (!isFlipped) {
+          flipCard();
+        }
+
+        // 朗讀核心片語
+        highlightSpeaking('card-core-container');
+        await speakPromise(topic.core_expression);
+        if (!isAutoPlaying) return;
+        await sleep(sentenceDelaySec * 1000);
+        if (!isAutoPlaying) return;
+
+        // 依序朗讀 4 組英文例句
+        for (let i = 0; i < topic.examples.length; i++) {
+          if (!isAutoPlaying) return;
+          highlightSpeaking(`example-item-${i}`);
+          await speakPromise(topic.examples[i].en);
+          if (!isAutoPlaying) return;
+          await sleep(sentenceDelaySec * 1000);
+        }
+
+        clearSpeakingHighlights();
+        if (!isAutoPlaying) return;
+
+        // 稍作停頓後自動前往下一題
+        autoPlayTimeoutId = setTimeout(() => {
+          if (isAutoPlaying) {
+            currentCardIndex = (currentCardIndex + 1) % TOPICS_DATA.length;
+            renderCurrentCard();
+            runAutoPlayCycle();
+          }
+        }, 1000);
+
+      } else {
+        // 【雙語翻牌思考模式】：正面先停留思考，翻面朗讀核心與例句，然後下一題
+        if (isFlipped) {
+          flipCard(); // 先回正面
+        }
+
+        // 正面停留 3.5 秒讓使用者思考「這句英文怎麼說」
+        await sleep(3500);
+        if (!isAutoPlaying) return;
+
+        // 翻面
+        flipCard();
+        await sleep(400);
+
+        // 朗讀核心英文片語
+        highlightSpeaking('card-core-container');
+        await speakPromise(topic.core_expression);
+        if (!isAutoPlaying) return;
+        await sleep(sentenceDelaySec * 1000);
+
+        // 朗讀第 1 句精選英文
+        if (topic.examples && topic.examples[0]) {
+          highlightSpeaking(`example-item-0`);
+          await speakPromise(topic.examples[0].en);
+          if (!isAutoPlaying) return;
+          await sleep(sentenceDelaySec * 1000);
+        }
+
+        clearSpeakingHighlights();
+        if (!isAutoPlaying) return;
+
+        // 翻到下一題
+        autoPlayTimeoutId = setTimeout(() => {
+          if (isAutoPlaying) {
+            currentCardIndex = (currentCardIndex + 1) % TOPICS_DATA.length;
+            renderCurrentCard();
+            runAutoPlayCycle();
+          }
+        }, 1500);
+      }
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => {
+        autoPlayTimeoutId = setTimeout(resolve, ms);
+      });
+    }
+
+    // 條列總覽渲染
+    function renderList(items) {
+      const container = document.getElementById('list-container');
+      container.innerHTML = '';
+
+      if (items.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-16 glass-card rounded-3xl">
+            <p class="text-slate-400 text-sm">找不到符合條件的問答項目。</p>
+          </div>
+        `;
+        return;
+      }
+
+      items.forEach(t => {
+        const card = document.createElement('div');
+        card.className = 'glass-card rounded-3xl p-6 sm:p-8 border border-white/10 hover:border-indigo-500/30 transition shadow-xl';
+        
+        let exHtml = '';
+        t.examples.forEach((ex, idx) => {
+          exHtml += `
+            <div class="p-3.5 rounded-2xl bg-slate-800/40 border border-white/5 flex items-start justify-between gap-3">
+              <div class="flex-1">
+                <p class="text-sm sm:text-base font-semibold text-white tracking-wide">${idx + 1}. ${ex.en}</p>
+                <p class="text-xs sm:text-sm text-slate-300 mt-1 zh-translation">${ex.zh}</p>
+                ${ex.note ? `<p class="text-xs text-indigo-400 mt-0.5 font-medium">📌 ${ex.note}</p>` : ''}
+              </div>
+              <button onclick="speakSingleText('${ex.en.replace(/'/g, "\'")}')" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-700/80 transition" title="朗讀此句">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                </svg>
+              </button>
+            </div>
+          `;
+        });
+
+        let synHtml = '';
+        if (t.synonyms) {
+          t.synonyms.forEach(s => {
+            synHtml += `<span class="px-2.5 py-1 text-xs rounded-xl bg-indigo-950/60 text-indigo-300 border border-indigo-500/20"><b>${s.en}</b>：<span class="zh-translation">${s.zh}</span></span> `;
+          });
+        }
+
+        card.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-white/10">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                #${t.id} ${t.category}
+              </span>
+              <h3 class="text-xl font-extrabold text-white">${t.query}</h3>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="speakSingleText('${t.core_expression.replace(/'/g, "\'")}')" class="px-3 py-1.5 rounded-xl bg-indigo-600/80 hover:bg-indigo-600 text-white text-xs font-medium flex items-center gap-1 transition">
+                <span>🔊</span> 朗讀核心片語
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+            <div class="p-4 rounded-2xl bg-indigo-950/30 border border-indigo-500/20">
+              <h4 class="text-xs uppercase tracking-wider text-indigo-400 font-bold mb-1">🎯 核心地道表達</h4>
+              <p class="text-lg font-bold text-white mb-2">${t.core_expression}</p>
+              <p class="text-xs text-slate-300 leading-relaxed zh-translation">${t.explanation}</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-800/40 border border-white/5">
+              <h4 class="text-xs uppercase tracking-wider text-slate-400 font-bold mb-1">💡 適用情境</h4>
+              <p class="text-sm text-slate-300 mb-3">${t.context}</p>
+              <h4 class="text-xs uppercase tracking-wider text-slate-400 font-bold mb-1.5">🔄 同義與進階補充</h4>
+              <div class="flex flex-wrap gap-1.5">${synHtml}</div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">📚 4 組真實實戰例句對照</h4>
+            <div class="space-y-2.5">${exHtml}</div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterList() {
+      const query = document.getElementById('search-input').value.toLowerCase().trim();
+      const cat = document.getElementById('category-filter').value;
+
+      const filtered = TOPICS_DATA.filter(t => {
+        const matchCat = (cat === 'ALL' || t.category === cat);
+        const matchText = (
+          t.query.toLowerCase().includes(query) ||
+          t.core_expression.toLowerCase().includes(query) ||
+          t.context.toLowerCase().includes(query) ||
+          t.explanation.toLowerCase().includes(query) ||
+          t.examples.some(e => e.en.toLowerCase().includes(query) || e.zh.toLowerCase().includes(query))
+        );
+        return matchCat && matchText;
+      });
+      renderList(filtered);
+    }
+
+    // 測驗題庫邏輯
+    let quizQuestions = [];
+    let currentQuizIndex = 0;
+    let quizScore = 0;
+
+    function buildQuizPool() {
+      const pool = [];
+      TOPICS_DATA.forEach(t => {
+        // 題型 1: 中翻英核心表達四選一
+        const distractors = TOPICS_DATA.filter(x => x.id !== t.id).sort(() => 0.5 - Math.random()).slice(0, 3).map(x => x.core_expression.split('/')[0].trim());
+        const options = [t.core_expression.split('/')[0].trim(), ...distractors].sort(() => 0.5 - Math.random());
+        pool.push({
+          type: 'choice',
+          badge: '核心口語四選一',
+          prompt: `當你想詢問或表達「${t.query}」時，最道地的說法是？`,
+          hint: `情境指引：${t.context}`,
+          correctAnswer: t.core_expression.split('/')[0].trim(),
+          options: options,
+          explanation: `${t.query} 最經典的英文是：${t.core_expression}。${t.explanation}`
+        });
+
+        // 題型 2: 例句判斷
+        if (t.examples && t.examples[0]) {
+          const ex = t.examples[0];
+          pool.push({
+            type: 'sentence',
+            badge: '情境例句辨析',
+            prompt: `中文句子：「${ex.zh}」最道地的英文對應是？`,
+            hint: `重點單字線索：${t.keywords.join(', ')}`,
+            correctAnswer: ex.en,
+            options: [
+              ex.en,
+              ...TOPICS_DATA.filter(x => x.id !== t.id).map(x => x.examples[0].en).slice(0, 3)
+            ].sort(() => 0.5 - Math.random()),
+            explanation: `正解：${ex.en}。中文為「${ex.zh}」。`
+          });
+        }
+      });
+      return pool.sort(() => 0.5 - Math.random()).slice(0, 10);
+    }
+
+    function startNewQuiz() {
+      quizQuestions = buildQuizPool();
+      currentQuizIndex = 0;
+      quizScore = 0;
+      document.getElementById('quiz-score').innerText = '0 分';
+      renderQuizQuestion();
+    }
+
+    function renderQuizQuestion() {
+      const q = quizQuestions[currentQuizIndex];
+      if (!q) return;
+
+      document.getElementById('quiz-question-counter').innerText = `第 ${currentQuizIndex + 1} / ${quizQuestions.length} 題`;
+      document.getElementById('quiz-badge').innerText = q.badge;
+      document.getElementById('quiz-prompt').innerText = q.prompt;
+      document.getElementById('quiz-hint').innerText = q.hint;
+
+      const optsContainer = document.getElementById('quiz-options');
+      optsContainer.innerHTML = '';
+      document.getElementById('quiz-feedback').classList.add('hidden');
+      document.getElementById('btn-quiz-next').classList.add('hidden');
+
+      q.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-opt-btn w-full p-4 rounded-2xl bg-slate-800/80 hover:bg-slate-700/80 text-left font-medium text-white border border-white/5 transition flex items-center justify-between group';
+        btn.innerHTML = `
+          <span>${opt}</span>
+          <span class="w-6 h-6 rounded-full border border-white/20 flex items-center justify-center text-xs group-hover:border-indigo-400">➔</span>
+        `;
+        btn.onclick = () => handleQuizAnswer(opt, btn);
+        optsContainer.appendChild(btn);
+      });
+    }
+
+    function handleQuizAnswer(selected, targetBtn) {
+      const q = quizQuestions[currentQuizIndex];
+      const isCorrect = (selected === q.correctAnswer);
+      
+      document.querySelectorAll('.quiz-opt-btn').forEach(btn => {
+        btn.disabled = true;
+        btn.classList.add('opacity-80', 'cursor-not-allowed');
+        if (btn.innerText.includes(q.correctAnswer)) {
+          btn.classList.remove('bg-slate-800/80');
+          btn.classList.add('bg-emerald-600/40', 'border-emerald-500', 'text-emerald-200');
+        }
+      });
+
+      const fb = document.getElementById('quiz-feedback');
+      fb.classList.remove('hidden');
+
+      if (isCorrect) {
+        quizScore += 10;
+        document.getElementById('quiz-score').innerText = `${quizScore} 分`;
+        targetBtn.classList.remove('bg-slate-800/80');
+        targetBtn.classList.add('bg-emerald-600/60', 'border-emerald-500');
+        fb.className = 'p-4 rounded-2xl mb-6 text-sm bg-emerald-950/40 border border-emerald-500/30 text-emerald-200';
+        fb.innerHTML = `<b>🎉 答對了！</b><br>${q.explanation}`;
+        speakSingleText(q.correctAnswer);
+      } else {
+        targetBtn.classList.remove('bg-slate-800/80');
+        targetBtn.classList.add('bg-red-600/60', 'border-red-500');
+        fb.className = 'p-4 rounded-2xl mb-6 text-sm bg-red-950/40 border border-red-500/30 text-red-200';
+        fb.innerHTML = `<b>❌ 答錯了！正確答案是：${q.correctAnswer}</b><br>${q.explanation}`;
+      }
+
+      document.getElementById('btn-quiz-next').classList.remove('hidden');
+    }
+
+    function nextQuizQuestion() {
+      currentQuizIndex++;
+      if (currentQuizIndex < quizQuestions.length) {
+        renderQuizQuestion();
+      } else {
+        showQuizSummary();
+      }
+    }
+
+    function showQuizSummary() {
+      const optsContainer = document.getElementById('quiz-options');
+      optsContainer.innerHTML = '';
+      document.getElementById('quiz-prompt').innerText = `測驗完成！最終得分：${quizScore} / ${quizQuestions.length * 10} 分`;
+      document.getElementById('quiz-hint').innerText = quizScore >= 80 ? '太棒了！您對這些英文道地表達已經非常熟稔！' : '建議切換至「3D 卡牌」或「手冊總覽」多複習幾次喔！';
+      
+      const fb = document.getElementById('quiz-feedback');
+      fb.className = 'p-5 rounded-2xl mb-6 text-center text-sm bg-indigo-950/40 border border-indigo-500/30 text-indigo-200';
+      fb.innerHTML = `
+        <p class="text-2xl mb-2">${quizScore >= 80 ? '🏆 卓越掌握' : '💪 持續精進'}</p>
+        <button onclick="startNewQuiz()" class="mt-3 px-6 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs shadow-lg transition">
+          再測一次
+        </button>
+      `;
+      document.getElementById('btn-quiz-next').classList.add('hidden');
+    }
+
+    // 匯出功能
+    function exportMarkdown() {
+      let md = '# 📚 Gemini 英文怎麼說：精選學習筆記\n\n';
+      md += '> 收錄您在 Gemini 中詢問過的「英文怎麼說」與完整情境例句。\n\n---\n\n';
+      TOPICS_DATA.forEach(t => {
+        md += `## ${t.id}. ${t.query}\n`;
+        md += `- **分類**：\`${t.category}\`\n`;
+        md += `- **核心表達**：**${t.core_expression}**\n`;
+        md += `- **使用情境**：${t.context}\n`;
+        md += `- **詳細解析**：${t.explanation}\n\n`;
+        md += `### 實戰例句：\n`;
+        t.examples.forEach((ex, idx) => {
+          md += `${idx + 1}. **${ex.en}**\n   - 中文：${ex.zh}\n   - 註記：${ex.note || '實用例句'}\n`;
+        });
+        md += `\n---\n\n`;
+      });
+      downloadFile(md, 'Gemini_英文怎麼說_學習筆記.md', 'text/markdown;charset=utf-8');
+    }
+
+    function exportAnkiCSV() {
+      let csv = 'Front,Back,Tags\n';
+      TOPICS_DATA.forEach(t => {
+        let front = `<b>${t.query}</b><br><small>${t.context}</small>`;
+        let back = `<h3>${t.core_expression}</h3><p>${t.explanation}</p><ul>`;
+        t.examples.forEach(ex => {
+          back += `<li><b>${ex.en}</b><br>${ex.zh}</li>`;
+        });
+        back += `</ul>`;
+        csv += `"${front.replace(/"/g, '""')}","${back.replace(/"/g, '""')}","Gemini_English"
+`;
+      });
+      downloadFile(csv, 'Gemini_English_Anki.csv', 'text/csv;charset=utf-8');
+    }
+
+    function exportJSON() {
+      downloadFile(JSON.stringify(TOPICS_DATA, null, 2), 'Gemini_English_Data.json', 'application/json;charset=utf-8');
+    }
+
+    function resetUserData() {
+      if (confirm('確定要清空所有精通標記與星號收藏嗎？')) {
+        userMastered = [];
+        userStarred = [];
+        localStorage.removeItem(STORAGE_KEY_MASTERED);
+        localStorage.removeItem(STORAGE_KEY_STARRED);
+        renderStats();
+        renderCurrentCard();
+        toggleExportModal();
+        alert('已重設學習進度！');
+      }
+    }
+
+    function downloadFile(content, filename, type) {
+      const blob = new Blob([content], { type: type });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
