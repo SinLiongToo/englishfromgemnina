@@ -1,6 +1,7 @@
 # 📚 Gemini 英文怎麼說：互動學習工具 (English from Gemini)
 
-> 🚀 **本專案旨在將您在 Gemini 中詢問過的所有「英文怎麼說」與情境表達完整提取、結構化整理，並打造成高互動、高質感的單頁 HTML 學習工具。**
+> 🚀 **本專案旨在將您在 Gemini 中詢問過的所有「英文怎麼說」與情境表達完整提取、結構化整理，並打造成高互動、高質感的單頁 HTML 學習工具。**  
+> 🌐 **GitHub Pages 線上直接體驗**：[https://sinliongtoo.github.io/englishfromgemnina/](https://sinliongtoo.github.io/englishfromgemnina/)
 
 ---
 
