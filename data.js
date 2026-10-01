@@ -47,7 +47,8 @@ window.TOPICS_DATA = [
         "zh": "別當事後諸葛放馬後炮，有建議在專案上線前就該提出來！",
         "note": "職場口語進階用法"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 2,
@@ -97,7 +98,8 @@ window.TOPICS_DATA = [
         "zh": "我們直接給主管層真實數據，不要有任何粉飾修飾。",
         "note": "專案回報實用句"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 3,
@@ -147,7 +149,8 @@ window.TOPICS_DATA = [
         "zh": "他們的工程交付成果品質向來是無可挑剔的。",
         "note": "科技專案驗收讚譽"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 4,
@@ -197,7 +200,8 @@ window.TOPICS_DATA = [
         "zh": "跨入新領域時，犯點小錯是免不了的。",
         "note": "安慰與自我勉勵"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 5,
@@ -247,7 +251,8 @@ window.TOPICS_DATA = [
         "zh": "產品展示期間伺服器當機時，經理整個人徹底大抓狂暴走。",
         "note": "現代科技職場真實情境"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 6,
@@ -296,7 +301,8 @@ window.TOPICS_DATA = [
         "zh": "無論薪水漲得多高，黃金法則永遠是量入為出。",
         "note": "長遠財富管理觀念"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 7,
@@ -346,7 +352,8 @@ window.TOPICS_DATA = [
         "zh": "在大熱天進行高強度鍛鍊時，及時補充水分與流失的電解質至關重要。",
         "note": "專業健身與長跑情境"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 8,
@@ -396,7 +403,8 @@ window.TOPICS_DATA = [
         "zh": "我們的軟體設計哲學很單純：速度與實用功能第一，捨棄不必要的視覺花巧。",
         "note": "軟體與工程產品設計"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 9,
@@ -446,7 +454,8 @@ window.TOPICS_DATA = [
         "zh": "當辦公室政治變得複雜時，最聰明的做法往往是置身事外，專注於工作成果。",
         "note": "職場生存金句"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 10,
@@ -495,7 +504,8 @@ window.TOPICS_DATA = [
         "zh": "要提防後見之明偏誤；評估決策應基於當時所掌握的資訊，而非事後結果。",
         "note": "商業與投資決策思維"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 11,
@@ -545,7 +555,8 @@ window.TOPICS_DATA = [
         "zh": "過去的失敗會像陰魂不散般纏著你，除非你選擇與之和解並繼續前行。",
         "note": "心理勵志與釋懷"
       }
-    ]
+    ],
+    "source": "Gemini"
   },
   {
     "id": 12,
@@ -594,6 +605,568 @@ window.TOPICS_DATA = [
         "en": "Without a clear viewpoint or factual evidence, an argument ends up being neither subjective nor objective—just meaningless noise.",
         "zh": "如果既沒有鮮明觀點，又缺乏事實佐證，爭論最後只會變成既不主觀也不客觀的無意義雜訊。",
         "note": "深度邏輯批判"
+      }
+    ],
+    "source": "Gemini"
+  },
+  {
+    "id": 13,
+    "source": "ChatGPT",
+    "query": "工作出錯、心裡難受時怎麼用英文表達與應對？",
+    "category": "職場心態 / 挫折應對",
+    "core_expression": "Feel bad about a mistake / Take prompt action to prevent escalation",
+    "keywords": [
+      "mistake",
+      "escalating",
+      "transparent",
+      "proactive"
+    ],
+    "context": "在工作中犯了錯、感到內疚自責時，如何向主管或同事真誠表達並展現積極補救的專業態度。",
+    "explanation": "工作犯錯時，不要只說「I'm sorry」，更成熟的職場用語是「I feel bad about this mistake, and I'm taking prompt action to prevent the problem from escalating」（我對此感到抱歉，我正迅速採取行動防止問題擴大）。展現責任感（accountability）與透明度（transparency）。",
+    "synonyms": [
+      {
+        "en": "Take accountability",
+        "zh": "勇於承擔責任"
+      },
+      {
+        "en": "Prevent from escalating",
+        "zh": "防止事態擴大"
+      },
+      {
+        "en": "Own up to a mistake",
+        "zh": "坦然承認錯誤"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I feel bad about the mistake on the job, but I'm fully committed to making it right.",
+        "zh": "對於工作上的失誤我感到非常難過，但我一定會全力把它修正好。",
+        "note": "真誠承擔責任"
+      },
+      {
+        "en": "Taking prompt action can prevent a small issue from escalating into a crisis.",
+        "zh": "迅速採取行動可以防止小問題升級為大危機。",
+        "note": "危機管理原則"
+      },
+      {
+        "en": "Being transparent and proactive shows responsibility and maintains team trust.",
+        "zh": "保持透明度與積極主動能展現責任感，並維護團隊的信任。",
+        "note": "團隊合作核心"
+      },
+      {
+        "en": "Mistakes happen to everyone; what defines us is how swiftly and effectively we resolve them.",
+        "zh": "人人都會犯錯；決定我們價值的，是我們有多迅速且有效地解決問題。",
+        "note": "主管安慰與勉勵"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "source": "ChatGPT",
+    "query": "盡快補救修復、希望別拖累/妨礙進度的英文怎麼說？",
+    "category": "專案溝通 / 進度管理",
+    "core_expression": "Fix it promptly so it won't hamper progress / Nip it in the bud",
+    "keywords": [
+      "hamper",
+      "promptly",
+      "progress",
+      "workflow"
+    ],
+    "context": "發現失誤後立即動手修正，並期盼不會對團隊整體工作流造成阻礙或耽擱。",
+    "explanation": "動詞「hamper」意思是「阻礙、妨礙、牽制」。「I hope it won't hamper the progress」非常地道。而成語「nip it in the bud」（防患於未然/扼殺於搖籃）也常搭配使用。",
+    "synonyms": [
+      {
+        "en": "Hamper progress",
+        "zh": "妨礙/拖累進度"
+      },
+      {
+        "en": "Nip in the bud",
+        "zh": "防微杜漸、防患未然"
+      },
+      {
+        "en": "Bottleneck the team",
+        "zh": "成為團隊的瓶頸"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I should fix this promptly, and I hope it won't hamper our project timeline too much.",
+        "zh": "我應該立刻修復這個問題，希望它不會過度拖累我們的專案時程。",
+        "note": "進度回報必備"
+      },
+      {
+        "en": "Unexpected system delays shouldn't hamper our momentum.",
+        "zh": "突如其來的系統延遲不應該阻礙我們的衝勁。",
+        "note": "維持團隊動能"
+      },
+      {
+        "en": "Let's resolve the bug immediately to avoid hampering downstream deployments.",
+        "zh": "我們立刻修復這個臭蟲，避免妨礙下游的發布進度。",
+        "note": "軟體研發情境"
+      },
+      {
+        "en": "Clear communication ensures that individual roadblocks don't hamper the entire sprint.",
+        "zh": "清晰的溝通能確保個人的阻礙不會拖累整個衝刺期。",
+        "note": "敏捷開發流程"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "source": "ChatGPT",
+    "query": "關鍵是找出自己究竟漏掉了什麼（抓盲點）的英文怎麼說？",
+    "category": "問題排查 / 深度覆盤",
+    "core_expression": "Pinpoint where things went off track / Retrace one's steps",
+    "keywords": [
+      "pinpoint",
+      "retrace",
+      "discrepancies",
+      "off track"
+    ],
+    "context": "遇到錯誤時，重點不是慌亂，而是冷靜回溯整個流程步驟，抓出關鍵遺漏點。",
+    "explanation": "動詞「pinpoint」精確表示「精準指出、找出確切位置」。「Retrace your steps」意為「回溯步驟，從頭逐步檢視」。兩者結合是排查問題（root cause analysis）的黃金句型。",
+    "synonyms": [
+      {
+        "en": "Pinpoint the discrepancy",
+        "zh": "精準抓出差異與矛盾"
+      },
+      {
+        "en": "Retrace one's steps",
+        "zh": "回溯步驟、重新梳理流程"
+      },
+      {
+        "en": "Spot the blind spot",
+        "zh": "找出盲點"
+      }
+    ],
+    "examples": [
+      {
+        "en": "The key is to know where I missed and pinpoint where things started to go off track.",
+        "zh": "關鍵是知道自己漏掉了什麼，並精準抓出事情是從哪一步開始偏離正軌的。",
+        "note": "自我覆盤深刻總結"
+      },
+      {
+        "en": "Go back through the process from the beginning and break it down into smaller parts.",
+        "zh": "從頭重新梳理流程，並將其拆解為更小的部分逐一檢視。",
+        "note": "問題拆解思維"
+      },
+      {
+        "en": "Check the data inputs and outputs carefully to identify any underlying discrepancies.",
+        "zh": "仔細檢查資料的輸入與輸出，以找出潛在的不一致之處。",
+        "note": "工程與數據分析"
+      },
+      {
+        "en": "A fresh pair of eyes can often help you spot what you might have overlooked.",
+        "zh": "旁觀者清，換個視角往往能幫你發現自己可能遺漏的細節。",
+        "note": "尋求同事代碼審查"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "source": "ChatGPT",
+    "query": "事情千頭萬緒混在一起、用腦過度、思緒打結的英文怎麼說？",
+    "category": "壓力調適 / 大腦超載",
+    "core_expression": "My mind is tangled / Mind-twisting mental overload / Feeling overwhelmed",
+    "keywords": [
+      "tangled",
+      "overwhelmed",
+      "mental overload",
+      "prioritize"
+    ],
+    "context": "多項複雜任務同時湧入，腦袋資訊爆炸、思緒混亂糾纏在一起時的真實感受表達。",
+    "explanation": "口語可以用「tangled thoughts」（打結的思緒）或「mind-twisting」（燒腦、讓人思緒擰在一起）。正式表達則為「mental overload / cognitive overload」（認知超載）或「feeling overwhelmed」。",
+    "synonyms": [
+      {
+        "en": "Mental overload",
+        "zh": "精神超載、腦袋塞爆"
+      },
+      {
+        "en": "Tangled thoughts",
+        "zh": "千頭萬緒打結在一起"
+      },
+      {
+        "en": "Cognitive overload",
+        "zh": "認知負擔過重"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Too many tasks are tangled together right now; it's honestly mind-twisting.",
+        "zh": "現在太多事情糾纏在一起了，坦白講真是讓人腦袋打結。",
+        "note": "真情流露的感受"
+      },
+      {
+        "en": "When complexity feels overwhelming, take a step back, prioritize, and break it down.",
+        "zh": "當複雜度讓人喘不過氣時，退一步，排定優先級並拆解任務。",
+        "note": "給自己的降壓指南"
+      },
+      {
+        "en": "Writing down your thoughts can quickly untangle a chaotic mental state.",
+        "zh": "把想法寫在紙上能迅速理清混亂的大腦狀態。",
+        "note": "第二大腦筆記法"
+      },
+      {
+        "en": "Multitasking during high-stress periods only intensifies cognitive fatigue.",
+        "zh": "在高壓時期同時多工只會加劇認知疲勞。",
+        "note": "工作心理學常識"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "source": "ChatGPT",
+    "query": "邊做邊學、在工作中快速摸索工具的英文怎麼說？",
+    "category": "職場學習 / 技能進階",
+    "core_expression": "Learn on the go / Get up to speed with the tools / Steep learning curve",
+    "keywords": [
+      "learn on the go",
+      "get up to speed",
+      "learning curve",
+      "tools"
+    ],
+    "context": "新加入團隊或面對未知軟體工具時，沒有充裕的培訓期，必須在實戰任務中快速邊學邊用。",
+    "explanation": "「Learn on the go」是極為地道的美式口語，意為在行進中、實操中隨時學習。「Get up to speed」代表跟上團隊進度、掌握必要工具與資訊。「Steep learning curve」形容學習曲線陡峭。",
+    "synonyms": [
+      {
+        "en": "Learn on the fly / on the go",
+        "zh": "邊做邊學、邊摸索邊上手"
+      },
+      {
+        "en": "Get up to speed",
+        "zh": "迅速進入狀況、跟上進度"
+      },
+      {
+        "en": "Hit the ground running",
+        "zh": "迅速進入角色、即刻發揮作用"
+      }
+    ],
+    "examples": [
+      {
+        "en": "As a newcomer, I have to learn on the go and get up to speed with our internal tools.",
+        "zh": "作為新人，我必須邊做邊學，盡快熟悉我們內部的工具。",
+        "note": "新人入職自我勉勵"
+      },
+      {
+        "en": "There's a steep learning curve, but mastering these Excel shortcuts will save hours.",
+        "zh": "雖然學習曲線很陡峭，但精通這些 Excel 快捷鍵將能省下數小時。",
+        "note": "工具技能提升"
+      },
+      {
+        "en": "Don't hesitate to ask questions; teammates appreciate someone eager to learn.",
+        "zh": "不要猶豫發問；隊友會很欣賞樂於主動學習的人。",
+        "note": "職場問答文化"
+      },
+      {
+        "en": "Set clear boundaries so that data collection doesn't consume your entire day.",
+        "zh": "設定清晰的時間邊界，別讓資料蒐集耗掉你一整天的精力。",
+        "note": "效率管理訣竅"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "source": "ChatGPT",
+    "query": "痛定思痛、認知提升並找出精進方向的英文怎麼說？",
+    "category": "自我成長 / 認知升級",
+    "core_expression": "Analyze root causes / Close the gap between knowing and executing",
+    "keywords": [
+      "root causes",
+      "enhance",
+      "awareness",
+      "gap"
+    ],
+    "context": "經歷挫折後深刻認識到自己的短板，從錯誤中提煉養分並制定具體的強化計劃。",
+    "explanation": "「Analyze the root causes」（分析根本原因）是工程與管理學經典法門。「Close the gap」（縮小差距）形容把「認知到的不足」落實轉化為「實際能力的增長」。",
+    "synonyms": [
+      {
+        "en": "Root cause analysis",
+        "zh": "根本原因分析"
+      },
+      {
+        "en": "Close the skill gap",
+        "zh": "縮小技能差距"
+      },
+      {
+        "en": "Turn insight into action",
+        "zh": "將洞察化為行動"
+      }
+    ],
+    "examples": [
+      {
+        "en": "The most important breakthrough is realizing where we went wrong and knowing where to enhance.",
+        "zh": "最關鍵的突破是意識到我們在哪裡搞錯了，並清楚知道該從何處精進。",
+        "note": "認知覆盤金句"
+      },
+      {
+        "en": "Analyzing root causes helps you create targeted strategies rather than surface-level fixes.",
+        "zh": "分析根本原因能幫你制定精準對策，而非停留在治標不治本的表面修補。",
+        "note": "深度解決問題思維"
+      },
+      {
+        "en": "Awareness of your blind spots is the very first step toward mastery.",
+        "zh": "意識到自己的盲點，正是通往大師境界的第一步。",
+        "note": "成長型思維名言"
+      },
+      {
+        "en": "Set clear, actionable milestones to close the gap between ambition and reality.",
+        "zh": "設定清晰且可執行的里程碑，以弭平雄心壯志與現實能力的落差。",
+        "note": "目標設定法則"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "source": "ChatGPT",
+    "query": "殘酷現實：職場上沒有人會等你慢慢成長的英文怎麼說？",
+    "category": "職場現實 / 效率驅動",
+    "core_expression": "No one will wait for you to grow / Accelerate learning / Leverage quick wins",
+    "keywords": [
+      "wait for you to grow",
+      "harsh reality",
+      "quick wins",
+      "accelerate"
+    ],
+    "context": "商業競爭與專案節奏極快，組織需要快速產出，提醒自己必須加速學習、快速交出成果。",
+    "explanation": "句型「One harsh reality of the workplace is that no one will wait for you to grow」（職場的一個殘酷現實是沒人會等你成長）。面對此狀況，解答策略是「leverage quick wins」（藉由快速取得小勝展現價值）與「accelerate learning」。",
+    "synonyms": [
+      {
+        "en": "Harsh reality of the workplace",
+        "zh": "殘酷的職場現實"
+      },
+      {
+        "en": "Deliver quick wins",
+        "zh": "快速取得小勝/產出"
+      },
+      {
+        "en": "Sink or swim environment",
+        "zh": "全憑自身本事生存的環境"
+      }
+    ],
+    "examples": [
+      {
+        "en": "A harsh reality of the business world is that no one will wait for you to grow.",
+        "zh": "商業世界的殘酷現實是：沒有人會停下來等你慢慢成長。",
+        "note": "警醒自律金句"
+      },
+      {
+        "en": "Leverage quick wins early on to build credibility and earn the runway you need.",
+        "zh": "在前期爭取快速的小勝以建立信譽，並為自己贏得摸索成長的空間。",
+        "note": "職場生存策略"
+      },
+      {
+        "en": "Focus on the 'must-know' essentials before diving into theoretical nuances.",
+        "zh": "先專注於最核心的必知重點，再深入鑽研理論細節。",
+        "note": "高壓學習法"
+      },
+      {
+        "en": "Showing a proactive attitude and rapid adaptability proves your value faster than anything.",
+        "zh": "展現積極的態度與飛快的適應力，比任何東西都能更快證明你的價值。",
+        "note": "贏得主管信任"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "source": "ChatGPT",
+    "query": "心靈雞湯沒用、職場需要殘酷真話與行動指南的英文怎麼說？",
+    "category": "實用主義 / 深度洞察",
+    "core_expression": "A dose of tough love / Reality check / Actionable insights over chicken soup",
+    "keywords": [
+      "chicken soup",
+      "tough love",
+      "reality check",
+      "actionable insights"
+    ],
+    "context": "面對真實工作的重壓，空泛的安慰毫無幫助，唯有直面真相的硬派建言才能化解危機。",
+    "explanation": "英文中常用「Chicken soup for the soul」（心靈雞湯）指溫暖但缺乏實效的安慰話；而「a dose of tough love」（一劑嚴厲的關愛 / 逆耳忠言）與「reality check」（面對現實的棒喝）才是能讓人絕處逢生的解方。",
+    "synonyms": [
+      {
+        "en": "Tough love",
+        "zh": "苦口婆心的嚴厲關愛、逆耳忠言"
+      },
+      {
+        "en": "Reality check",
+        "zh": "現實檢驗、當頭棒喝"
+      },
+      {
+        "en": "Actionable advice",
+        "zh": "可操作落地的實用建議"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Authors writing pure chicken soup of the soul won't survive the brutal realities of modern business.",
+        "zh": "只會寫心靈雞湯的作者，在現代商業殘酷的現實面前是混不下去的。",
+        "note": "對話精闢金句"
+      },
+      {
+        "en": "Sometimes, a dose of tough love and a reality check is the best medicine for career stagnation.",
+        "zh": "有時候，一劑逆耳忠言與現實當頭棒喝，才是治癒職涯停滯的最佳良藥。",
+        "note": "職涯提點"
+      },
+      {
+        "en": "We need actionable insights and battle-tested strategies, not vague motivational quotes.",
+        "zh": "我們需要能落地的洞察與身經百戰的策略，而不是空泛的勵志名言。",
+        "note": "會議指導方針"
+      },
+      {
+        "en": "True resilience comes from confronting harsh truths, not from burying your head in comforting illusions.",
+        "zh": "真正的心理韌性來自直面殘酷真相，而非把頭埋在安撫人心的幻覺裡。",
+        "note": "心態鍛鍊"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "source": "ChatGPT",
+    "query": "知易行難、在做中學才能摸透細節與原理的英文怎麼說？",
+    "category": "實踐哲學 / 深度學習",
+    "core_expression": "There's a gap between knowing and doing / Real learning happens in the process of doing",
+    "keywords": [
+      "knowing and doing",
+      "process of doing",
+      "iterative learning",
+      "depth"
+    ],
+    "context": "看懂理論和親手實踐完全是兩回事，只有親自捲起袖子踩坑，才能發現未曾料到的細節與深度知識。",
+    "explanation": "「Knowing and doing are two different things」（知道與做到是兩回事），管理學稱為「the knowing-doing gap」。「Real learning happens in the process of doing」（真正的學習發生在實踐的過程中）。",
+    "synonyms": [
+      {
+        "en": "The knowing-doing gap",
+        "zh": "知易行難、知行差距"
+      },
+      {
+        "en": "Learn by doing",
+        "zh": "在實踐中學習、做中學"
+      },
+      {
+        "en": "Hands-on experience",
+        "zh": "親自實操累積的經驗"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Knowing and doing are completely different; real expertise is forged in the messy process of execution.",
+        "zh": "知道與做到完全是兩碼子事；真正的專業，是在繁雜的執行過程中淬煉出來的。",
+        "note": "哲理實踐總結"
+      },
+      {
+        "en": "When doing the actual work, you uncover nuances and complexities that theory never mentioned.",
+        "zh": "當你實際動手做時，你會發現理論中從未提及的微妙細節與複雜性。",
+        "note": "工程實戰心得"
+      },
+      {
+        "en": "Iterative learning allows you to loop back, refine your approach, and deepen your grasp.",
+        "zh": "迭代式學習讓你能回頭覆盤、修正方法，並加深你的掌握程度。",
+        "note": "學習方法論"
+      },
+      {
+        "en": "Document your process along the way; today's workaround becomes tomorrow's best practice.",
+        "zh": "邊做邊隨手記錄流程；今天的應急解法，會變成明天的最佳實踐。",
+        "note": "知識管理習慣"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "source": "ChatGPT",
+    "query": "不怕犯錯、勇敢說不（敢於拒絕）、捍衛專注力的英文怎麼說？",
+    "category": "職場界線 / 專注與自律",
+    "core_expression": "Dare to say no / Protect your focus / Embrace mistakes as learning opportunities",
+    "keywords": [
+      "dare to say no",
+      "protect focus",
+      "boundaries",
+      "embrace mistakes"
+    ],
+    "context": "在職場上不當濫好人，敢於推掉不合理要求與雜事，設定清晰界線以維護核心任務的高品質完成度。",
+    "explanation": "片語「Dare to say no」（敢於說不）強調勇氣。「Protect your focus / Protect your time and energy」（捍衛你的專注力與精力）。「Set boundaries」（劃定界線）。",
+    "synonyms": [
+      {
+        "en": "Set firm boundaries",
+        "zh": "劃定堅定的界線"
+      },
+      {
+        "en": "Push back on unrealistic demands",
+        "zh": "委婉推拒不合理要求"
+      },
+      {
+        "en": "Prioritize quality over quantity",
+        "zh": "重視品質勝過數量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Don't be afraid of making mistakes, and dare to say no to protect your core focus.",
+        "zh": "不要害怕犯錯，並且要敢於說不以捍衛你的核心專注力。",
+        "note": "自尊與專注金句"
+      },
+      {
+        "en": "Saying no allows you to devote your best energy to the assignments that truly move the needle.",
+        "zh": "學會說不，才能讓你有充沛的精力投入到真正有實質影響力的任務上。",
+        "note": "高產出者思維"
+      },
+      {
+        "en": "Respectful boundaries enhance collaboration rather than damaging relationships.",
+        "zh": "得體有禮的界線只會增進合作成效，而不會破壞同事情誼。",
+        "note": "人際交往藝術"
+      },
+      {
+        "en": "When you embrace mistakes as learning opportunities, fear loses its grip on your decision-making.",
+        "zh": "當你把犯錯視為學習契機時，恐懼便無法再綁架你的決策。",
+        "note": "心理自由"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "source": "ChatGPT",
+    "query": "情緒轉換、心態修復（這一切終究會過去）的英文怎麼說？",
+    "category": "情緒復原 / 內在力量",
+    "core_expression": "Transform your mood / This too shall pass / Shift from frustration to determination",
+    "keywords": [
+      "transform mood",
+      "this too shall pass",
+      "mindful",
+      "determination"
+    ],
+    "context": "在遭遇嚴重挫折或壓力崩潰邊緣時，學會自我安撫、抽離負面情緒並重新找回內心平靜。",
+    "explanation": "「Transform your mood」（轉換你的心情 / 情緒復原）。千古名言「This too shall pass」（這一切終究會過去）是撫慰心靈的至高經典。「Shift from frustration to determination」（從沮喪轉變為堅定決心）。",
+    "synonyms": [
+      {
+        "en": "This too shall pass",
+        "zh": "這一切終究會過去"
+      },
+      {
+        "en": "Bounce back from adversity",
+        "zh": "從逆境中反彈復原"
+      },
+      {
+        "en": "Reframe negative thoughts",
+        "zh": "重新架構負面思維"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Whenever work stress peaks, I remind myself: 'This too shall pass.'",
+        "zh": "每當工作壓力達到頂點時，我就提醒自己：「這一切終究會過去的。」",
+        "note": "最沉著的定心丸"
+      },
+      {
+        "en": "Transforming your mood isn't about denial; it's about shifting focus toward what you can control.",
+        "zh": "轉換情緒不是逃避現實，而是將注意力轉向你能夠掌控的事情上。",
+        "note": "斯多葛哲學實踐"
+      },
+      {
+        "en": "A few minutes of mindful breathing and a brief walk can reset an exhausted nervous system.",
+        "zh": "幾分鐘的正念深呼吸與短暫散步，就能重置疲憊不堪的神經系統。",
+        "note": "生理調節技巧"
+      },
+      {
+        "en": "Channel your temporary frustration into fuel for disciplined growth.",
+        "zh": "把短暫的挫敗感轉化為滋養自律成長的燃料吧！",
+        "note": "自我超越鼓舞"
       }
     ]
   }

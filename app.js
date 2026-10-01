@@ -16,6 +16,8 @@ let userStarred = JSON.parse(localStorage.getItem(STORAGE_KEY_STARRED) || '[]');
 let isEnglishOnlyMode = (localStorage.getItem(STORAGE_KEY_ENGLISH_ONLY) === 'true');
 let autoPlayMode = localStorage.getItem(STORAGE_KEY_PLAY_MODE) || 'english_only'; // 'english_only' | 'bilingual_flip'
 
+let currentSourceFilter = 'ALL'; // 'ALL' | 'Gemini' | 'ChatGPT'
+let activeCardPool = [];
 let currentCardIndex = 0;
 let isFlipped = false;
 let isAutoPlaying = false;
@@ -32,7 +34,7 @@ let speechRate = 1.0;
 // =========================================================
 window.addEventListener('DOMContentLoaded', () => {
   // 檢查資料
-  if (!topicsData || topicsData.length === 0) {
+  if (!topicsData || activeCardPool.length === 0) {
     if (window.TOPICS_DATA && window.TOPICS_DATA.length > 0) {
       topicsData = window.TOPICS_DATA;
     }
@@ -42,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initVoices();
   applyEnglishOnlyUI();
   updatePlayModeUI();
+  updateActiveCardPool();
   renderStats();
   renderCurrentCard();
   renderList(topicsData);
@@ -64,6 +67,48 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+// =========================================================
+// 來源過濾器 (Source Filter: ALL / Gemini / ChatGPT)
+// =========================================================
+function setSourceFilter(source) {
+  currentSourceFilter = source;
+  updateSourceFilterUI();
+  updateActiveCardPool();
+  currentCardIndex = 0;
+  if (isFlipped && autoPlayMode !== 'english_only') flipCard();
+  renderCurrentCard();
+  filterList();
+  startNewQuiz();
+
+  if (isAutoPlaying) {
+    stopAutoPlay();
+    startAutoPlay();
+  }
+}
+
+function updateActiveCardPool() {
+  if (currentSourceFilter === 'ALL') {
+    activeCardPool = topicsData.slice();
+  } else {
+    activeCardPool = topicsData.filter(t => t.source === currentSourceFilter);
+  }
+  if (activeCardPool.length === 0) activeCardPool = topicsData.slice();
+}
+
+function updateSourceFilterUI() {
+  document.querySelectorAll('.source-pill-btn').forEach(btn => {
+    if (btn.dataset.source === currentSourceFilter) {
+      btn.className = 'source-pill-btn px-3 py-1 text-xs font-bold rounded-xl transition bg-indigo-600 text-white shadow';
+    } else {
+      btn.className = 'source-pill-btn px-3 py-1 text-xs font-medium rounded-xl transition text-slate-400 hover:text-white bg-slate-800/80 border border-white/5';
+    }
+  });
+
+  const srcSelect = document.getElementById('source-filter');
+  if (srcSelect) srcSelect.value = currentSourceFilter;
+}
 
 // =========================================================
 // 主題切換 (Theme)
@@ -250,7 +295,7 @@ function testSpeech() {
 // 統計看板 (Stats)
 // =========================================================
 function renderStats() {
-  const total = topicsData.length;
+  const total = activeCardPool.length;
   const mastered = userMastered.length;
   const starred = userStarred.length;
   const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
@@ -285,7 +330,7 @@ function flipCard() {
 function nextCard() {
   clearAutoPlayTimers();
   if (isFlipped && autoPlayMode !== 'english_only') flipCard();
-  currentCardIndex = (currentCardIndex + 1) % topicsData.length;
+  currentCardIndex = (currentCardIndex + 1) % activeCardPool.length;
   renderCurrentCard();
   if (isAutoPlaying) {
     runAutoPlayCycle();
@@ -295,7 +340,7 @@ function nextCard() {
 function prevCard() {
   clearAutoPlayTimers();
   if (isFlipped && autoPlayMode !== 'english_only') flipCard();
-  currentCardIndex = (currentCardIndex - 1 + topicsData.length) % topicsData.length;
+  currentCardIndex = (currentCardIndex - 1 + activeCardPool.length) % activeCardPool.length;
   renderCurrentCard();
   if (isAutoPlaying) {
     runAutoPlayCycle();
@@ -303,13 +348,24 @@ function prevCard() {
 }
 
 function renderCurrentCard() {
-  const topic = topicsData[currentCardIndex];
+  const topic = activeCardPool[currentCardIndex];
   if (!topic) return;
 
   const catBadge = document.getElementById('card-category-badge');
+  const srcBadge = document.getElementById('card-source-badge');
   const idxInd = document.getElementById('card-index-indicator');
+
+  if (srcBadge) {
+    if (topic.source === 'ChatGPT') {
+      srcBadge.innerHTML = '💬 ChatGPT 職場實戰';
+      srcBadge.className = 'text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+    } else {
+      srcBadge.innerHTML = '🤖 Gemini 精選表達';
+      srcBadge.className = 'text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30';
+    }
+  }
   if (catBadge) catBadge.innerText = topic.category;
-  if (idxInd) idxInd.innerText = (currentCardIndex + 1) + ' / ' + topicsData.length;
+  if (idxInd) idxInd.innerText = (currentCardIndex + 1) + ' / ' + activeCardPool.length;
 
   // 正面
   const qFront = document.getElementById('card-query-front');
@@ -401,7 +457,7 @@ function renderCurrentCard() {
 }
 
 function toggleStarCurrent() {
-  const topic = topicsData[currentCardIndex];
+  const topic = activeCardPool[currentCardIndex];
   if (!topic) return;
   const idx = userStarred.indexOf(topic.id);
   if (idx >= 0) userStarred.splice(idx, 1);
@@ -412,7 +468,7 @@ function toggleStarCurrent() {
 }
 
 function toggleMasterCurrent() {
-  const topic = topicsData[currentCardIndex];
+  const topic = activeCardPool[currentCardIndex];
   if (!topic) return;
   const idx = userMastered.indexOf(topic.id);
   if (idx >= 0) userMastered.splice(idx, 1);
@@ -459,7 +515,7 @@ function sleep(ms) {
 
 // 連讀當前卡片所有英文句子（手動按鈕）
 async function playAllEnglishCurrentCard() {
-  const topic = topicsData[currentCardIndex];
+  const topic = activeCardPool[currentCardIndex];
   if (!topic) return;
 
   const badge = document.getElementById('playing-status-badge');
@@ -549,7 +605,7 @@ function stopAutoPlay() {
 
 async function runAutoPlayCycle() {
   if (!isAutoPlaying) return;
-  const topic = topicsData[currentCardIndex];
+  const topic = activeCardPool[currentCardIndex];
   if (!topic) return;
 
   if (autoPlayMode === 'english_only') {
@@ -577,7 +633,7 @@ async function runAutoPlayCycle() {
 
     autoPlayTimeoutId = setTimeout(() => {
       if (isAutoPlaying) {
-        currentCardIndex = (currentCardIndex + 1) % topicsData.length;
+        currentCardIndex = (currentCardIndex + 1) % activeCardPool.length;
         renderCurrentCard();
         runAutoPlayCycle();
       }
@@ -612,7 +668,7 @@ async function runAutoPlayCycle() {
 
     autoPlayTimeoutId = setTimeout(() => {
       if (isAutoPlaying) {
-        currentCardIndex = (currentCardIndex + 1) % topicsData.length;
+        currentCardIndex = (currentCardIndex + 1) % activeCardPool.length;
         renderCurrentCard();
         runAutoPlayCycle();
       }
@@ -650,11 +706,14 @@ function renderList(items) {
 
     card.innerHTML = `
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-4 border-b border-white/10">
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full ${t.source === 'ChatGPT' ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30'}">
+            ${t.source === 'ChatGPT' ? '💬 ChatGPT' : '🤖 Gemini'}
+          </span>
+          <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-white/10">
             #${t.id} ${t.category}
           </span>
-          <h3 class="text-xl font-extrabold text-white">${t.query}</h3>
+          <h3 class="text-lg sm:text-xl font-extrabold text-white">${t.query}</h3>
         </div>
         <div class="flex items-center gap-2">
           <button onclick="speakTopicCore(${t.id})" class="px-3 py-1.5 rounded-xl bg-indigo-600/80 hover:bg-indigo-600 text-white text-xs font-medium flex items-center gap-1 transition">
@@ -713,9 +772,13 @@ function renderList(items) {
 function filterList() {
   const query = document.getElementById('search-input').value.toLowerCase().trim();
   const cat = document.getElementById('category-filter').value;
+  const srcSelect = document.getElementById('source-filter');
+  const selectedSource = srcSelect ? srcSelect.value : currentSourceFilter;
 
   const filtered = topicsData.filter(t => {
+    const matchSrc = (selectedSource === 'ALL' || t.source === selectedSource);
     const matchCat = (cat === 'ALL' || t.category === cat);
+    if (!matchSrc) return false;
     const matchText = (
       t.query.toLowerCase().includes(query) ||
       t.core_expression.toLowerCase().includes(query) ||
@@ -737,9 +800,10 @@ let quizScore = 0;
 
 function buildQuizPool() {
   const pool = [];
-  topicsData.forEach(t => {
+  const targetPool = activeCardPool.length > 0 ? activeCardPool : topicsData;
+  targetPool.forEach(t => {
     const coreClean = t.core_expression.split('/')[0].trim();
-    const distractors = topicsData
+    const distractors = targetPool
       .filter(x => x.id !== t.id)
       .sort(() => 0.5 - Math.random())
       .slice(0, 3)
@@ -766,7 +830,7 @@ function buildQuizPool() {
         correctAnswer: ex.en,
         options: [
           ex.en,
-          ...topicsData.filter(x => x.id !== t.id).map(x => x.examples[0].en).slice(0, 3)
+          ...targetPool.filter(x => x.id !== t.id).map(x => x.examples[0].en).slice(0, 3)
         ].sort(() => 0.5 - Math.random()),
         explanation: '正解：' + ex.en + '。中文為「' + ex.zh + '」。'
       });

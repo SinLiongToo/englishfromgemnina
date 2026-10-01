@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gemini 英文怎麼說 | 互動式精選學習工具</title>
+  <title>Gemini & ChatGPT 英文怎麼說 | 雙核心互動學習工具</title>
   
   <!-- 初始化主題與偏好設定 -->
   <script>
@@ -151,9 +151,9 @@
         </div>
         <div>
           <h1 class="text-lg font-bold tracking-tight bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
-            Gemini 英文怎麼說
+            Gemini & ChatGPT 英文怎麼說
           </h1>
-          <p class="text-xs text-slate-400">道地口語 & 職場句型互動學習工具</p>
+          <p class="text-xs text-slate-400">雙核心 AI 道地口語 & 職場實戰學習工具</p>
         </div>
       </div>
 
@@ -241,18 +241,37 @@
       </div>
     </div>
 
+    <!-- AI 來源篩選標籤列 -->
+    <div class="mb-6 flex flex-wrap items-center gap-2">
+      <span class="text-xs text-slate-400 font-semibold flex items-center gap-1">
+        <span>🔎</span> 來源切換：
+      </span>
+      <button onclick="setSourceFilter('ALL')" data-source="ALL" class="source-pill-btn px-3 py-1.5 text-xs font-bold rounded-xl transition bg-indigo-600 text-white shadow">
+        🌐 全部收錄 (23 則)
+      </button>
+      <button onclick="setSourceFilter('Gemini')" data-source="Gemini" class="source-pill-btn px-3 py-1.5 text-xs font-medium rounded-xl transition text-slate-400 hover:text-white bg-slate-800/80 border border-white/5">
+        🤖 Gemini 精選表達 (12 則)
+      </button>
+      <button onclick="setSourceFilter('ChatGPT')" data-source="ChatGPT" class="source-pill-btn px-3 py-1.5 text-xs font-medium rounded-xl transition text-slate-400 hover:text-white bg-slate-800/80 border border-white/5">
+        💬 ChatGPT 職場實戰 (11 則)
+      </button>
+    </div>
+
     <!-- 視圖 1: 3D 卡牌抽測模式 (Flashcards View) -->
     <section id="view-flashcards" class="view-panel block">
       <div class="max-w-2xl mx-auto flex flex-col items-center">
         
         <!-- 自動播放與卡牌輔助工具列 -->
         <div class="w-full flex flex-wrap items-center justify-between gap-2 mb-4">
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30" id="card-category-badge">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30" id="card-source-badge">
+              🤖 Gemini 精選表達
+            </span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-white/10" id="card-category-badge">
               成語俗諺 / 職場應對
             </span>
-            <span class="text-xs text-slate-400" id="card-index-indicator">
-              1 / 12
+            <span class="text-xs text-slate-400 font-mono" id="card-index-indicator">
+              1 / 23
             </span>
           </div>
 
@@ -406,8 +425,8 @@
     <section id="view-list" class="view-panel hidden">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
-          <h2 class="text-xl font-bold text-white">12 大核心英文問答完整手冊</h2>
-          <p class="text-sm text-slate-400">情境解析、4 組真實例句對照、同義替換與日常/商務語境</p>
+          <h2 class="text-xl font-bold text-white">23 大核心英文問答完整手冊 (Gemini + ChatGPT 雙核心)</h2>
+          <p class="text-sm text-slate-400">道地口語、職場挫折排解、進度管理、深層思維與 4 組高頻例句對照</p>
         </div>
 
         <!-- 搜尋與篩選列 -->
@@ -419,8 +438,14 @@
             </svg>
           </div>
 
+          <select id="source-filter" onchange="setSourceFilter(this.value)" class="px-3 py-2 rounded-xl text-sm bg-slate-800/80 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="ALL">全部 AI 來源 (23 則)</option>
+            <option value="Gemini">🤖 Gemini 精選 (12 則)</option>
+            <option value="ChatGPT">💬 ChatGPT 實戰 (11 則)</option>
+          </select>
+
           <select id="category-filter" onchange="filterList()" class="px-3 py-2 rounded-xl text-sm bg-slate-800/80 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
-            <option value="ALL">所有分類</option>
+            <option value="ALL">所有情境分類</option>
             <option value="成語俗諺 / 職場應對">成語俗諺 / 職場應對</option>
             <option value="職場溝通 / 說話藝術">職場溝通 / 說話藝術</option>
             <option value="評價評語 / 正式書面">評價評語 / 正式書面</option>
@@ -433,6 +458,17 @@
             <option value="心理學認知 / 邏輯思維">心理學認知 / 邏輯思維</option>
             <option value="情緒心理 / 記憶感受">情緒心理 / 記憶感受</option>
             <option value="論辯邏輯 / 人格批評">論辯邏輯 / 人格批評</option>
+            <option value="職場心態 / 挫折應對">職場心態 / 挫折應對</option>
+            <option value="專案溝通 / 進度管理">專案溝通 / 進度管理</option>
+            <option value="問題排查 / 深度覆盤">問題排查 / 深度覆盤</option>
+            <option value="壓力調適 / 大腦超載">壓力調適 / 大腦超載</option>
+            <option value="職場學習 / 技能進階">職場學習 / 技能進階</option>
+            <option value="自我成長 / 認知升級">自我成長 / 認知升級</option>
+            <option value="職場現實 / 效率驅動">職場現實 / 效率驅動</option>
+            <option value="實用主義 / 深度洞察">實用主義 / 深度洞察</option>
+            <option value="實踐哲學 / 深度學習">實踐哲學 / 深度學習</option>
+            <option value="職場界線 / 專注與自律">職場界線 / 專注與自律</option>
+            <option value="情緒復原 / 內在力量">情緒復原 / 內在力量</option>
           </select>
         </div>
       </div>
