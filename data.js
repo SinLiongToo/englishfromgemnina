@@ -1986,6 +1986,414 @@ const DATA = [
       }
     ],
     "source": "ChatGPT"
+  },
+  {
+    "id": 40,
+    "query": "世界不是圍繞著你轉 英文",
+    "category": "處世哲學 / 人際心態",
+    "core_expression": "The world doesn't revolve around you / Get over yourself",
+    "keywords": [
+      "revolve",
+      "ego",
+      "perspective",
+      "entitlement"
+    ],
+    "context": "提醒他人或反省自己不要過度自我中心、以為所有事情都必須順應自己的意願或情緒。",
+    "explanation": "「The world doesn't revolve around you」（世界不是圍繞著你公轉）是英語中最經典、直率又深刻的提醒。「Get over yourself」意思是「別把自己看得太重、收起那點傲慢」。「Check your ego at the door」則是職場進入會議時放下個人自尊、專注於事實與團隊目標的常用金句。",
+    "synonyms": [
+      {
+        "en": "Get over yourself",
+        "zh": "別把自己看得太重要、收起傲氣"
+      },
+      {
+        "en": "Check your ego at the door",
+        "zh": "放下個人自尊包袱"
+      },
+      {
+        "en": "Not everything is about you",
+        "zh": "不是每件事都衝著你來的"
+      }
+    ],
+    "examples": [
+      {
+        "en": "You need to realize that the world doesn't revolve around you; the team has broader priorities.",
+        "zh": "你必須認清世界不是圍繞著你轉的；團隊有更全面的優先目標。",
+        "note": "職場團隊合作警醒"
+      },
+      {
+        "en": "Stop taking every comment personally; not everything people say is about you.",
+        "zh": "別把每句評論都當成針對你個人；別人說的話並非全都是衝著你來的。",
+        "note": "情緒脫敏與心理韌性"
+      },
+      {
+        "en": "A mature professional checks their ego at the door and focuses on what is best for the product.",
+        "zh": "成熟的專業人士在進門前會放下個人自尊包袱，專注於什麼才是對產品最有利的。",
+        "note": "專業素養高度評價"
+      },
+      {
+        "en": "Whenever you feel entitled, remind yourself: the universe owes you nothing.",
+        "zh": "每當你覺得理所當然時，提醒自己：這個宇宙並不欠你任何東西。",
+        "note": "深度心智自省"
+      }
+    ],
+    "source": "ChatGPT"
+  },
+  {
+    "id": 41,
+    "query": "文字潤稿與精準措辭 英文",
+    "category": "寫作修辭 / 專業溝通",
+    "core_expression": "Polish the prose / Nuanced phrasing / Elevate the writing",
+    "keywords": [
+      "polish",
+      "prose",
+      "nuance",
+      "concise"
+    ],
+    "context": "在撰寫文稿、商業報告或文學創作時，對文字反覆修飾潤色，追求詞意精確、語感優美。",
+    "explanation": "「Polish the prose」（打磨散文/文句）常用於編輯潤稿出版品。「Nuanced phrasing」（微言大義、富含細膩層次的措辭）指用字極具深意。「Elevate the writing」（提升文風檔次）則是讓文章從平鋪直敘躍升為大師水準的專業表達。「Cut the fluff」則指刪除冗贅廢話。",
+    "synonyms": [
+      {
+        "en": "Fine-tune the wording",
+        "zh": "微調字句、雕琢用字"
+      },
+      {
+        "en": "Cut the fluff",
+        "zh": "刪減冗詞贅字、去蕪存菁"
+      },
+      {
+        "en": "Refine the tone",
+        "zh": "調整修飾語氣"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Let's spend an extra hour polishing the prose before submitting the proposal to leadership.",
+        "zh": "在將提案呈送主管層之前，我們多花一小時好好潤飾打磨文句吧。",
+        "note": "提案撰寫高品質要求"
+      },
+      {
+        "en": "Her nuanced phrasing conveyed firm boundaries without sounding confrontational.",
+        "zh": "她細膩得體的精準措辭表達了堅定界線，同時又毫不顯得咄咄逼人。",
+        "note": "高EQ寫作典範"
+      },
+      {
+        "en": "Editing is not just correcting grammar; it's about cutting the fluff to make every sentence punchy.",
+        "zh": "編輯不只是修改文法；更在於去蕪存菁，讓每個句子都簡潔有力。",
+        "note": "寫作心法精粹"
+      },
+      {
+        "en": "This final revision truly elevates the narrative from a dry summary into a compelling story.",
+        "zh": "這版最終定稿確實提升了整體文風，把枯燥的摘要昇華為引人入勝的故事。",
+        "note": "文稿修訂讚許"
+      }
+    ],
+    "source": "ChatGPT"
+  },
+  {
+    "id": 42,
+    "query": "職涯轉換與權衡矩陣 英文",
+    "category": "職涯決策 / 策略思考",
+    "core_expression": "Career pivot / Weigh the pros and cons / Trade-off matrix",
+    "keywords": [
+      "pivot",
+      "trade-off",
+      "matrix",
+      "crossroads"
+    ],
+    "context": "當面臨轉職、跳槽或跨領域發展時，有系統地評估機會成本、利弊得失與風險收益。",
+    "explanation": "「Career pivot」（職涯軸轉/華麗轉身）源自新創術語，指利用既有核心優勢轉換賽道。「Weigh the pros and cons」（衡量利弊得失）是決策分析必用語。「Trade-off matrix」（權衡矩陣）常用於將薪資、成長性、文化與工時進行量化評分。",
+    "synonyms": [
+      {
+        "en": "At a career crossroads",
+        "zh": "身處職涯十字路口"
+      },
+      {
+        "en": "Opportunity cost analysis",
+        "zh": "機會成本分析"
+      },
+      {
+        "en": "Take a calculated leap",
+        "zh": "深思熟慮後的勇敢一跳"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Before accepting the new offer, build a trade-off matrix to compare growth potential against work-life balance.",
+        "zh": "在接受新職缺之前，建立一個權衡矩陣來比較成長潛力與工作生活平衡。",
+        "note": "理性職涯評估工具"
+      },
+      {
+        "en": "She executed a successful career pivot from hardware engineering into machine learning consulting.",
+        "zh": "她成功實現了從硬體工程向機器學習顧問的職涯跨界軸轉。",
+        "note": "跨領域成功案例"
+      },
+      {
+        "en": "When you're at a crossroads, carefully weigh the pros and cons rather than jumping on impulse.",
+        "zh": "當你處於職涯十字路口時，務必仔細權衡利弊得失，切莫憑一時衝動行事。",
+        "note": "轉職理智建議"
+      },
+      {
+        "en": "Every major career transition involves trade-offs; the key is choosing the problems you prefer to solve.",
+        "zh": "每一次重大職涯轉換都伴隨著取捨；關鍵在於選擇你真正願意去面對與解決的難題。",
+        "note": "職涯哲理金句"
+      }
+    ],
+    "source": "ChatGPT"
+  },
+  {
+    "id": 43,
+    "query": "職等晉升與職場階梯 英文",
+    "category": "職場發展 / 組織晉升",
+    "core_expression": "Climb the corporate ladder / Job grade system / Promotion criteria",
+    "keywords": [
+      "ladder",
+      "grade",
+      "promotion",
+      "milestone"
+    ],
+    "context": "探討外企或大廠內部的職等職級制度、晉升考核標準與向上流動途徑。",
+    "explanation": "「Climb the corporate ladder」（攀爬企業職場階梯）是指在公司體制內步步高升。「Job grade / Salary band」（職級/薪資帶）是跨國企業（如 ASML 等）評定工程師級別的術語。「Meet the promotion criteria」（達到升遷標準）則是考核面談的核心詞。",
+    "synonyms": [
+      {
+        "en": "Career progression",
+        "zh": "職涯晉升歷程"
+      },
+      {
+        "en": "Advance to the next seniority tier",
+        "zh": "邁向更高的資歷層級"
+      },
+      {
+        "en": "Broaden ownership",
+        "zh": "擴大職責權限範圍"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Understanding the company's job grade system helps you map out realistic career milestones.",
+        "zh": "搞懂公司的職等體系，有助於你規劃切合實際的職涯里程碑。",
+        "note": "職場發展規劃"
+      },
+      {
+        "en": "Moving up to a principal engineering level requires demonstrating cross-team technical influence.",
+        "zh": "升遷至主任/資深專家層級，需要展現出跨團隊的技術影響力。",
+        "note": "工程師升遷標準"
+      },
+      {
+        "en": "Don't just climb the corporate ladder blindly; ensure it is leaning against the right wall.",
+        "zh": "別只是盲目攀爬職場階梯；先確認那把梯子是否靠在了正確的牆上。",
+        "note": "經典職涯方向寓言"
+      },
+      {
+        "en": "To advance your job grade, you must consistently deliver results beyond your current scope.",
+        "zh": "要想晉升職等，你必須持續拿出超出當前職責範圍的顯著成果。",
+        "note": "考核績效指南"
+      }
+    ],
+    "source": "ChatGPT"
+  },
+  {
+    "id": 44,
+    "query": "個人操作系統與心智模型 英文",
+    "category": "自我管理 / 系統思維",
+    "core_expression": "Personal Operating System / Mental model / Streamline routines",
+    "keywords": [
+      "operating system",
+      "mental model",
+      "routines",
+      "principles"
+    ],
+    "context": "建立個人的生活與工作系統，透過清晰原則、自動化工具與決策模型來減少認知負荷。",
+    "explanation": "「Personal Operating System」（個人作業系統）是高產出者用來指代自身習慣、筆記系統（如 Obsidian）、自動化流程與生活原則的整合體系。「Mental model」（心智模型）則是查理·蒙格推崇的跨學科思考框架。「Streamline routines」指精簡日常例行事務。",
+    "synonyms": [
+      {
+        "en": "First-principles thinking",
+        "zh": "第一性原理思維"
+      },
+      {
+        "en": "Standard Operating Procedure (SOP)",
+        "zh": "標準作業流程"
+      },
+      {
+        "en": "Cognitive offloading",
+        "zh": "認知負荷轉移、大腦減負"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Building a solid Personal Operating System frees your mind to focus on high-leverage creative work.",
+        "zh": "建立一套扎實的個人操作系統，能解放大腦去專注於高槓桿的創造性工作。",
+        "note": "生產力與系統思維"
+      },
+      {
+        "en": "He relies on clear mental models to make sound decisions without suffering from decision fatigue.",
+        "zh": "他依靠清晰的心智模型來做出穩健決策，而不受決策疲勞所困擾。",
+        "note": "決策科學心法"
+      },
+      {
+        "en": "Automating administrative tasks is the cornerstone of an efficient Personal Operating System.",
+        "zh": "將行政瑣事自動化，是打造高效個人操作系統的基石。",
+        "note": "數位化工作流"
+      },
+      {
+        "en": "Review your operating principles periodically to ensure your daily actions align with long-term goals.",
+        "zh": "定期檢視你的個人處事作業原則，確保日常行動與長遠目標方向一致。",
+        "note": "定期覆盤習慣"
+      }
+    ],
+    "source": "ChatGPT"
+  },
+  {
+    "id": 45,
+    "query": "追求零缺陷與卓越品質 英文",
+    "category": "工程品質 / 嚴謹製造",
+    "core_expression": "Zero defects / High repeatability / Six Sigma precision",
+    "keywords": [
+      "repeatability",
+      "defects",
+      "precision",
+      "rigorous"
+    ],
+    "context": "在半導體製造、量測檢驗或高科技研發中，追求極致的一致性、良率與零缺陷標準。",
+    "explanation": "「Zero defects」（零缺陷）是品質管理大師克勞斯比提出的終極目標。「High repeatability and reproducibility (Gage R&R)」（高重複性與再現性）是半導體製程與儀器檢驗的核心指標。「Six Sigma precision」（六標準差精度，每百萬次僅 3.4 個瑕疵）代表對公差的極致把控。",
+    "synonyms": [
+      {
+        "en": "Process capability (Cp/Cpk)",
+        "zh": "製程能力指標"
+      },
+      {
+        "en": "Poka-Yoke / Error-proofing",
+        "zh": "防呆防錯機制"
+      },
+      {
+        "en": "First-time-right",
+        "zh": "一次做對、一次到位"
+      }
+    ],
+    "examples": [
+      {
+        "en": "In advanced lithography, achieving zero defects demands flawless repeatability in every single run.",
+        "zh": "在先進微影技術中，實現零缺陷需要每次製程運轉都具備毫無瑕疵的高重複性。",
+        "note": "半導體高精尖製程要求"
+      },
+      {
+        "en": "A robust test strategy must guarantee high repeatability across different test stations and operators.",
+        "zh": "一套穩健的測試策略，必須確保在不同測試站與作業員之間都能維持高重複精度。",
+        "note": "測試工程與品質保證"
+      },
+      {
+        "en": "Six Sigma precision isn't about luck; it's the result of rigorous variance reduction.",
+        "zh": "六標準差的精準度不是靠運氣，而是嚴格降低變異的必然結果。",
+        "note": "六標準差管理精粹"
+      },
+      {
+        "en": "Adopt a first-time-right mindset to eliminate costly downstream rework.",
+        "zh": "貫徹一次做對的心態，徹底杜絕下游高昂的返工成本。",
+        "note": "工程製造品質承諾"
+      }
+    ],
+    "source": "ChatGPT"
+  },
+  {
+    "id": 46,
+    "query": "語料庫校正與語義釐清 英文",
+    "category": "語言工程 / 語義分析",
+    "core_expression": "Linguistic corpus / Clarify terminology / Disambiguation",
+    "keywords": [
+      "corpus",
+      "terminology",
+      "disambiguation",
+      "nuance"
+    ],
+    "context": "在處理雙語對照、方言辭典（如台羅、漢羅）或 AI 訓練時，校正語料庫並釐清多義字詞。",
+    "explanation": "「Linguistic corpus」（語言語料庫，複數 corpora）指用於語言研究的大規模文本集。「Clarify terminology」（釐清術語）指消弭定義上的分歧。「Disambiguation」（消除歧義）常用於自然語言處理或辭典編纂中區分多音多義字詞。",
+    "synonyms": [
+      {
+        "en": "Cross-reference against standard lexicons",
+        "zh": "與標準辭典交叉比對"
+      },
+      {
+        "en": "Semantic alignment",
+        "zh": "語意對齊"
+      },
+      {
+        "en": "Corpus curation",
+        "zh": "語料庫清洗與策劃"
+      }
+    ],
+    "examples": [
+      {
+        "en": "We must curate the linguistic corpus thoroughly to ensure accurate dialect translation.",
+        "zh": "我們必須徹底整理清洗語言語料庫，以確保方言翻譯的準確無誤。",
+        "note": "語言學與數位典藏應用"
+      },
+      {
+        "en": "Clarifying confusing terminology early saves weeks of misunderstanding during cross-team syncs.",
+        "zh": "及早釐清容易混淆的術語，能省下跨團隊同步時長達數週的溝通誤解。",
+        "note": "跨部門溝通效率"
+      },
+      {
+        "en": "Automated disambiguation algorithms help resolve homonyms in colloquial text.",
+        "zh": "自動消除歧義演算法有助於解析口語文本中的同音異義詞。",
+        "note": "自然語言處理實務"
+      },
+      {
+        "en": "Cross-referencing historical texts with modern linguistic corpora deepens our cultural insights.",
+        "zh": "將文史典籍與現代語言語料庫進行交叉對照，能深化我們的文化洞察。",
+        "note": "人文科技研究"
+      }
+    ],
+    "source": "ChatGPT"
+  },
+  {
+    "id": 47,
+    "query": "自動化瑣事、聰明工作 英文",
+    "category": "生產力工具 / 效率工程",
+    "core_expression": "Automate repetitive tasks / Work smarter not harder / Scripting efficiency",
+    "keywords": [
+      "automate",
+      "repetitive",
+      "streamline",
+      "efficiency"
+    ],
+    "context": "利用腳本（如 PowerShell、Python）將重複繁雜的手工操作自動化，釋放大腦精力。",
+    "explanation": "「Work smarter, not harder」（巧幹勝於苦幹）是最廣為流傳的效率金句。「Automate repetitive tasks」（自動化重複任務）是工程師的核心美德。「Scripting efficiency」（腳本自動化效率）指用小工具代替無休止的手工點擊複製。",
+    "synonyms": [
+      {
+        "en": "Eliminate manual overhead",
+        "zh": "消除手工瑣碎負擔"
+      },
+      {
+        "en": "Streamline daily workflow",
+        "zh": "簡化日常工作流"
+      },
+      {
+        "en": "Leverage automation tools",
+        "zh": "善用自動化工具槓桿"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Writing a simple PowerShell script to automate data collection saved me three hours every day.",
+        "zh": "寫個簡單的 PowerShell 腳本來自動化數據蒐集，每天為我省下了整整三小時。",
+        "note": "腳本提高效率日常"
+      },
+      {
+        "en": "Always work smarter, not harder; if a task is done more than twice, automate it.",
+        "zh": "永遠要巧幹而非蠻幹；如果一件事要重複做兩次以上，就該把它自動化。",
+        "note": "自動化第一準則"
+      },
+      {
+        "en": "Eliminating manual overhead allows engineers to focus on architectural innovations.",
+        "zh": "消除手工瑣事的沉重負擔，能讓工程師專注於架構層面的創新突破。",
+        "note": "研發團隊效能釋放"
+      },
+      {
+        "en": "Small scripting habits compound into massive productivity gains over the course of a year.",
+        "zh": "隨手編寫小腳本的習慣，在一年下來會複利累積成巨大的生產力提升。",
+        "note": "複利效應體悟"
+      }
+    ],
+    "source": "ChatGPT"
   }
 ];
 

@@ -1,16 +1,16 @@
 # 📚 Gemini & ChatGPT 英文怎麼說：雙核心互動學習工具 (English from Gemini & ChatGPT)
 
-> 🚀 **本專案完整收錄您在 Gemini 與 ChatGPT 中詢問過的所有「英文怎麼說」與「中文＋英文」提問、成語片語、以及職場深度實戰對話精華（共 39 大主題），並打造成高互動、高質感的單頁 HTML 學習工具。**  
+> 🚀 **本專案完整收錄您在 Gemini 與 ChatGPT 中詢問過的所有「英文怎麼說」與「中文＋英文」提問、成語片語、以及職場深度實戰對話精華（共 47 大主題），並打造成高互動、高質感的單頁 HTML 學習工具。**  
 > 🌐 **GitHub Pages 線上直接體驗**：[https://sinliongtoo.github.io/englishfromgemnina/](https://sinliongtoo.github.io/englishfromgemnina/)
 
 ---
 
 ## 🌟 核心特色
 
-1. **🤖 + 💬 雙 AI 核心知識庫（收錄共 39 大主題）**：
+1. **🤖 + 💬 雙 AI 核心知識庫（收錄共 47 大主題）**：
    - **Gemini 精選表達篇（20 則）**：道地口語、成語俗諺（如 `Bite the bullet`、`Make a snap decision`）、生活哲學、批判思維。
-   - **ChatGPT 職場實戰與成語篇（19 則）**：工作出錯應對、時間與工具摸索、專注自律說不、心理韌性與覆盤、高頻成語（如 `Hit the nail on the head`、`Strike while the iron is hot`、`The elephant in the room`）。
-   - 支援一鍵來源切換（`全部 39 則` / `Gemini 20 則` / `ChatGPT 19 則`），卡牌抽測與隨堂測驗自動連動！
+   - **ChatGPT 職場實戰與成語篇（27 則）**：工作出錯應對、時間與工具摸索、專注自律說不、心理韌性與覆盤、高頻成語（如 `Hit the nail on the head`、`Strike while the iron is hot`、`The elephant in the room`）。
+   - 支援一鍵來源切換（`全部 47 則` / `Gemini 20 則` / `ChatGPT 27 則`），卡牌抽測與隨堂測驗自動連動！
 2. **🎴 3D 擬真翻牌卡片（Flashcards）**：
    - 正面顯示詢問情境、來源標籤、反思導引與關鍵字。
    - 翻面揭曉道地美式核心片語、深入用法解析。
@@ -25,7 +25,7 @@
    - **🔤 單獨英文視覺模式（English Only Mode）**：頂部導航一鍵切換，中文翻譯自動模糊遮罩（滑鼠懸停顯示），建立直接以英語思維理解的習慣。
    - 可依個人習慣調整語速（0.6x ~ 1.4x）與句間停頓秒數。
 4. **📑 精華手冊條列總覽（Comprehensive Guide）**：
-   - 39 大主題情境、詳細文化語境、同義詞替換。
+   - 47 大主題情境、詳細文化語境、同義詞替換。
    - 每題均收錄 **4 組高頻真實例句**（中英對照、單句發音、實用場合標註）。
    - 支援即時模糊搜尋、AI 來源篩選與 20+ 種情境分類過濾。
 5. **🎯 實戰隨堂測驗（Interactive Quiz）**：
@@ -40,7 +40,7 @@
 
 ---
 
-## 💡 收錄之 39 大英文核心主題一覽
+## 💡 收錄之 47 大英文核心主題一覽
 
 ### 🤖 第一部分：Gemini 精選表達 (20 則)
 | 編號 | 原始提問 | 核心道地表達 | 實戰情境分類 |
@@ -66,7 +66,7 @@
 | **36** | 偷工減料 / 走捷徑 英文 | `Cut corners` | 職場道德 / 品質控管 |
 | **38** | 打掉重練 / 從頭再來 英文 | `Back to the drawing board` | 專案管理 / 迭代更新 |
 
-### 💬 第二部分：ChatGPT 職場實戰與成語篇 (19 則)
+### 💬 第二部分：ChatGPT 職場實戰與成語篇 (27 則)
 | 編號 | 原始提問 | 核心道地表達 | 實戰情境分類 |
 | :---: | :--- | :--- | :--- |
 | **13** | 工作出錯、心裡難受時怎麼用英文表達與應對？ | `Feel bad about a mistake` | 職場心態 / 挫折應對 |
@@ -88,6 +88,14 @@
 | **35** | 半信半疑 / 聽聽就好 英文 | `Take it with a grain of salt` | 成語片語 / 批判思維 |
 | **37** | 視而不見的重大問題 英文 | `The elephant in the room` | 職場溝通 / 組織痛點 |
 | **39** | 今天到此為止 / 收工 英文 | `Call it a day` | 職場日常 / 工作生活平衡 |
+| **40** | 世界不是圍繞著你轉 英文 | `The world doesn't revolve around you` | 處世哲學 / 人際心態 |
+| **41** | 文字潤稿與精準措辭 英文 | `Polish the prose` | 寫作修辭 / 專業溝通 |
+| **42** | 職涯轉換與權衡矩陣 英文 | `Career pivot` | 職涯決策 / 策略思考 |
+| **43** | 職等晉升與職場階梯 英文 | `Climb the corporate ladder` | 職場發展 / 組織晉升 |
+| **44** | 個人操作系統與心智模型 英文 | `Personal Operating System` | 自我管理 / 系統思維 |
+| **45** | 追求零缺陷與卓越品質 英文 | `Zero defects` | 工程品質 / 嚴謹製造 |
+| **46** | 語料庫校正與語義釐清 英文 | `Linguistic corpus` | 語言工程 / 語義分析 |
+| **47** | 自動化瑣事、聰明工作 英文 | `Automate repetitive tasks` | 生產力工具 / 效率工程 |
 
 ---
 

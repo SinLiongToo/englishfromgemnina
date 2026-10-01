@@ -1,6 +1,6 @@
 # 📚 Gemini & ChatGPT 英文怎麼說：深度實戰學習手冊
 
-> 本手冊完整彙整您在 **Gemini** 與 **ChatGPT** 提問過的「中文＋英文」與「英文怎麼說」主題（共 39 大主題）。  
+> 本手冊完整彙整您在 **Gemini** 與 **ChatGPT** 提問過的「中文＋英文」與「英文怎麼說」主題（共 47 大主題）。  
 > 每個主題均提供：核心地道片語、文化語境解析、同義詞替換以及 4 組高頻實戰生活/職場例句。
 
 ---
@@ -30,7 +30,7 @@
 36. [偷工減料 / 走捷徑 英文](#36-偷工減料 / 走捷徑 英文)
 38. [打掉重練 / 從頭再來 英文](#38-打掉重練 / 從頭再來 英文)
 
-### 💬 第二部分：ChatGPT 實戰對話與成語篇 (19 則)
+### 💬 第二部分：ChatGPT 實戰對話與成語篇 (27 則)
 
 13. [工作出錯、心裡難受時怎麼用英文表達與應對？](#13-工作出錯、心裡難受時怎麼用英文表達與應對？)
 14. [盡快補救修復、希望別拖累/妨礙進度的英文怎麼說？](#14-盡快補救修復、希望別拖累/妨礙進度的英文怎麼說？)
@@ -51,6 +51,14 @@
 35. [半信半疑 / 聽聽就好 英文](#35-半信半疑 / 聽聽就好 英文)
 37. [視而不見的重大問題 英文](#37-視而不見的重大問題 英文)
 39. [今天到此為止 / 收工 英文](#39-今天到此為止 / 收工 英文)
+40. [世界不是圍繞著你轉 英文](#40-世界不是圍繞著你轉 英文)
+41. [文字潤稿與精準措辭 英文](#41-文字潤稿與精準措辭 英文)
+42. [職涯轉換與權衡矩陣 英文](#42-職涯轉換與權衡矩陣 英文)
+43. [職等晉升與職場階梯 英文](#43-職等晉升與職場階梯 英文)
+44. [個人操作系統與心智模型 英文](#44-個人操作系統與心智模型 英文)
+45. [追求零缺陷與卓越品質 英文](#45-追求零缺陷與卓越品質 英文)
+46. [語料庫校正與語義釐清 英文](#46-語料庫校正與語義釐清 英文)
+47. [自動化瑣事、聰明工作 英文](#47-自動化瑣事、聰明工作 英文)
 
 ---
 
@@ -948,5 +956,189 @@
      *我們把這場會議收尾吧，好讓每個人有時間準備下一項要務。* — 📌 會議時間管理者必備結尾句
   4. **Good job everyone! Let's clean up our workspace and call it a day.**  
      *大家辛苦了！整理好工作區，我們收工下班囉。* — 📌 歡快收工口語
+
+---
+
+### 40. 世界不是圍繞著你轉 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`處世哲學 / 人際心態`
+- **核心道地表達**：`The world doesn't revolve around you / Get over yourself`
+- **重點字彙**：`revolve, ego, perspective, entitlement`
+- **使用情境**：提醒他人或反省自己不要過度自我中心、以為所有事情都必須順應自己的意願或情緒。
+- **深度解析**：「The world doesn't revolve around you」（世界不是圍繞著你公轉）是英語中最經典、直率又深刻的提醒。「Get over yourself」意思是「別把自己看得太重、收起那點傲慢」。「Check your ego at the door」則是職場進入會議時放下個人自尊、專注於事實與團隊目標的常用金句。
+- **同義與替換**：
+  - `Get over yourself`（別把自己看得太重要、收起傲氣）
+  - `Check your ego at the door`（放下個人自尊包袱）
+  - `Not everything is about you`（不是每件事都衝著你來的）
+- **實戰例句**：
+  1. **You need to realize that the world doesn't revolve around you; the team has broader priorities.**  
+     *你必須認清世界不是圍繞著你轉的；團隊有更全面的優先目標。* — 📌 職場團隊合作警醒
+  2. **Stop taking every comment personally; not everything people say is about you.**  
+     *別把每句評論都當成針對你個人；別人說的話並非全都是衝著你來的。* — 📌 情緒脫敏與心理韌性
+  3. **A mature professional checks their ego at the door and focuses on what is best for the product.**  
+     *成熟的專業人士在進門前會放下個人自尊包袱，專注於什麼才是對產品最有利的。* — 📌 專業素養高度評價
+  4. **Whenever you feel entitled, remind yourself: the universe owes you nothing.**  
+     *每當你覺得理所當然時，提醒自己：這個宇宙並不欠你任何東西。* — 📌 深度心智自省
+
+---
+
+### 41. 文字潤稿與精準措辭 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`寫作修辭 / 專業溝通`
+- **核心道地表達**：`Polish the prose / Nuanced phrasing / Elevate the writing`
+- **重點字彙**：`polish, prose, nuance, concise`
+- **使用情境**：在撰寫文稿、商業報告或文學創作時，對文字反覆修飾潤色，追求詞意精確、語感優美。
+- **深度解析**：「Polish the prose」（打磨散文/文句）常用於編輯潤稿出版品。「Nuanced phrasing」（微言大義、富含細膩層次的措辭）指用字極具深意。「Elevate the writing」（提升文風檔次）則是讓文章從平鋪直敘躍升為大師水準的專業表達。「Cut the fluff」則指刪除冗贅廢話。
+- **同義與替換**：
+  - `Fine-tune the wording`（微調字句、雕琢用字）
+  - `Cut the fluff`（刪減冗詞贅字、去蕪存菁）
+  - `Refine the tone`（調整修飾語氣）
+- **實戰例句**：
+  1. **Let's spend an extra hour polishing the prose before submitting the proposal to leadership.**  
+     *在將提案呈送主管層之前，我們多花一小時好好潤飾打磨文句吧。* — 📌 提案撰寫高品質要求
+  2. **Her nuanced phrasing conveyed firm boundaries without sounding confrontational.**  
+     *她細膩得體的精準措辭表達了堅定界線，同時又毫不顯得咄咄逼人。* — 📌 高EQ寫作典範
+  3. **Editing is not just correcting grammar; it's about cutting the fluff to make every sentence punchy.**  
+     *編輯不只是修改文法；更在於去蕪存菁，讓每個句子都簡潔有力。* — 📌 寫作心法精粹
+  4. **This final revision truly elevates the narrative from a dry summary into a compelling story.**  
+     *這版最終定稿確實提升了整體文風，把枯燥的摘要昇華為引人入勝的故事。* — 📌 文稿修訂讚許
+
+---
+
+### 42. 職涯轉換與權衡矩陣 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`職涯決策 / 策略思考`
+- **核心道地表達**：`Career pivot / Weigh the pros and cons / Trade-off matrix`
+- **重點字彙**：`pivot, trade-off, matrix, crossroads`
+- **使用情境**：當面臨轉職、跳槽或跨領域發展時，有系統地評估機會成本、利弊得失與風險收益。
+- **深度解析**：「Career pivot」（職涯軸轉/華麗轉身）源自新創術語，指利用既有核心優勢轉換賽道。「Weigh the pros and cons」（衡量利弊得失）是決策分析必用語。「Trade-off matrix」（權衡矩陣）常用於將薪資、成長性、文化與工時進行量化評分。
+- **同義與替換**：
+  - `At a career crossroads`（身處職涯十字路口）
+  - `Opportunity cost analysis`（機會成本分析）
+  - `Take a calculated leap`（深思熟慮後的勇敢一跳）
+- **實戰例句**：
+  1. **Before accepting the new offer, build a trade-off matrix to compare growth potential against work-life balance.**  
+     *在接受新職缺之前，建立一個權衡矩陣來比較成長潛力與工作生活平衡。* — 📌 理性職涯評估工具
+  2. **She executed a successful career pivot from hardware engineering into machine learning consulting.**  
+     *她成功實現了從硬體工程向機器學習顧問的職涯跨界軸轉。* — 📌 跨領域成功案例
+  3. **When you're at a crossroads, carefully weigh the pros and cons rather than jumping on impulse.**  
+     *當你處於職涯十字路口時，務必仔細權衡利弊得失，切莫憑一時衝動行事。* — 📌 轉職理智建議
+  4. **Every major career transition involves trade-offs; the key is choosing the problems you prefer to solve.**  
+     *每一次重大職涯轉換都伴隨著取捨；關鍵在於選擇你真正願意去面對與解決的難題。* — 📌 職涯哲理金句
+
+---
+
+### 43. 職等晉升與職場階梯 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`職場發展 / 組織晉升`
+- **核心道地表達**：`Climb the corporate ladder / Job grade system / Promotion criteria`
+- **重點字彙**：`ladder, grade, promotion, milestone`
+- **使用情境**：探討外企或大廠內部的職等職級制度、晉升考核標準與向上流動途徑。
+- **深度解析**：「Climb the corporate ladder」（攀爬企業職場階梯）是指在公司體制內步步高升。「Job grade / Salary band」（職級/薪資帶）是跨國企業（如 ASML 等）評定工程師級別的術語。「Meet the promotion criteria」（達到升遷標準）則是考核面談的核心詞。
+- **同義與替換**：
+  - `Career progression`（職涯晉升歷程）
+  - `Advance to the next seniority tier`（邁向更高的資歷層級）
+  - `Broaden ownership`（擴大職責權限範圍）
+- **實戰例句**：
+  1. **Understanding the company's job grade system helps you map out realistic career milestones.**  
+     *搞懂公司的職等體系，有助於你規劃切合實際的職涯里程碑。* — 📌 職場發展規劃
+  2. **Moving up to a principal engineering level requires demonstrating cross-team technical influence.**  
+     *升遷至主任/資深專家層級，需要展現出跨團隊的技術影響力。* — 📌 工程師升遷標準
+  3. **Don't just climb the corporate ladder blindly; ensure it is leaning against the right wall.**  
+     *別只是盲目攀爬職場階梯；先確認那把梯子是否靠在了正確的牆上。* — 📌 經典職涯方向寓言
+  4. **To advance your job grade, you must consistently deliver results beyond your current scope.**  
+     *要想晉升職等，你必須持續拿出超出當前職責範圍的顯著成果。* — 📌 考核績效指南
+
+---
+
+### 44. 個人操作系統與心智模型 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`自我管理 / 系統思維`
+- **核心道地表達**：`Personal Operating System / Mental model / Streamline routines`
+- **重點字彙**：`operating system, mental model, routines, principles`
+- **使用情境**：建立個人的生活與工作系統，透過清晰原則、自動化工具與決策模型來減少認知負荷。
+- **深度解析**：「Personal Operating System」（個人作業系統）是高產出者用來指代自身習慣、筆記系統（如 Obsidian）、自動化流程與生活原則的整合體系。「Mental model」（心智模型）則是查理·蒙格推崇的跨學科思考框架。「Streamline routines」指精簡日常例行事務。
+- **同義與替換**：
+  - `First-principles thinking`（第一性原理思維）
+  - `Standard Operating Procedure (SOP)`（標準作業流程）
+  - `Cognitive offloading`（認知負荷轉移、大腦減負）
+- **實戰例句**：
+  1. **Building a solid Personal Operating System frees your mind to focus on high-leverage creative work.**  
+     *建立一套扎實的個人操作系統，能解放大腦去專注於高槓桿的創造性工作。* — 📌 生產力與系統思維
+  2. **He relies on clear mental models to make sound decisions without suffering from decision fatigue.**  
+     *他依靠清晰的心智模型來做出穩健決策，而不受決策疲勞所困擾。* — 📌 決策科學心法
+  3. **Automating administrative tasks is the cornerstone of an efficient Personal Operating System.**  
+     *將行政瑣事自動化，是打造高效個人操作系統的基石。* — 📌 數位化工作流
+  4. **Review your operating principles periodically to ensure your daily actions align with long-term goals.**  
+     *定期檢視你的個人處事作業原則，確保日常行動與長遠目標方向一致。* — 📌 定期覆盤習慣
+
+---
+
+### 45. 追求零缺陷與卓越品質 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`工程品質 / 嚴謹製造`
+- **核心道地表達**：`Zero defects / High repeatability / Six Sigma precision`
+- **重點字彙**：`repeatability, defects, precision, rigorous`
+- **使用情境**：在半導體製造、量測檢驗或高科技研發中，追求極致的一致性、良率與零缺陷標準。
+- **深度解析**：「Zero defects」（零缺陷）是品質管理大師克勞斯比提出的終極目標。「High repeatability and reproducibility (Gage R&R)」（高重複性與再現性）是半導體製程與儀器檢驗的核心指標。「Six Sigma precision」（六標準差精度，每百萬次僅 3.4 個瑕疵）代表對公差的極致把控。
+- **同義與替換**：
+  - `Process capability (Cp/Cpk)`（製程能力指標）
+  - `Poka-Yoke / Error-proofing`（防呆防錯機制）
+  - `First-time-right`（一次做對、一次到位）
+- **實戰例句**：
+  1. **In advanced lithography, achieving zero defects demands flawless repeatability in every single run.**  
+     *在先進微影技術中，實現零缺陷需要每次製程運轉都具備毫無瑕疵的高重複性。* — 📌 半導體高精尖製程要求
+  2. **A robust test strategy must guarantee high repeatability across different test stations and operators.**  
+     *一套穩健的測試策略，必須確保在不同測試站與作業員之間都能維持高重複精度。* — 📌 測試工程與品質保證
+  3. **Six Sigma precision isn't about luck; it's the result of rigorous variance reduction.**  
+     *六標準差的精準度不是靠運氣，而是嚴格降低變異的必然結果。* — 📌 六標準差管理精粹
+  4. **Adopt a first-time-right mindset to eliminate costly downstream rework.**  
+     *貫徹一次做對的心態，徹底杜絕下游高昂的返工成本。* — 📌 工程製造品質承諾
+
+---
+
+### 46. 語料庫校正與語義釐清 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`語言工程 / 語義分析`
+- **核心道地表達**：`Linguistic corpus / Clarify terminology / Disambiguation`
+- **重點字彙**：`corpus, terminology, disambiguation, nuance`
+- **使用情境**：在處理雙語對照、方言辭典（如台羅、漢羅）或 AI 訓練時，校正語料庫並釐清多義字詞。
+- **深度解析**：「Linguistic corpus」（語言語料庫，複數 corpora）指用於語言研究的大規模文本集。「Clarify terminology」（釐清術語）指消弭定義上的分歧。「Disambiguation」（消除歧義）常用於自然語言處理或辭典編纂中區分多音多義字詞。
+- **同義與替換**：
+  - `Cross-reference against standard lexicons`（與標準辭典交叉比對）
+  - `Semantic alignment`（語意對齊）
+  - `Corpus curation`（語料庫清洗與策劃）
+- **實戰例句**：
+  1. **We must curate the linguistic corpus thoroughly to ensure accurate dialect translation.**  
+     *我們必須徹底整理清洗語言語料庫，以確保方言翻譯的準確無誤。* — 📌 語言學與數位典藏應用
+  2. **Clarifying confusing terminology early saves weeks of misunderstanding during cross-team syncs.**  
+     *及早釐清容易混淆的術語，能省下跨團隊同步時長達數週的溝通誤解。* — 📌 跨部門溝通效率
+  3. **Automated disambiguation algorithms help resolve homonyms in colloquial text.**  
+     *自動消除歧義演算法有助於解析口語文本中的同音異義詞。* — 📌 自然語言處理實務
+  4. **Cross-referencing historical texts with modern linguistic corpora deepens our cultural insights.**  
+     *將文史典籍與現代語言語料庫進行交叉對照，能深化我們的文化洞察。* — 📌 人文科技研究
+
+---
+
+### 47. 自動化瑣事、聰明工作 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`生產力工具 / 效率工程`
+- **核心道地表達**：`Automate repetitive tasks / Work smarter not harder / Scripting efficiency`
+- **重點字彙**：`automate, repetitive, streamline, efficiency`
+- **使用情境**：利用腳本（如 PowerShell、Python）將重複繁雜的手工操作自動化，釋放大腦精力。
+- **深度解析**：「Work smarter, not harder」（巧幹勝於苦幹）是最廣為流傳的效率金句。「Automate repetitive tasks」（自動化重複任務）是工程師的核心美德。「Scripting efficiency」（腳本自動化效率）指用小工具代替無休止的手工點擊複製。
+- **同義與替換**：
+  - `Eliminate manual overhead`（消除手工瑣碎負擔）
+  - `Streamline daily workflow`（簡化日常工作流）
+  - `Leverage automation tools`（善用自動化工具槓桿）
+- **實戰例句**：
+  1. **Writing a simple PowerShell script to automate data collection saved me three hours every day.**  
+     *寫個簡單的 PowerShell 腳本來自動化數據蒐集，每天為我省下了整整三小時。* — 📌 腳本提高效率日常
+  2. **Always work smarter, not harder; if a task is done more than twice, automate it.**  
+     *永遠要巧幹而非蠻幹；如果一件事要重複做兩次以上，就該把它自動化。* — 📌 自動化第一準則
+  3. **Eliminating manual overhead allows engineers to focus on architectural innovations.**  
+     *消除手工瑣事的沉重負擔，能讓工程師專注於架構層面的創新突破。* — 📌 研發團隊效能釋放
+  4. **Small scripting habits compound into massive productivity gains over the course of a year.**  
+     *隨手編寫小腳本的習慣，在一年下來會複利累積成巨大的生產力提升。* — 📌 複利效應體悟
 
 ---
