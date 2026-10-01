@@ -10,7 +10,22 @@ const STORAGE_KEY_PLAY_MODE = 'gemini_en_play_mode_v1';
 const STORAGE_KEY_THEME = 'gemini_en_theme';
 
 // 狀態變數
-let topicsData = window.TOPICS_DATA || [];
+function getTopicsData() {
+  if (typeof window !== 'undefined') {
+    if (window.TOPICS_DATA && Array.isArray(window.TOPICS_DATA) && window.TOPICS_DATA.length > 0) {
+      return window.TOPICS_DATA;
+    }
+    if (window.DATA && Array.isArray(window.DATA) && window.DATA.length > 0) {
+      return window.DATA;
+    }
+  }
+  if (typeof DATA !== 'undefined' && Array.isArray(DATA) && DATA.length > 0) {
+    return DATA;
+  }
+  return [];
+}
+
+let topicsData = getTopicsData();
 let userMastered = JSON.parse(localStorage.getItem(STORAGE_KEY_MASTERED) || '[]');
 let userStarred = JSON.parse(localStorage.getItem(STORAGE_KEY_STARRED) || '[]');
 let isEnglishOnlyMode = (localStorage.getItem(STORAGE_KEY_ENGLISH_ONLY) === 'true');
@@ -33,19 +48,13 @@ let speechRate = 1.0;
 // 初始化
 // =========================================================
 window.addEventListener('DOMContentLoaded', () => {
-  // 檢查資料
-  if (!topicsData || activeCardPool.length === 0) {
-    if (window.TOPICS_DATA && window.TOPICS_DATA.length > 0) {
-      topicsData = window.TOPICS_DATA;
-    }
-  }
-
+  topicsData = getTopicsData();
+  updateActiveCardPool();
   initTheme();
   initVoices();
   applyEnglishOnlyUI();
   updatePlayModeUI();
   updateSourceFilterUI();
-  updateActiveCardPool();
   renderStats();
   renderCurrentCard();
   renderList(topicsData);
@@ -75,10 +84,11 @@ window.addEventListener('DOMContentLoaded', () => {
 // =========================================================
 function setSourceFilter(source) {
   currentSourceFilter = source;
-  updateSourceFilterUI();
   updateActiveCardPool();
+  updateSourceFilterUI();
   currentCardIndex = 0;
   if (isFlipped && autoPlayMode !== 'english_only') flipCard();
+  renderStats();
   renderCurrentCard();
   filterList();
   startNewQuiz();

@@ -1989,6 +1989,11 @@ const DATA = [
   }
 ];
 
+if (typeof window !== 'undefined') {
+  window.DATA = DATA;
+  window.TOPICS_DATA = DATA;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = DATA;
 }
