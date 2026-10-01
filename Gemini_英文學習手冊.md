@@ -1,38 +1,56 @@
 # 📚 Gemini & ChatGPT 英文怎麼說：深度實戰學習手冊
 
-> 本手冊彙整您曾在 **Gemini** 與 **ChatGPT** 提問過的「英文怎麼說」與職場實戰對話精華（共 23 大主題）。  
-> 針對每個表達提供：核心道地句型、文化語境解析、同義詞比較以及 4 組高頻實戰例句。
+> 本手冊完整彙整您在 **Gemini** 與 **ChatGPT** 提問過的「中文＋英文」與「英文怎麼說」主題（共 39 大主題）。  
+> 每個主題均提供：核心地道片語、文化語境解析、同義詞替換以及 4 組高頻實戰生活/職場例句。
 
 ---
 
 ## 📑 目錄導航
 
-### 🤖 第一部分：Gemini 精選核心表達 (12 則)
+### 🤖 第一部分：Gemini 精選表達 (20 則)
+
 1. [事後諸葛的英文](#1-事後諸葛的英文)
-2. [修飾過度 擦脂抹粉英文](#2-修飾過度-擦脂抹粉英文)
-3. [無可後非（無可指責／無可非議）](#3-無可後非無可指責無可非議)
-4. [免不了，英文](#4-免不了英文)
+2. [修飾過度 擦脂抹粉英文](#2-修飾過度 擦脂抹粉英文)
+3. [無可後非（無可指責／無可非議）](#3-無可後非（無可指責／無可非議）)
+4. [免不了，英文](#4-免不了，英文)
 5. [大暴走的英文怎麼說](#5-大暴走的英文怎麼說)
 6. [量入為出英文](#6-量入為出英文)
 7. [隨時補充水份英文](#7-隨時補充水份英文)
-8. [注重 功能性而非奢華 英文](#8-注重-功能性而非奢華-英文)
+8. [注重 功能性而非奢華 英文](#8-注重 功能性而非奢華 英文)
 9. [置身事外的英文](#9-置身事外的英文)
 10. [後見之明英文](#10-後見之明英文)
-11. [陰魂不散，英文](#11-陰魂不散英文)
+11. [陰魂不散，英文](#11-陰魂不散，英文)
 12. [你這個人不主觀也不客觀英文怎麼說](#12-你這個人不主觀也不客觀英文怎麼說)
+24. [硬著頭皮 / 咬牙硬撐 英文](#24-硬著頭皮 / 咬牙硬撐 英文)
+25. [當機立斷 英文](#25-當機立斷 英文)
+26. [工作的管見 英文](#26-工作的管見 英文)
+27. [穩健保命 英文](#27-穩健保命 英文)
+28. [得體的優雅舉止 英文](#28-得體的優雅舉止 英文)
+29. [職場拒絕無效會議 英文](#29-職場拒絕無效會議 英文)
+36. [偷工減料 / 走捷徑 英文](#36-偷工減料 / 走捷徑 英文)
+38. [打掉重練 / 從頭再來 英文](#38-打掉重練 / 從頭再來 英文)
 
-### 💬 第二部分：ChatGPT 職場實戰對話篇 (11 則)
-13. [工作出錯、心裡難受時的英文應對](#13-工作出錯心裡難受時怎麼用英文表達與應對)
-14. [盡快補救修復、希望別拖累進度的英文](#14-盡快補救修復希望別拖累妨礙進度的英文怎麼說)
-15. [關鍵是找出自己究竟漏掉了什麼（抓盲點）的英文](#15-關鍵是找出自己究竟漏掉了什麼抓盲點的英文怎麼說)
-16. [事情千頭萬緒、用腦過度、思緒打結的英文](#16-事情千頭萬緒混在一起用腦過度思緒打結的英文怎麼說)
-17. [邊做邊學、在工作中快速摸索工具的英文](#17-邊做邊學在工作中快速摸索工具的英文怎麼說)
-18. [痛定思痛、認知提升並找出精進方向的英文](#18-痛定思痛認知提升並找出精進方向的英文怎麼說)
-19. [殘酷現實：職場上沒有人會等你慢慢成長的英文](#19-殘酷現實職場上沒有人會等你慢慢成長的英文怎麼說)
-20. [心靈雞湯沒用、職場需要殘酷真話與行動指南的英文](#20-心靈雞湯沒用職場需要殘酷真話與行動指南的英文怎麼說)
-21. [知易行難、在做中學才能摸透細節與原理的英文](#21-知易行難在做中學才能摸透細節與原理的英文怎麼說)
-22. [不怕犯錯、勇敢說不（敢於拒絕）、捍衛專注力的英文](#22-不怕犯錯勇敢說不敢於拒絕捍衛專注力的英文怎麼說)
-23. [情緒轉換、心態修復（這一切終究會過去）的英文](#23-情緒轉換心態修復這一切終究會過去的英文怎麼說)
+### 💬 第二部分：ChatGPT 實戰對話與成語篇 (19 則)
+
+13. [工作出錯、心裡難受時怎麼用英文表達與應對？](#13-工作出錯、心裡難受時怎麼用英文表達與應對？)
+14. [盡快補救修復、希望別拖累/妨礙進度的英文怎麼說？](#14-盡快補救修復、希望別拖累/妨礙進度的英文怎麼說？)
+15. [關鍵是找出自己究竟漏掉了什麼（抓盲點）的英文怎麼說？](#15-關鍵是找出自己究竟漏掉了什麼（抓盲點）的英文怎麼說？)
+16. [事情千頭萬緒混在一起、用腦過度、思緒打結的英文怎麼說？](#16-事情千頭萬緒混在一起、用腦過度、思緒打結的英文怎麼說？)
+17. [邊做邊學、在工作中快速摸索工具的英文怎麼說？](#17-邊做邊學、在工作中快速摸索工具的英文怎麼說？)
+18. [痛定思痛、認知提升並找出精進方向的英文怎麼說？](#18-痛定思痛、認知提升並找出精進方向的英文怎麼說？)
+19. [殘酷現實：職場上沒有人會等你慢慢成長的英文怎麼說？](#19-殘酷現實：職場上沒有人會等你慢慢成長的英文怎麼說？)
+20. [心靈雞湯沒用、職場需要殘酷真話與行動指南的英文怎麼說？](#20-心靈雞湯沒用、職場需要殘酷真話與行動指南的英文怎麼說？)
+21. [知易行難、在做中學才能摸透細節與原理的英文怎麼說？](#21-知易行難、在做中學才能摸透細節與原理的英文怎麼說？)
+22. [不怕犯錯、勇敢說不（敢於拒絕）、捍衛專注力的英文怎麼說？](#22-不怕犯錯、勇敢說不（敢於拒絕）、捍衛專注力的英文怎麼說？)
+23. [情緒轉換、心態修復（這一切終究會過去）的英文怎麼說？](#23-情緒轉換、心態修復（這一切終究會過去）的英文怎麼說？)
+30. [一針見血 / 切中要害 英文](#30-一針見血 / 切中要害 英文)
+31. [見機行事 / 隨機應變 英文](#31-見機行事 / 隨機應變 英文)
+32. [打鐵趁熱 英文](#32-打鐵趁熱 英文)
+33. [塞翁失馬（焉知非福） 英文](#33-塞翁失馬（焉知非福） 英文)
+34. [破釜沉舟 / 不留後路 英文](#34-破釜沉舟 / 不留後路 英文)
+35. [半信半疑 / 聽聽就好 英文](#35-半信半疑 / 聽聽就好 英文)
+37. [視而不見的重大問題 英文](#37-視而不見的重大問題 英文)
+39. [今天到此為止 / 收工 英文](#39-今天到此為止 / 收工 英文)
 
 ---
 
@@ -40,6 +58,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`成語俗諺 / 職場應對`
 - **核心道地表達**：`Hindsight is 20/20 / Monday-morning quarterback`
+- **重點字彙**：`hindsight, 20/20, judge, approach`
 - **使用情境**：用於描述事情發生後才明白當初應該怎麼做，常見於後悔或事後檢討的情境中。
 - **深度解析**：「事後諸葛」最道地的美式片語是「Hindsight is 20/20」（20/20 代表視力完美，事情過後看總是無比清晰）。美式口語中也常說「Monday-morning quarterback」（週一早上的四分衛，指週末美式足球賽打完後，週一在辦公室指手畫腳的球迷）。
 - **同義與替換**：
@@ -62,6 +81,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`職場溝通 / 說話藝術`
 - **核心道地表達**：`Sugarcoat / Gild the lily / Put lipstick on a pig`
+- **重點字彙**：`sugarcoat, truth, conflict, financial troubles`
 - **使用情境**：用於描述對事實進行過度包裝、美化，常用來提醒說話要誠實，不要刻意掩飾負面消息。
 - **深度解析**：動詞「sugarcoat」（在苦藥上包糖衣）最能生動體現「擦脂抹粉、粉飾太平」。「Don't sugarcoat it」意思是「有話直說，別拐彎抹角美化」。口語中若指對劣質品硬做美化，可用俚語「put lipstick on a pig」（給豬塗口紅）。
 - **同義與替換**：
@@ -84,6 +104,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`評價評語 / 正式書面`
 - **核心道地表達**：`Beyond reproach / Above suspicion / Unimpeachable`
+- **重點字彙**：`beyond reproach, conduct, integrity, investigation`
 - **使用情境**：形容某人或某事完全無法挑剔，行為或表現無可指責、品德高尚。
 - **深度解析**：「Beyond reproach」是極高評價的正式表達，「reproach」為責備、非議之意，超越非議即「無可非議、無懈可擊」。常搭配 conduct（操行）、integrity（廉潔/誠信）、behavior（表現）。
 - **同義與替換**：
@@ -106,6 +127,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`生活哲理 / 職場日常`
 - **核心道地表達**：`Inevitable / Bound to happen / Unavoidable`
+- **重點字彙**：`inevitable, conflict, change, team`
 - **使用情境**：描述某件事無法避免、遲早會發生、理所當然會碰到的狀況。
 - **深度解析**：形容詞「Inevitable」表示「不可避免的、必然發生的」；動詞片語「cannot be avoided」或「bound to happen」也很常用。「It's inevitable」簡短好記，直接表達「免不了的啦」。
 - **同義與替換**：
@@ -128,6 +150,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`情緒表達 / 生動口語`
 - **核心道地表達**：`Go on a rampage / Go ballistic / Fly off the handle`
+- **重點字彙**：`rampage, smashed, attacker, chaos`
 - **使用情境**：描述某人因情緒爆發、理智斷線或壓力過大而做出失控、暴怒或破壞性的行為。
 - **深度解析**：「Go on a rampage」強調像暴風雨般四處橫衝直撞破壞。「Go ballistic」像飛彈升空爆炸，指瞬間暴怒氣炸。「Fly off the handle」指斧頭脫柄飛出，形容脾氣突然失控大發雷霆。
 - **同義與替換**：
@@ -150,6 +173,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`理財智慧 / 生活哲學`
 - **核心道地表達**：`Live within one's means / Cut one's coat according to one's cloth`
+- **重點字彙**：`live within your means, financial stability, save money`
 - **使用情境**：指根據自己的收入來控制日常支出與消費，避免入不敷出、過度借貸。
 - **深度解析**：「means」在此處指「財力、經濟能力」。「Live within one's means」字面是生活在自身財力之內，即「量入為出」。英國傳統諺語也有「Cut your coat according to your cloth」（看布料多少來剪裁衣服）。
 - **同義與替換**：
@@ -172,6 +196,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`健康運動 / 日常生活`
 - **核心道地表達**：`Stay hydrated at all times / Drink plenty of fluids`
+- **重點字彙**：`stay hydrated, run, water regularly, fluids`
 - **使用情境**：提醒人在運動、跑步、烈日炎夏或戶外活動時要隨時多喝水、保持身體水分充足。
 - **深度解析**：英文不只說「drink water」，更地道、更專業的健康用語是「stay hydrated」（維持水分充足）。「Hydration」是名詞水分補給，「Dehydration」則是脫水。
 - **同義與替換**：
@@ -194,6 +219,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`產品設計 / 價值觀念`
 - **核心道地表達**：`Prioritize functionality over luxury / Function over form`
+- **重點字彙**：`functionality, luxury, functional, fancy`
 - **使用情境**：強調實用性、效能優先於外表的奢華包裝，常見於工業設計、極簡生活或產品選型。
 - **深度解析**：句型為「Prioritize A over B」（重視 A 勝於 B）。名言諺語「Function over form」（功能重於形式）是現代包浩斯（Bauhaus）與實用主義極簡哲學的核心。
 - **同義與替換**：
@@ -216,6 +242,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`人際處世 / 職場智慧`
 - **核心道地表達**：`Remain aloof from / Stay out of / Keep one's distance`
+- **重點字彙**：`aloof, stay out of, drama, argument`
 - **使用情境**：形容某人對紛爭、爭吵、政治角力或事件保持距離，不介入、不捲入其中、袖手旁觀。
 - **深度解析**：「Aloof」帶有冷眼旁觀、超然獨立的色彩。「Remain aloof from the situation」是標準優雅的說法。口語直接說「Stay out of it!」（別插手管這檔事！）。
 - **同義與替換**：
@@ -238,6 +265,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`心理學認知 / 邏輯思維`
 - **核心道地表達**：`With the benefit of hindsight / Hindsight bias`
+- **重點字彙**：`benefit of hindsight, hindsight shows, mistake`
 - **使用情境**：在事情塵埃落定之後，才回頭看清因果道理或做出判斷；或指心理學上的「後見之明偏誤」。
 - **深度解析**：「With the benefit of hindsight」意思是站在已經知道結果的有利角度回看。心理學專業術語「Hindsight bias」（後見之明偏誤 / 我早就知道了現象）正是描述人類總在事後誤以為自己早已預測到結果。
 - **同義與替換**：
@@ -260,6 +288,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`情緒心理 / 記憶感受`
 - **核心道地表達**：`Keep haunting someone / Cast a long shadow / Linger on`
+- **重點字彙**：`haunting, memory, decision, haunt`
 - **使用情境**：比喻過去的失敗、不愉快的陰影、執念或某個人事始終擺脫不掉，長久困擾內心。
 - **深度解析**：動詞「haunt」原指鬼魂出沒，引申為回憶、悔恨、惡夢像幽靈一樣一直纏著不走。「It keeps haunting me」生動傳達了「陰魂不散、揮之不去」的心情。
 - **同義與替換**：
@@ -282,6 +311,7 @@
 - **來源**：`🤖 Gemini`
 - **情境分類**：`論辯邏輯 / 人格批評`
 - **核心道地表達**：`Neither subjective nor objective / Lacking coherent stance`
+- **重點字彙**：`neither subjective nor objective, logic, confusing, caught in between`
 - **使用情境**：形容對方論點混亂、缺乏中心思想與依據，既沒有自己的主見（不主觀），又沒有依照事實數據（不客觀），讓人摸不著頭緒。
 - **深度解析**：使用「neither... nor...」（既不...也不...）句型。「You're neither subjective nor objective」精確對應中文；亦可補充「Your reasoning makes no sense / You're all over the place」（你的論點四無著落、東拼西湊）。
 - **同義與替換**：
@@ -304,6 +334,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`職場心態 / 挫折應對`
 - **核心道地表達**：`Feel bad about a mistake / Take prompt action to prevent escalation`
+- **重點字彙**：`mistake, escalating, transparent, proactive`
 - **使用情境**：在工作中犯了錯、感到內疚自責時，如何向主管或同事真誠表達並展現積極補救的專業態度。
 - **深度解析**：工作犯錯時，不要只說「I'm sorry」，更成熟的職場用語是「I feel bad about this mistake, and I'm taking prompt action to prevent the problem from escalating」（我對此感到抱歉，我正迅速採取行動防止問題擴大）。展現責任感（accountability）與透明度（transparency）。
 - **同義與替換**：
@@ -326,6 +357,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`專案溝通 / 進度管理`
 - **核心道地表達**：`Fix it promptly so it won't hamper progress / Nip it in the bud`
+- **重點字彙**：`hamper, promptly, progress, workflow`
 - **使用情境**：發現失誤後立即動手修正，並期盼不會對團隊整體工作流造成阻礙或耽擱。
 - **深度解析**：動詞「hamper」意思是「阻礙、妨礙、牽制」。「I hope it won't hamper the progress」非常地道。而成語「nip it in the bud」（防患於未然/扼殺於搖籃）也常搭配使用。
 - **同義與替換**：
@@ -348,6 +380,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`問題排查 / 深度覆盤`
 - **核心道地表達**：`Pinpoint where things went off track / Retrace one's steps`
+- **重點字彙**：`pinpoint, retrace, discrepancies, off track`
 - **使用情境**：遇到錯誤時，重點不是慌亂，而是冷靜回溯整個流程步驟，抓出關鍵遺漏點。
 - **深度解析**：動詞「pinpoint」精確表示「精準指出、找出確切位置」。「Retrace your steps」意為「回溯步驟，從頭逐步檢視」。兩者結合是排查問題（root cause analysis）的黃金句型。
 - **同義與替換**：
@@ -370,6 +403,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`壓力調適 / 大腦超載`
 - **核心道地表達**：`My mind is tangled / Mind-twisting mental overload / Feeling overwhelmed`
+- **重點字彙**：`tangled, overwhelmed, mental overload, prioritize`
 - **使用情境**：多項複雜任務同時湧入，腦袋資訊爆炸、思緒混亂糾纏在一起時的真實感受表達。
 - **深度解析**：口語可以用「tangled thoughts」（打結的思緒）或「mind-twisting」（燒腦、讓人思緒擰在一起）。正式表達則為「mental overload / cognitive overload」（認知超載）或「feeling overwhelmed」。
 - **同義與替換**：
@@ -392,6 +426,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`職場學習 / 技能進階`
 - **核心道地表達**：`Learn on the go / Get up to speed with the tools / Steep learning curve`
+- **重點字彙**：`learn on the go, get up to speed, learning curve, tools`
 - **使用情境**：新加入團隊或面對未知軟體工具時，沒有充裕的培訓期，必須在實戰任務中快速邊學邊用。
 - **深度解析**：「Learn on the go」是極為地道的美式口語，意為在行進中、實操中隨時學習。「Get up to speed」代表跟上團隊進度、掌握必要工具與資訊。「Steep learning curve」形容學習曲線陡峭。
 - **同義與替換**：
@@ -414,6 +449,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`自我成長 / 認知升級`
 - **核心道地表達**：`Analyze root causes / Close the gap between knowing and executing`
+- **重點字彙**：`root causes, enhance, awareness, gap`
 - **使用情境**：經歷挫折後深刻認識到自己的短板，從錯誤中提煉養分並制定具體的強化計劃。
 - **深度解析**：「Analyze the root causes」（分析根本原因）是工程與管理學經典法門。「Close the gap」（縮小差距）形容把「認知到的不足」落實轉化為「實際能力的增長」。
 - **同義與替換**：
@@ -436,6 +472,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`職場現實 / 效率驅動`
 - **核心道地表達**：`No one will wait for you to grow / Accelerate learning / Leverage quick wins`
+- **重點字彙**：`wait for you to grow, harsh reality, quick wins, accelerate`
 - **使用情境**：商業競爭與專案節奏極快，組織需要快速產出，提醒自己必須加速學習、快速交出成果。
 - **深度解析**：句型「One harsh reality of the workplace is that no one will wait for you to grow」（職場的一個殘酷現實是沒人會等你成長）。面對此狀況，解答策略是「leverage quick wins」（藉由快速取得小勝展現價值）與「accelerate learning」。
 - **同義與替換**：
@@ -458,6 +495,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`實用主義 / 深度洞察`
 - **核心道地表達**：`A dose of tough love / Reality check / Actionable insights over chicken soup`
+- **重點字彙**：`chicken soup, tough love, reality check, actionable insights`
 - **使用情境**：面對真實工作的重壓，空泛的安慰毫無幫助，唯有直面真相的硬派建言才能化解危機。
 - **深度解析**：英文中常用「Chicken soup for the soul」（心靈雞湯）指溫暖但缺乏實效的安慰話；而「a dose of tough love」（一劑嚴厲的關愛 / 逆耳忠言）與「reality check」（面對現實的棒喝）才是能讓人絕處逢生的解方。
 - **同義與替換**：
@@ -480,6 +518,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`實踐哲學 / 深度學習`
 - **核心道地表達**：`There's a gap between knowing and doing / Real learning happens in the process of doing`
+- **重點字彙**：`knowing and doing, process of doing, iterative learning, depth`
 - **使用情境**：看懂理論和親手實踐完全是兩回事，只有親自捲起袖子踩坑，才能發現未曾料到的細節與深度知識。
 - **深度解析**：「Knowing and doing are two different things」（知道與做到是兩回事），管理學稱為「the knowing-doing gap」。「Real learning happens in the process of doing」（真正的學習發生在實踐的過程中）。
 - **同義與替換**：
@@ -502,6 +541,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`職場界線 / 專注與自律`
 - **核心道地表達**：`Dare to say no / Protect your focus / Embrace mistakes as learning opportunities`
+- **重點字彙**：`dare to say no, protect focus, boundaries, embrace mistakes`
 - **使用情境**：在職場上不當濫好人，敢於推掉不合理要求與雜事，設定清晰界線以維護核心任務的高品質完成度。
 - **深度解析**：片語「Dare to say no」（敢於說不）強調勇氣。「Protect your focus / Protect your time and energy」（捍衛你的專注力與精力）。「Set boundaries」（劃定界線）。
 - **同義與替換**：
@@ -524,6 +564,7 @@
 - **來源**：`💬 ChatGPT`
 - **情境分類**：`情緒復原 / 內在力量`
 - **核心道地表達**：`Transform your mood / This too shall pass / Shift from frustration to determination`
+- **重點字彙**：`transform mood, this too shall pass, mindful, determination`
 - **使用情境**：在遭遇嚴重挫折或壓力崩潰邊緣時，學會自我安撫、抽離負面情緒並重新找回內心平靜。
 - **深度解析**：「Transform your mood」（轉換你的心情 / 情緒復原）。千古名言「This too shall pass」（這一切終究會過去）是撫慰心靈的至高經典。「Shift from frustration to determination」（從沮喪轉變為堅定決心）。
 - **同義與替換**：
@@ -542,4 +583,370 @@
 
 ---
 
-*Generated by Antigravity for English Learning from Gemini & ChatGPT*
+### 24. 硬著頭皮 / 咬牙硬撐 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`成語片語 / 職場應對`
+- **核心道地表達**：`Bite the bullet / Tough it out / Grin and bear it`
+- **重點字彙**：`bullet, tough, inevitable, resilience`
+- **使用情境**：當面臨極度痛苦、艱難、令人畏懼但又無法逃避的任務時，下定決心咬緊牙關去面對。
+- **深度解析**：「Bite the bullet」源自早期戰地手術沒有麻醉劑時，士兵必須咬住鉛彈來忍受劇痛。現在廣泛用於生活與職場，表示「事已至此，只能硬著頭皮面對」。「Tough it out」強調咬牙撐過艱難時期，「Grin and bear it」則是苦笑著默默承受。
+- **同義與替換**：
+  - `Tough it out`（咬牙硬撐過去）
+  - `Grin and bear it`（苦笑忍耐、逆來順受）
+  - `Face the music`（勇於承擔後果、面對現實）
+- **實戰例句**：
+  1. **I hate having difficult conversations with stakeholders, but I just have to bite the bullet and do it.**  
+     *我討厭和利害關係人進行艱難談判，但我只能硬著頭皮去做了。* — 📌 職場必備的高頻片語表達
+  2. **We finally decided to bite the bullet and invest in upgrading our core infrastructure.**  
+     *我們最終決定咬緊牙關，痛下決心投資升級核心基礎架構。* — 📌 商業與系統架構決策語境
+  3. **The transition period will be painful, but the team will just have to tough it out.**  
+     *轉型期會很痛苦，但團隊只能咬牙硬撐過去。* — 📌 強調組織抗壓韌性
+  4. **Stop procrastinating; bite the bullet and tell the boss about the delay before things get worse.**  
+     *別再拖延了；在事情惡化前，硬著頭皮去向老闆報告進度延誤吧。* — 📌 日常辦公室溝通勸勉
+
+---
+
+### 25. 當機立斷 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`職場領導 / 決策判斷`
+- **核心道地表達**：`Make a snap decision / Decisive action / Call the shots`
+- **重點字彙**：`snap, decisive, hesitation, promptly`
+- **使用情境**：在突發狀況或關鍵時刻，毫不遲疑、迅速且果斷地下達決定。
+- **深度解析**：「Make a snap decision」指在極短時間內快刀斬亂麻做決定。「Take decisive action」是正式場合中「採取果斷行動」的黃金句型。「Make a quick call」是口語常見的當機立斷說法。
+- **同義與替換**：
+  - `Take decisive action`（採取果斷行動）
+  - `Make a quick call`（迅速下決定）
+  - `Act promptly`（迅速採取行動）
+- **實戰例句**：
+  1. **In a fast-moving crisis, leaders must make snap decisions with limited information.**  
+     *在瞬息萬變的危機中，領導者必須在資訊有限的情況下當機立斷。* — 📌 危機管理經典句型
+  2. **She took decisive action and halted the production line before more defective units were made.**  
+     *她當機立斷停止產線，避免產生更多瑕疵品。* — 📌 工廠製造與品質管理實用
+  3. **We don't have the luxury of time; you need to make a quick call right now.**  
+     *我們沒有猶豫的時間，你現在必須當機立斷做決定。* — 📌 緊急會議催促決策
+  4. **His ability to make snap decisions under extreme pressure earned him universal respect.**  
+     *他在極大壓力下當機立斷的能力，為他贏得了眾人普遍的尊敬。* — 📌 高階主管能力評價
+
+---
+
+### 26. 工作的管見 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`職場溝通 / 謙虛陳述`
+- **核心道地表達**：`My two cents on work / In my humble opinion / A modest observation`
+- **重點字彙**：`two cents, humble, perspective, discretion`
+- **使用情境**：在會議或工作交流中，謙遜地表達自己的個人見解、淺見或微薄建議。
+- **深度解析**：中文的「管見」即「個人淺見、一孔之見」。「My two cents」（我微不足道的兩分錢看法）是美式職場最地道且親切的表達。商務書信或正式提案中則常用「In my humble opinion」或「From my perspective」。
+- **同義與替換**：
+  - `Just my two cents`（僅供參考的個人淺見）
+  - `From my perspective`（從我的角度來看）
+  - `For what it's worth`（無論價值如何、供您參考）
+- **實戰例句**：
+  1. **Here's my two cents on how we can optimize our daily workflow.**  
+     *關於如何最佳化日常工作流程，這是我的一點個人管見。* — 📌 會議上分享建議的親切開場
+  2. **For what it's worth, that's just my humble opinion based on five years in the field.**  
+     *無論有無幫助，這純粹是我在這領域工作五年來的一點淺見。* — 📌 資深同仁謙遜發言
+  3. **Allow me to offer my two cents before we finalize this project plan.**  
+     *在我們敲定專案計畫前，請容我提出一點管見。* — 📌 書面或會議插話建議
+  4. **Take it with a grain of salt, but that is my personal observation on the team dynamics.**  
+     *聽聽就好，這只是我對團隊運作氛圍的一點個人觀察與淺見。* — 📌 溫和客觀的觀察反饋
+
+---
+
+### 27. 穩健保命 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`職場生存 / 風險管理`
+- **核心道地表達**：`Play it safe / Cover your bases / Risk aversion`
+- **重點字彙**：`safe, bases, hedge, caution`
+- **使用情境**：指在職場或決策時不冒無謂風險，做足準備防患未然，確保萬無一失的自我保護策略。
+- **深度解析**：「Play it safe」表示行事謹慎求穩，不貪功冒進。「Cover all your bases」（涵蓋所有壘包，源自棒球）表示「面面俱到、做好萬全防範以防被抓把柄」。「CYA (Cover Your Ass)」則是外企內部俚語，指保護自己免於背黑鍋的防禦性措施。
+- **同義與替換**：
+  - `Cover all your bases`（面面俱到、防患未然）
+  - `Better safe than sorry`（小心駛得萬年船、有備無患）
+  - `Err on the side of caution`（寧可謹慎行事）
+- **實戰例句**：
+  1. **Given the current volatility, it's wiser to play it safe and hold off on expansion.**  
+     *考量到目前的市場波動，穩健保命、暫緩擴張才是明智之舉。* — 📌 策略規劃求穩語境
+  2. **Always keep an email paper trail to cover your bases in cross-functional projects.**  
+     *在跨部門專案中務必保留郵件往來紀錄，以做好穩健防範、自我保命。* — 📌 跨部門合作自保金句
+  3. **When estimating project deadlines, always err on the side of caution.**  
+     *預估專案交付期限時，寧可抓得保守謹慎一點。* — 📌 時程規劃實用提醒
+  4. **He survived multiple restructuring rounds simply by playing it safe and never over-promising.**  
+     *他多次在組織重組中生存下來，靠的就是處事穩健、絕不輕易誇下海口。* — 📌 職場生存智慧評語
+
+---
+
+### 28. 得體的優雅舉止 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`人際交往 / 職場修養`
+- **核心道地表達**：`Carry oneself with grace / Classy behavior / Composure`
+- **重點字彙**：`grace, classy, composure, dignity`
+- **使用情境**：在社交或職場中展現成熟、從容不迫、尊重他人且不失自尊的優雅風範。
+- **深度解析**：「Carry oneself with grace/dignity」意為「舉止優雅大方、端莊得體」。「Poise and composure」指在逆境或公眾場合保持泰然自若的定力。「Classy」則形容人有教養、談吐舉止上檔次。
+- **同義與替換**：
+  - `Maintain composure`（維持沉著從容）
+  - `Conduct oneself professionally`（舉止專業得體）
+  - `Handle it with grace`（優雅得體地應對）
+- **實戰例句**：
+  1. **Even when faced with unfair criticism, she carried herself with remarkable grace.**  
+     *即便面對不公的批評，她依然展現出令人欽佩的得體優雅舉止。* — 📌 高EQ處世典範
+  2. **True class is not about showing off wealth, but treating everyone with genuine respect.**  
+     *真正得體的優雅舉止不是炫耀財富，而是真誠尊重每一個人。* — 📌 人生修養格言
+  3. **He maintained his composure and answered aggressive questions calmly during the press conference.**  
+     *在記者會上，他保持從容鎮定，從容回答充滿攻擊性的提問。* — 📌 公關與公眾演說表現
+  4. **No matter how heated the debate gets, always conduct yourself professionally.**  
+     *無論辯論多麼激烈，始終要保持專業而得體的言行舉止。* — 📌 專業職場守則
+
+---
+
+### 29. 職場拒絕無效會議 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`時間管理 / 職場敏捷`
+- **核心道地表達**：`Politely decline meetings / Push back diplomatically / Protect focus time`
+- **重點字彙**：`decline, diplomatically, bandwidth, agenda`
+- **使用情境**：當工作行程被過多沒有明確議程的會議佔滿時，禮貌且堅定地婉拒或轉為非同步溝通。
+- **深度解析**：拒絕會議時最得體的做法是「先肯定會議目標 + 表明當前首要任務與頻寬限制 + 提供替代方案（例如請對方傳送紀要或非同步更新）」。「Push back diplomatically」指得體委婉地推辭；「Protect my focus block」是保護深度工作專注時間的專業說法。
+- **同義與替換**：
+  - `Decline with a counter-proposal`（婉拒並提供替代方案）
+  - `Take it offline`（私下非同步討論）
+  - `Prioritize deliverables`（以產出交付為優先考量）
+- **實戰例句**：
+  1. **I need to focus on delivering our sprint goals, so I must respectfully decline this meeting.**  
+     *我需要專注於達成這次衝刺的目標，因此必須委婉婉拒這場會議。* — 📌 堅定且專注的拒絕句型
+  2. **Could you share the agenda or pre-read? I can review it asynchronously to save everyone's time.**  
+     *能否先提供會議議程或先讀資料？我可以非同步檢閱，省去大家開會時間。* — 📌 高效化開會提案
+  3. **I don't have the bandwidth to attend today, but please loop me in on the meeting minutes.**  
+     *我今天沒有多餘的心力出席，但麻煩會後將會議紀錄副本抄送給我。* — 📌 日常最實用的婉拒回信
+  4. **Learning to push back diplomatically against unproductive syncs is key to avoiding burnout.**  
+     *學會委婉拒絕沒有產出的無效同步會議，是避免職場倦怠的關鍵。* — 📌 高效工作心法
+
+---
+
+### 30. 一針見血 / 切中要害 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`成語片語 / 溝通表達`
+- **核心道地表達**：`Hit the nail on the head / Cut to the chase / Right on the money`
+- **重點字彙**：`nail, exact, spot-on, precise`
+- **使用情境**：精準說出問題核心、批評切中關鍵或說法完全正確毫無偏差。
+- **深度解析**：「Hit the nail on the head」（正好敲在釘子頭上）是最具代表性的「一針見血、切中要點」成語。「Spot-on」形容完全精準；「Cut to the chase」指直奔主題、開門見山不廢話。
+- **同義與替換**：
+  - `Spot-on`（完全準確、切中要點）
+  - `Right on the money`（完全正確、分毫不差）
+  - `Strike at the heart of the issue`（直擊問題核心）
+- **實戰例句**：
+  1. **You really hit the nail on the head with your analysis of our product shortcomings.**  
+     *你對我們產品缺點的分析真是一針見血、切中要害。* — 📌 讚揚對方洞察精闢
+  2. **Her feedback was blunt, but it hit the nail on the head.**  
+     *她的回饋雖然直白，但確實切中要害。* — 📌 評價客觀直率的建議
+  3. **His assessment of the client's real hesitation is right on the money.**  
+     *他對客戶真正顧慮點的評估完全精準無誤。* — 📌 業務與客戶心理分析
+  4. **Let's stop beating around the bush and cut straight to the core problem.**  
+     *我們別再拐彎抹角了，直接切入核心問題吧。* — 📌 會議拉回主軸必備句
+
+---
+
+### 31. 見機行事 / 隨機應變 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`成語片語 / 靈活應變`
+- **核心道地表達**：`Play it by ear / Roll with the punches / Adapt on the fly`
+- **重點字彙**：`ear, punches, adapt, flexibility`
+- **使用情境**：事情無法提前預訂周全計畫，需要根據現場情況隨機應變、彈性處理。
+- **深度解析**：「Play it by ear」源自樂手不看樂譜純靠耳朵聽音演奏，現指「不預設死計畫，到時見機行事」。「Roll with the punches」（源自拳擊手順著對手的拳勢化解衝擊）指面對逆境時靈活調適。「Wing it」則是口語中「即興發揮、臨場應對」。
+- **同義與替換**：
+  - `Roll with the punches`（靈活應變、見招拆招）
+  - `Wing it`（臨場發揮、即興應對）
+  - `Adapt as we go`（邊走邊調整）
+- **實戰例句**：
+  1. **We don't know the exact schedule yet, so let's just play it by ear tomorrow.**  
+     *我們還不清楚確切的時間表，明天就先見機行事吧。* — 📌 生活與出差行程常用
+  2. **In startup environments, unexpected hurdles arise daily, so you must learn to roll with the punches.**  
+     *在敏捷新創環境中每天都有意外阻礙，你必須學會靈活應變、見招拆招。* — 📌 敏捷文化抗壓思維
+  3. **The client arrived earlier than expected, so we had to wing the presentation.**  
+     *客戶比預期早到，我們只好臨場即興應變完成簡報。* — 📌 突發緊急狀況應對
+  4. **Having a flexible mindset allows you to adapt on the fly without panicking.**  
+     *擁有靈活的心態能讓你在突發狀況中隨機應變而不慌亂。* — 📌 心理調適與應變力
+
+---
+
+### 32. 打鐵趁熱 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`成語片語 / 掌握時機`
+- **核心道地表達**：`Strike while the iron is hot / Seize the moment / Capitalize on`
+- **重點字彙**：`strike, iron, momentum, opportunity`
+- **使用情境**：當有利的條件或時機出現時，毫不遲疑立刻採取行動，把握良機趁勝追擊。
+- **深度解析**：「Strike while the iron is hot」源自鐵匠打鐵必須趁鐵塊被燒得通紅滾燙時鍛打，是英文中最經典且歷史悠久的成語之一。商業上常用「Capitalize on the momentum」（利用目前的強勁動能趁勢而為）。
+- **同義與替換**：
+  - `Seize the opportunity`（把握良機）
+  - `Capitalize on the momentum`（趁勝追擊、借勢發揮）
+  - `Make hay while the sun shines`（抓緊有利時機）
+- **實戰例句**：
+  1. **The demo went exceptionally well; we should strike while the iron is hot and send the contract today.**  
+     *產品展示非常順利，我們應該打鐵趁熱，今天就把合約送過去。* — 📌 業務推進與簽約必備
+  2. **Customer excitement is peaking right now; let's strike while the iron is hot with a follow-up campaign.**  
+     *顧客的熱情正處於最高點，我們應該打鐵趁熱推出後續行銷推廣。* — 📌 行銷節奏掌握
+  3. **Opportunities like this don't come often, so strike while the iron is hot before someone else does.**  
+     *這樣的機會可遇不可求，趁著打鐵趁熱先下手為強，免得被人捷足先登。* — 📌 激勵行動力語境
+  4. **The media is actively covering our launch; we must capitalize on this momentum immediately.**  
+     *媒體正積極報導我們的新品發表，我們必須立即把握良機趁勝追擊。* — 📌 公關宣傳黃金時機
+
+---
+
+### 33. 塞翁失馬（焉知非福） 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`成語片語 / 樂觀思維`
+- **核心道地表達**：`A blessing in disguise / Every cloud has a silver lining`
+- **重點字彙**：`blessing, disguise, silver lining, turnaround`
+- **使用情境**：遇到表面看似糟糕、不幸的挫折，後來卻帶來意想不到的好結果或轉機。
+- **深度解析**：「A blessing in disguise」（偽裝成不幸的祝福）是中文「塞翁失馬，焉知非福」最完美的對應。「Every cloud has a silver lining」（每朵烏雲邊緣都有銀光）則常用於安慰他人「黑暗過後必有光明」。
+- **同義與替換**：
+  - `Silver lining`（不幸中的轉機、一線希望）
+  - `Turn of good fortune`（轉危為安、好運來臨）
+  - `Disguised opportunity`（偽裝成挫折的機會）
+- **實戰例句**：
+  1. **Losing that client was a blessing in disguise; it freed us up to win a much larger contract.**  
+     *失去那個客戶真是塞翁失馬焉知非福；這讓我們騰出資源拿下大得多的合約。* — 📌 商場逆轉勝經典例句
+  2. **Getting laid off turned out to be a blessing in disguise because it pushed me to start my own venture.**  
+     *被裁員結果成了塞翁失馬，因為這促使我下定決心自行創業。* — 📌 職涯重大轉折分享
+  3. **Don't be discouraged by this setback; every cloud has a silver lining.**  
+     *別因為這次挫折氣餒，烏雲背後總有燦爛陽光（塞翁失馬焉知非福）。* — 📌 安慰鼓勵同事
+  4. **Looking back, that project failure was a blessing in disguise because of the valuable lessons we learned.**  
+     *現在回想起來，那次專案失敗是塞翁失馬，因為我們從中學到了寶貴的經驗教訓。* — 📌 事後覆盤正面思維
+
+---
+
+### 34. 破釜沉舟 / 不留後路 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`成語片語 / 決心毅力`
+- **核心道地表達**：`Burn one's bridges / Burn one's boats / Cross the Rubicon`
+- **重點字彙**：`bridges, boats, commitment, irreversible`
+- **使用情境**：抱持孤注一擲的決心，斷絕一切退路全心向前；但在人際關係中亦指切斷人脈關係。
+- **深度解析**：「Burn one's boats」（將船燒毀，源自古羅馬統帥登陸後燒毀戰船以示絕不撤退）是「破釜沉舟」的英美經典典故。「Cross the Rubicon」（渡過盧比孔河）表示做出不可逆轉的重大歷史決定。注意：「Burn one's bridges」在現代職場多指「撕破臉、把退路與人際網絡斷絕」，需注意語意分寸。
+- **同義與替換**：
+  - `Burn one's boats`（破釜沉舟、自斷退路）
+  - `Cross the Rubicon`（孤注一擲、跨出不可逆的一步）
+  - `Go all in`（全力以赴、孤注一擲）
+- **實戰例句**：
+  1. **By resigning before finding a new job, he burned his boats and forced himself to succeed in consulting.**  
+     *他在找到新工作前就辭職，抱著破釜沉舟的決心逼自己在顧問界闖出名堂。* — 📌 展現不成功便成仁的魄力
+  2. **Once we sign this exclusivity agreement, we've crossed the Rubicon; there is no going back.**  
+     *一旦簽署這份獨家排他協議，我們就如同破釜沉舟，再無回頭路了。* — 📌 不可逆的商業合作承諾
+  3. **Even when leaving a toxic company, never burn your bridges; the industry is small.**  
+     *就算離開不合適的公司，也千萬別和老東家撕破臉斷後路；業界圈子很小。* — 📌 職場人情留一線的善意提醒
+  4. **The team decided to go all in and burn their boats to beat the aggressive deadline.**  
+     *團隊決定破釜沉舟、全員投入，務求趕上極為緊迫的截止期限。* — 📌 團隊衝刺凝聚力
+
+---
+
+### 35. 半信半疑 / 聽聽就好 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`成語片語 / 批判思維`
+- **核心道地表達**：`Take it with a grain of salt / Skeptical / With a pinch of salt`
+- **重點字彙**：`salt, grain, pinch, skeptical`
+- **使用情境**：對聽到的傳言、未證實的消息或誇大的言論保持懷疑態度，不可全盤相信。
+- **深度解析**：「Take it with a grain of salt」（美式）或「Take it with a pinch of salt」（英式）源自古羅馬認為一小粒鹽能化解毒性的傳說，引申為「對某件事有所保留、聽聽就好、半信半疑」。「View with skepticism」則是更正式的學術或分析用語。
+- **同義與替換**：
+  - `Take it with a pinch of salt`（半信半疑、有所保留（英式））
+  - `Maintain healthy skepticism`（保持適度懷疑）
+  - `Not buy it entirely`（不完全買單其說法）
+- **實戰例句**：
+  1. **I'd take the competitor's revenue claims with a grain of salt; their numbers look inflated.**  
+     *競爭對手宣稱的營收數據聽聽就好、要半信半疑；數字看起來過度灌水了。* — 📌 市場情報分析實用語
+  2. **Office gossip is always circulating, so take everything you hear with a grain of salt.**  
+     *辦公室八卦傳聞不斷，聽到什麼都先半信半疑、聽聽就好。* — 📌 職場處世理性智慧
+  3. **Online customer reviews can be misleading, so take extreme praise or harsh blame with a grain of salt.**  
+     *網路顧客評價可能具有誤導性，因此無論極度讚美或嚴厲謾罵都要保留客觀判斷。* — 📌 產品體驗評估
+  4. **Good analysts take market forecasts with a healthy pinch of salt.**  
+     *優秀的分析師在看待市場預測報告時，都會抱持健康的懷疑態度。* — 📌 專業分析素養
+
+---
+
+### 36. 偷工減料 / 走捷徑 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`職場道德 / 品質控管`
+- **核心道地表達**：`Cut corners / Skimp on quality / Take shortcuts`
+- **重點字彙**：`corners, shortcuts, integrity, standards`
+- **使用情境**：為了節省時間、金錢或人力，採取不合規矩的做法，導致品質或安全大打折扣。
+- **深度解析**：「Cut corners」（切走角落走捷徑）是描述「偷工減料、敷衍了事、走歪門捷徑」最道地的用法。「Skimp on」（在材料或品質上吝嗇縮水）常用於物料採購或製造環節。
+- **同義與替換**：
+  - `Take unethical shortcuts`（走不合規範的捷徑）
+  - `Skimp on materials`（在用料上縮水扣除）
+  - `Compromise on standards`（向標準妥協、降低規格）
+- **實戰例句**：
+  1. **In semiconductor fabrication, you cannot cut corners; precision is non-negotiable.**  
+     *在半導體製造領域絕對不能偷工減料或走捷徑；高精度是不可妥協的原則。* — 📌 工程製造品質承諾
+  2. **The contractor cut corners on waterproofing, which eventually caused severe leaks.**  
+     *承包商在防水工程上偷工減料，最終導致嚴重滲漏。* — 📌 施工與外包品質爭議
+  3. **Never cut corners on cybersecurity, or the eventual breach will cost ten times more.**  
+     *在資訊安全上千萬別走捷徑或節省成本，否則日後的資安外洩代價將高達十倍。* — 📌 資安風險防患提醒
+  4. **They tried to cut corners to launch early, but users noticed the bugs immediately.**  
+     *他們為了提早上線試圖走捷徑妥協品質，但使用者立刻發現了大量的系統缺陷。* — 📌 軟體發布時程與品質權衡
+
+---
+
+### 37. 視而不見的重大問題 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`職場溝通 / 組織痛點`
+- **核心道地表達**：`The elephant in the room / Ignored hazard / Turn a blind eye`
+- **重點字彙**：`elephant, obvious, unspoken, avoidance`
+- **使用情境**：房間裡明明有一隻巨大的大象，大家卻假裝沒看見。指一個極其顯眼、每個人都心知肚明卻刻意迴避不願公開討論的重大問題。
+- **深度解析**：「The elephant in the room」是西方職場文化最經典的隱喻，指人人皆知卻因為尷尬、恐懼或政治考量而刻意避開的大難題。「Address the elephant in the room」表示「打破沉默、公開正視那個大家都心照不宣的癥結」。
+- **同義與替換**：
+  - `Address the elephant in the room`（打破沉默正視根本問題）
+  - `Turn a blind eye to`（對問題視而不見、睜隻眼閉隻眼）
+  - `The unaddressed bottleneck`（未被正視處理的瓶頸）
+- **實戰例句**：
+  1. **Let's address the elephant in the room: our current product architecture simply cannot scale to one million users.**  
+     *我們來談談那個大家都心知肚明卻不敢提的問題吧：我們現有的產品架構根本無法負荷百萬使用者。* — 📌 破除沉默、直球對決的會議發言
+  2. **Everyone knew the budget was blown, but nobody wanted to mention the elephant in the room.**  
+     *每個人都知道預算已經超標，但沒有人想去揭開這個公開的秘密。* — 📌 組織逃避心理描寫
+  3. **Ignoring the elephant in the room will only make the eventual crisis more severe.**  
+     *對眼前顯而易見的重大癥結視而不見，只會讓最終爆發的危機更嚴重。* — 📌 領導力警示句型
+  4. **He bravely called out the elephant in the room during the executive review.**  
+     *他在高階主管審查會議中勇敢指出了那隻「房間裡的大象」（眾人迴避的致命核心問題）。* — 📌 展現擔當與直言敢諫
+
+---
+
+### 38. 打掉重練 / 從頭再來 英文
+- **來源**：`🤖 Gemini`
+- **情境分類**：`專案管理 / 迭代更新`
+- **核心道地表達**：`Back to the drawing board / Start from scratch / Square one`
+- **重點字彙**：`drawing board, scratch, revisit, redesign`
+- **使用情境**：當原先嘗試的方案徹底失敗或不可行時，承認失敗並回到最初設計階段重新規劃。
+- **深度解析**：「Back to the drawing board」（回到製圖桌重畫）源自工程師與建築師把失敗草圖丟棄、重新在製圖桌上繪圖。「Back to square one」（回到第一格）源自棋盤遊戲被罰回原點。「Start from scratch」（從零開始起步）常用於烘焙與專案開發。
+- **同義與替換**：
+  - `Back to square one`（回到原點、從頭開始）
+  - `Start from scratch`（白手起家、從零開始）
+  - `Scrap it and start over`（報廢重來、打掉重做）
+- **實戰例句**：
+  1. **The prototype failed the stress test, so it's back to the drawing board for our engineering team.**  
+     *原型機未能通過壓力測試，因此工程團隊必須回到起點打掉重練了。* — 📌 研發與測試覆盤常用句
+  2. **Don't see going back to the drawing board as defeat; view it as an opportunity to build a better model.**  
+     *別把從頭重來視為失敗，要將它視為打造更優質模型的大好機會。* — 📌 激勵研發團隊士氣
+  3. **After the deal fell through, we found ourselves right back at square one.**  
+     *交易告吹之後，我們發現自己又回到了原點。* — 📌 商務談判受挫實況
+  4. **Sometimes it is faster to start from scratch than to patch up legacy code with endless technical debt.**  
+     *有時候從零開始重構，反而比在背負無盡技術債的老舊程式碼上修修補補更快。* — 📌 軟體架構重構經典考量
+
+---
+
+### 39. 今天到此為止 / 收工 英文
+- **來源**：`💬 ChatGPT`
+- **情境分類**：`職場日常 / 工作生活平衡`
+- **核心道地表達**：`Call it a day / Wrap it up / Clock out`
+- **重點字彙**：`day, wrap, progress, rest`
+- **使用情境**：當一天的工作或特定任務完成、或者進度已到適當停損點時，宣布結束今日工作回家休息。
+- **深度解析**：「Call it a day」（稱今天為圓滿的一天）是最具代表性的「今天收工、到此為止」。「Let's wrap it up」（把東西打包收尾）通常用於會議收尾或工作最後階段。「Call it a night」則是在深夜加班或夜間聚會結束時使用。
+- **同義與替換**：
+  - `Wrap it up`（收尾整理、圓滿收工）
+  - `Call it quits for today`（今天先暫告一段落）
+  - `Put a pin in it for today`（今天先插個大頭針標記，改天續談）
+- **實戰例句**：
+  1. **We've made tremendous progress on the deployment today; let's call it a day and get some rest.**  
+     *我們今天在系統部署上取得了極佳進展；今天就先到此為止收工，大家回去好好休息吧。* — 📌 主管體恤團隊辛苦的溫暖收工句
+  2. **It's past 8 PM and our brains are fried. Let's call it a night and resume tomorrow morning.**  
+     *已經過晚上八點，大家都用腦過度了。今晚先收工，明天一早再繼續吧。* — 📌 避免過勞的高效停損點
+  3. **Let's wrap up this meeting so everyone has time to prepare for their next commitment.**  
+     *我們把這場會議收尾吧，好讓每個人有時間準備下一項要務。* — 📌 會議時間管理者必備結尾句
+  4. **Good job everyone! Let's clean up our workspace and call it a day.**  
+     *大家辛苦了！整理好工作區，我們收工下班囉。* — 📌 歡快收工口語
+
+---

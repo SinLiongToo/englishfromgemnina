@@ -44,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initVoices();
   applyEnglishOnlyUI();
   updatePlayModeUI();
+  updateSourceFilterUI();
   updateActiveCardPool();
   renderStats();
   renderCurrentCard();
@@ -98,11 +99,20 @@ function updateActiveCardPool() {
 }
 
 function updateSourceFilterUI() {
+  const countAll = topicsData.length;
+  const countGemini = topicsData.filter(t => t.source === 'Gemini').length;
+  const countChatGPT = topicsData.filter(t => t.source === 'ChatGPT').length;
+
   document.querySelectorAll('.source-pill-btn').forEach(btn => {
-    if (btn.dataset.source === currentSourceFilter) {
-      btn.className = 'source-pill-btn px-3 py-1 text-xs font-bold rounded-xl transition bg-indigo-600 text-white shadow';
+    const src = btn.dataset.source;
+    if (src === 'ALL') btn.innerHTML = `🌐 全部收錄 (${countAll} 則)`;
+    else if (src === 'Gemini') btn.innerHTML = `🤖 Gemini 精選 (${countGemini} 則)`;
+    else if (src === 'ChatGPT') btn.innerHTML = `💬 ChatGPT 實戰 (${countChatGPT} 則)`;
+
+    if (src === currentSourceFilter) {
+      btn.className = 'source-pill-btn px-3 py-1.5 text-xs font-bold rounded-xl transition bg-indigo-600 text-white shadow';
     } else {
-      btn.className = 'source-pill-btn px-3 py-1 text-xs font-medium rounded-xl transition text-slate-400 hover:text-white bg-slate-800/80 border border-white/5';
+      btn.className = 'source-pill-btn px-3 py-1.5 text-xs font-medium rounded-xl transition text-slate-400 hover:text-white bg-slate-800/80 border border-white/5';
     }
   });
 
