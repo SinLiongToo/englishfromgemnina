@@ -1142,3 +1142,29 @@
      *隨手編寫小腳本的習慣，在一年下來會複利累積成巨大的生產力提升。* — 📌 複利效應體悟
 
 ---
+
+## 💡 附錄：如何免等信件，從 ChatGPT 網頁直接下載歷史對話？
+
+若使用 ChatGPT 官方「匯出資料」時未收到 Email，可直接在開著 `chatgpt.com` 的瀏覽器分頁按 **`F12`** ➔ 切換至 **`Console`** 貼上以下代碼按 Enter：
+
+```javascript
+fetch('/api/auth/session')
+  .then(res => res.json())
+  .then(session => {
+    return fetch('/backend-api/conversations?offset=0&limit=100', {
+      headers: { 'Authorization': 'Bearer ' + session.accessToken }
+    });
+  })
+  .then(res => res.json())
+  .then(data => {
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'chatgpt_history.json';
+    a.click();
+    console.log(`✅ 成功下載！共取得 ${data.items?.length || 0} 筆對話紀錄。`);
+  })
+  .catch(err => console.error('擷取失敗：', err));
+```
+檔案將秒速自動下載至「下載」資料夾！
+

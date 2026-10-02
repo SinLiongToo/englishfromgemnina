@@ -107,5 +107,37 @@
 
 ---
 
+## 💡 實用小秘技：免等信件！直接從瀏覽器下載 ChatGPT 對話清單 (Console Trick)
+
+若使用官方「匯出資料」時超過數小時未收到 Email（常因被歸類到垃圾郵件或 OpenAI 排程延遲），只要電腦瀏覽器正登入著 [chatgpt.com](https://chatgpt.com/)，即可使用此「10 秒絕招」直接下載對話清單備忘：
+
+1. 在開著 ChatGPT 的瀏覽器分頁按鍵盤 **`F12`**（或右鍵 ➔「檢查」）。
+2. 切換至頂部 **`Console`（主控台）** 頁籤。
+3. 複製並貼上以下代碼後按 **Enter**：
+
+```javascript
+fetch('/api/auth/session')
+  .then(res => res.json())
+  .then(session => {
+    return fetch('/backend-api/conversations?offset=0&limit=100', {
+      headers: { 'Authorization': 'Bearer ' + session.accessToken }
+    });
+  })
+  .then(res => res.json())
+  .then(data => {
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'chatgpt_history.json';
+    a.click();
+    console.log(`✅ 成功下載！共取得 ${data.items?.length || 0} 筆對話紀錄。`);
+  })
+  .catch(err => console.error('擷取失敗：', err));
+```
+
+4. 瀏覽器將自動把包含所有對話標題、對話 ID 與時間戳記的 `chatgpt_history.json` 下載至「下載 (Downloads)」資料夾，供日後隨時備份與分析！
+
+---
+
 ## 📄 授權條款
 MIT License. 歡迎自由學習、分享與客製化！
