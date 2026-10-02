@@ -1,16 +1,16 @@
 # 📚 Gemini & ChatGPT 英文怎麼說：雙核心互動學習工具 (English from Gemini & ChatGPT)
 
-> 🚀 **本專案完整收錄您在 Gemini 與 ChatGPT 中詢問過的所有「英文怎麼說」與「中文＋英文」提問、成語片語、以及職場深度實戰對話精華（共 47 大主題），並打造成高互動、高質感的單頁 HTML 學習工具。**  
+> 🚀 **本專案完整收錄您在 Gemini 與 ChatGPT 中詢問過的所有「英文怎麼說」與「中文＋英文」提問、成語片語、以及職場深度實戰對話精華（共 52 大主題），並打造成高互動、高質感的單頁 HTML 學習工具。**  
 > 🌐 **GitHub Pages 線上直接體驗**：[https://sinliongtoo.github.io/englishfromgemnina/](https://sinliongtoo.github.io/englishfromgemnina/)
 
 ---
 
 ## 🌟 核心特色
 
-1. **🤖 + 💬 雙 AI 核心知識庫（收錄共 47 大主題）**：
+1. **🤖 + 💬 雙 AI 核心知識庫（收錄共 52 大主題）**：
    - **Gemini 精選表達篇（20 則）**：道地口語、成語俗諺（如 `Bite the bullet`、`Make a snap decision`）、生活哲學、批判思維。
-   - **ChatGPT 職場實戰與成語篇（27 則）**：工作出錯應對、時間與工具摸索、專注自律說不、心理韌性與覆盤、高頻成語（如 `Hit the nail on the head`、`Strike while the iron is hot`、`The elephant in the room`）。
-   - 支援一鍵來源切換（`全部 47 則` / `Gemini 20 則` / `ChatGPT 27 則`），卡牌抽測與隨堂測驗自動連動！
+   - **ChatGPT 職場實戰與成語篇（32 則）**：工作出錯應對、時間與工具摸索、專注自律說不、心理韌性與覆盤、高頻成語（如 `Hit the nail on the head`、`Strike while the iron is hot`、`The elephant in the room`）、財務核心術語與生活哲理（如 `Gross margin`、`Treat energy like a luxury`）。
+   - 支援一鍵來源切換（`全部 52 則` / `Gemini 20 則` / `ChatGPT 32 則`），卡牌抽測、手冊總覽與隨堂測驗自動連動！
 2. **🎴 3D 擬真翻牌卡片（Flashcards）**：
    - 正面顯示詢問情境、來源標籤、反思導引與關鍵字。
    - 翻面揭曉道地美式核心片語、深入用法解析。
@@ -25,22 +25,23 @@
    - **🔤 單獨英文視覺模式（English Only Mode）**：頂部導航一鍵切換，中文翻譯自動模糊遮罩（滑鼠懸停顯示），建立直接以英語思維理解的習慣。
    - 可依個人習慣調整語速（0.6x ~ 1.4x）與句間停頓秒數。
 4. **📑 精華手冊條列總覽（Comprehensive Guide）**：
-   - 47 大主題情境、詳細文化語境、同義詞替換。
+   - 52 大主題情境、詳細文化語境、同義詞替換。
    - 每題均收錄 **4 組高頻真實例句**（中英對照、單句發音、實用場合標註）。
-   - 支援即時模糊搜尋、AI 來源篩選與 20+ 種情境分類過濾。
+   - 支援即時模糊搜尋、AI 來源篩選與動態情境分類過濾。
 5. **🎯 實戰隨堂測驗（Interactive Quiz）**：
    - 依當前選擇來源動態生成測驗題：核心口語四選一、情境例句辨析。
    - 即時答題回饋、詳盡解析與發音提示。
-6. **📊 本地進度追蹤與星號收藏**：
+6. **📥 專屬資源下載專區 (Download Center)**：
+   - **Markdown 筆記 (.md)**：相容 Obsidian / Notion / Logseq / Typora 雙向連結知識庫。
+   - **Anki 記憶卡牌 (.csv)**：支援正面情境提示、背面詳細中英對照與標籤，無縫匯入手機 Anki 複習。
+   - **原始 JSON 資料庫 (.json)**：便於開發者串接 API 或自製學習 Bot。
+   - **個人進度備份**：一鍵導出或重置 LocalStorage 學習記錄。
+7. **📊 本地進度追蹤與星號收藏**：
    - 支援「未精通 / 已精通」標記與星號重點收藏（Starred Items），資料儲存於瀏覽器 `localStorage`。
-7. **📤 多元格式匯出**：
-   - 一鍵匯出 **Markdown** 學習筆記（支援 Obsidian / Notion）。
-   - 一鍵匯出 **Anki 牌組 CSV**（可直接匯入手機 Anki 記憶）。
-   - 一鍵匯出結構化 **JSON** 數據。
 
 ---
 
-## 💡 收錄之 47 大英文核心主題一覽
+## 💡 收錄之 52 大英文核心主題一覽
 
 ### 🤖 第一部分：Gemini 精選表達 (20 則)
 | 編號 | 原始提問 | 核心道地表達 | 實戰情境分類 |
@@ -66,7 +67,7 @@
 | **36** | 偷工減料 / 走捷徑 英文 | `Cut corners` | 職場道德 / 品質控管 |
 | **38** | 打掉重練 / 從頭再來 英文 | `Back to the drawing board` | 專案管理 / 迭代更新 |
 
-### 💬 第二部分：ChatGPT 職場實戰與成語篇 (27 則)
+### 💬 第二部分：ChatGPT 職場實戰與成語篇 (32 則)
 | 編號 | 原始提問 | 核心道地表達 | 實戰情境分類 |
 | :---: | :--- | :--- | :--- |
 | **13** | 工作出錯、心裡難受時怎麼用英文表達與應對？ | `Feel bad about a mistake` | 職場心態 / 挫折應對 |
@@ -96,6 +97,11 @@
 | **45** | 追求零缺陷與卓越品質 英文 | `Zero defects` | 工程品質 / 嚴謹製造 |
 | **46** | 語料庫校正與語義釐清 英文 | `Linguistic corpus` | 語言工程 / 語義分析 |
 | **47** | 自動化瑣事、聰明工作 英文 | `Automate repetitive tasks` | 生產力工具 / 效率工程 |
+| **48** | 把自己的能量當成奢侈品（不是每個人都買得起）英文 | `Treat your energy like a luxury — not everyone can afford it` | 能量管理 / 自我邊界 |
+| **49** | 以和為貴 英文 | `Harmony is most precious` | 成語俗諺 / 處世智慧 |
+| **50** | 名存實亡 英文 | `In name only` | 成語俗諺 / 組織現況 |
+| **51** | Gross Margin（毛利率）與核心財務英文（營收、毛利、稅前盈餘） | `Gross Margin vs. Gross Profit` | 商業財報 / 法說會術語 |
+| **52** | 說出了我的心聲 英文 | `You took the words right out of my mouth` | 日常口語 / 共鳴讚同 |
 
 ---
 

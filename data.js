@@ -2394,6 +2394,261 @@ const DATA = [
       }
     ],
     "source": "ChatGPT"
+  },
+  {
+    "id": 48,
+    "source": "ChatGPT",
+    "query": "把自己的能量當成奢侈品（不是每個人都買得起）英文",
+    "category": "能量管理 / 自我邊界",
+    "core_expression": "Treat your energy like a luxury — not everyone can afford it / Rare commodity",
+    "keywords": [
+      "energy",
+      "luxury",
+      "commodity",
+      "boundary"
+    ],
+    "context": "提醒自己或他人要愛惜自己的精神與精力，不要隨意被無關緊要的人事物消耗，設定自尊與自愛的情感邊界。",
+    "explanation": "「Treat your energy like a luxury — not everyone can afford it」（把你的精力當成奢侈品，不是誰都消費得起）精準傳達了自我保護與高自尊的邊界感。詩意或哲理表達亦可用「Your energy is a luxury, not everyone deserves access to it」或「Consider your energy a rare commodity — only a few are worthy of it」。",
+    "synonyms": [
+      {
+        "en": "Your energy is a luxury, not everyone deserves access to it",
+        "zh": "你的能量是奢侈品，並非人人都配享有"
+      },
+      {
+        "en": "Consider your energy a rare commodity",
+        "zh": "將你的精力視為珍稀寶貴的資源"
+      },
+      {
+        "en": "Protect your peace and energy",
+        "zh": "捍衛你的內心平靜與能量"
+      }
+    ],
+    "examples": [
+      {
+        "en": "You should treat your energy like a luxury — not everyone can afford it.",
+        "zh": "你應該把自己的能量當成奢侈品，不是每個人都買得起。",
+        "note": "經典自省與邊界金句"
+      },
+      {
+        "en": "Your energy is a luxury, not everyone deserves unlimited access to your time and focus.",
+        "zh": "你的精力是珍貴的奢侈品，並非每個人都配無限索取你的時間與專注力。",
+        "note": "人際交往與防耗能"
+      },
+      {
+        "en": "Consider your mental energy a rare commodity; invest it only in projects and people that truly matter.",
+        "zh": "把你的心力視為稀缺資源；只將它投資在真正重要的人事物上。",
+        "note": "注意力投資哲學"
+      },
+      {
+        "en": "Learning to walk away from drama showed me that my peace is far too expensive to waste.",
+        "zh": "學會遠離無謂的紛擾讓我明白，我的內心平靜太昂貴了，絕不容隨意浪費。",
+        "note": "情緒自律維度"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "source": "ChatGPT",
+    "query": "以和為貴 英文",
+    "category": "成語俗諺 / 處世智慧",
+    "core_expression": "Harmony is most precious / Peace is to be valued above all",
+    "keywords": [
+      "harmony",
+      "precious",
+      "peace",
+      "prosperity"
+    ],
+    "context": "強調人際溝通、跨團隊合作或衝突調解時，優先尋求和諧、和平化解分歧，避免惡性對立。",
+    "explanation": "「Harmony is most precious」（和為貴）是最符合傳統儒家理念的英譯。「Peace is to be valued above all」（和平和睦重於一切）強調化解紛爭的最高原則。商業俗語「家和萬事興、和氣生財」常譯為「Harmony brings prosperity」。",
+    "synonyms": [
+      {
+        "en": "Value harmony above all",
+        "zh": "凡事以和為貴、追求和睦"
+      },
+      {
+        "en": "Cherish harmony",
+        "zh": "珍惜和諧氣氛"
+      },
+      {
+        "en": "Harmony brings prosperity",
+        "zh": "和氣生財、和睦致祥"
+      }
+    ],
+    "examples": [
+      {
+        "en": "In cross-cultural negotiations, our guiding principle has always been: harmony is most precious.",
+        "zh": "在跨文化商務談判中，我們的指導原則向來是：以和為貴。",
+        "note": "談判核心原則"
+      },
+      {
+        "en": "Rather than escalating personal conflicts, the leadership urged both sides to seek peace and harmony.",
+        "zh": "主管層敦促雙方以和為貴、尋求和解，而非激化個人衝突。",
+        "note": "組織衝突協調"
+      },
+      {
+        "en": "Cherishing harmony doesn't mean avoiding tough questions, but addressing them with mutual respect.",
+        "zh": "以和為貴並不意味著迴避難題，而是以互相尊重的態度去面對它。",
+        "note": "成熟溝通態度"
+      },
+      {
+        "en": "Traditional wisdom reminds us that internal harmony always brings long-term prosperity.",
+        "zh": "傳統智慧提醒我們：團隊內部的和睦相處，終將帶來長遠的繁榮與成功。",
+        "note": "團隊和睦金句"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "source": "ChatGPT",
+    "query": "名存實亡 英文",
+    "category": "成語俗諺 / 組織現況",
+    "core_expression": "In name only / A mere shell of its former self / Nominal existence",
+    "keywords": [
+      "in name only",
+      "shell",
+      "nominal",
+      "defunct"
+    ],
+    "context": "某個體制、機構、委員會、約定或合約表面上依然存在，但實際上已經完全失去效能或形同虛設。",
+    "explanation": "「In name only」（僅剩其名、徒具虛名）是「名存實亡」最廣為人知的簡短片語。「A mere shell of its former self」（只剩下昔日榮光的空殼）生動描寫組織衰落衰微。「Exists in name but not in reality」則是字面直譯的嚴謹表達。",
+    "synonyms": [
+      {
+        "en": "Exists in name but not in reality",
+        "zh": "名義上存在但無實質內容"
+      },
+      {
+        "en": "A mere shadow of what it was",
+        "zh": "形同虛設、昔日榮光不再"
+      },
+      {
+        "en": "Defunct in practice",
+        "zh": "實質上已停止運作"
+      }
+    ],
+    "examples": [
+      {
+        "en": "The steering committee still exists, but it's in name only — it no longer makes critical decisions.",
+        "zh": "指導委員會依然掛牌存在，但早已名存實亡——它不再做出任何關鍵決策。",
+        "note": "組織管理經典例句"
+      },
+      {
+        "en": "After key partners departed, the joint venture became a mere shell of its former self.",
+        "zh": "在核心合夥人離開後，這場合資企業已成了一具名存實亡的空殼。",
+        "note": "商業合作衰亡描述"
+      },
+      {
+        "en": "That agreement has been in name only for years; neither company actually adheres to its terms.",
+        "zh": "那份協議多年來早已名存實亡；兩家公司實際上都未遵守其條款。",
+        "note": "合約協議失效語境"
+      },
+      {
+        "en": "Without fresh capital and leadership, the department suffered a purely nominal existence.",
+        "zh": "若無注入新資金與領導力，該部門只會陷入名存實亡的虛設狀態。",
+        "note": "組織體檢深度陳述"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "source": "ChatGPT",
+    "query": "Gross Margin（毛利率）與核心財務英文（營收、毛利、稅前盈餘）",
+    "category": "商業財報 / 法說會術語",
+    "core_expression": "Gross Margin vs. Gross Profit / Revenue YoY / Pre-tax Profit (PBT)",
+    "keywords": [
+      "gross margin",
+      "revenue",
+      "profitability",
+      "earnings call"
+    ],
+    "context": "在解讀公司財報、分析獲利能力或參加半導體法說會（Earnings Call）時，精準區分營收、毛利、毛利率與營業利益率。",
+    "explanation": "必須嚴格區分：Gross Profit 是「毛利」（絕對金額，公式為 Revenue - COGS），而 Gross Margin 是「毛利率」（百分比，Gross Profit ÷ Revenue）。在科技與半導體法說會上常以縮寫溝通：GM (Gross Margin 毛利率)、OM (Operating Margin 營業利益率)、PBT (Profit Before Tax 稅前盈餘)、EPS (Earnings Per Share 每股盈餘)。YoY 則代表 Year-over-Year（年增率）。",
+    "synonyms": [
+      {
+        "en": "Profitability metrics",
+        "zh": "獲利能力指標"
+      },
+      {
+        "en": "Top-line revenue vs. Bottom-line net income",
+        "zh": "營收頂線 vs. 淨利底線"
+      },
+      {
+        "en": "Operating leverage",
+        "zh": "營運槓桿效益"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Revenue grew 12% YoY, while Gross Margin expanded from 25% to 30% due to favorable product mix.",
+        "zh": "營收年增 12%，毛利率更受惠於優良產品組合而由 25% 擴大至 30%。",
+        "note": "法說會亮點陳述"
+      },
+      {
+        "en": "Gross profit reached NT$500 million, while revenue, gross margin, and pre-tax profit all exceeded market consensus.",
+        "zh": "毛利達到新台幣 5 億元，營收、毛利率與稅前盈餘均優於市場普遍預期。",
+        "note": "財報亮眼業績發表"
+      },
+      {
+        "en": "In semiconductor fabrication, high capacity utilization is critical to defending our gross margin.",
+        "zh": "在半導體晶圓製造中，維持高產能利用率是捍衛我們毛利率的關鍵生死線。",
+        "note": "科技製造業核心經營指標"
+      },
+      {
+        "en": "The CFO emphasized that quarterly revenue hit a record high, driving a 25% surge in pre-tax profit.",
+        "zh": "財務長強調單季營收創下歷史新高，帶動稅前盈餘年增 25%。",
+        "note": "財務高管發言"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "source": "ChatGPT",
+    "query": "說出了我的心聲 英文",
+    "category": "日常口語 / 共鳴讚同",
+    "core_expression": "You took the words right out of my mouth / You spoke my mind",
+    "keywords": [
+      "mouth",
+      "mind",
+      "resonance",
+      "echoed"
+    ],
+    "context": "當別人說的話正好精確表達了你心裡想說但還沒說出的想法，引起強烈共鳴與讚同。",
+    "explanation": "最道地、最生動的美式成語是「You took the words right out of my mouth」（你把話從我嘴巴裡拿出來了，意即你搶先說出了我想說的話）。口語簡潔版為「You spoke my mind」（你替我說出了心聲）。亦可說「That's exactly how I feel」（那完全是我的真實感受）或「That hits home」（一語中的、說到心坎裡）。",
+    "synonyms": [
+      {
+        "en": "You spoke my mind",
+        "zh": "你說出了我的心聲 / 替我代言"
+      },
+      {
+        "en": "That's exactly how I feel",
+        "zh": "那正是我內心的真實感受"
+      },
+      {
+        "en": "That really hits home",
+        "zh": "說到我心坎裡了、引起深刻共鳴"
+      }
+    ],
+    "examples": [
+      {
+        "en": "You took the words right out of my mouth! That's exactly what I was planning to propose.",
+        "zh": "你完全說出了我的心聲！那正是本來打算提出的方案。",
+        "note": "會議上熱烈附和讚許"
+      },
+      {
+        "en": "Thank you for speaking up; you spoke my mind on why this project timeline is unrealistic.",
+        "zh": "謝謝你挺身直言；你說出了我的心聲，這專案時程確實不切實際。",
+        "note": "表達感激與支持同事"
+      },
+      {
+        "en": "Her commentary on work-life balance really hits home for everyone on our engineering team.",
+        "zh": "她對工作生活平衡的這番評論，真正說到了我們工程團隊每個人的心坎裡。",
+        "note": "引起團隊廣泛共鳴"
+      },
+      {
+        "en": "You expressed exactly what everyone was thinking but was too hesitant to articulate.",
+        "zh": "你精準說出了每個人心裡都在想、卻因為顧忌而不敢說出口的心聲。",
+        "note": "稱讚對方勇於直言"
+      }
+    ]
   }
 ];
 

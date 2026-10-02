@@ -171,6 +171,10 @@
           <span>🎯</span>
           <span class="hidden sm:inline">實戰隨堂測驗</span>
         </button>
+        <button onclick="switchView('download')" id="tab-download" class="tab-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition flex items-center gap-1.5 text-slate-400 hover:text-white">
+          <span>📥</span>
+          <span class="hidden sm:inline">資源下載專區</span>
+        </button>
       </div>
 
       <!-- 右側動作列 -->
@@ -211,7 +215,7 @@
       <div class="glass-card p-3 rounded-2xl flex items-center justify-between">
         <div>
           <p class="text-xs text-slate-400">收錄主題數</p>
-          <p class="text-xl font-bold text-indigo-400" id="stat-total">47</p>
+          <p class="text-xl font-bold text-indigo-400" id="stat-total">52</p>
         </div>
         <div class="text-2xl">💡</div>
       </div>
@@ -247,13 +251,13 @@
         <span>🔎</span> 來源切換：
       </span>
       <button onclick="setSourceFilter('ALL')" data-source="ALL" class="source-pill-btn px-3 py-1.5 text-xs font-bold rounded-xl transition bg-indigo-600 text-white shadow">
-        🌐 全部收錄 (47 則)
+        🌐 全部收錄 (52 則)
       </button>
       <button onclick="setSourceFilter('Gemini')" data-source="Gemini" class="source-pill-btn px-3 py-1.5 text-xs font-medium rounded-xl transition text-slate-400 hover:text-white bg-slate-800/80 border border-white/5">
         🤖 Gemini 精選 (20 則)
       </button>
       <button onclick="setSourceFilter('ChatGPT')" data-source="ChatGPT" class="source-pill-btn px-3 py-1.5 text-xs font-medium rounded-xl transition text-slate-400 hover:text-white bg-slate-800/80 border border-white/5">
-        💬 ChatGPT 實戰 (27 則)
+        💬 ChatGPT 實戰 (32 則)
       </button>
     </div>
 
@@ -271,7 +275,7 @@
               成語俗諺 / 職場應對
             </span>
             <span class="text-xs text-slate-400 font-mono" id="card-index-indicator">
-              1 / 47
+              1 / 52
             </span>
           </div>
 
@@ -531,6 +535,170 @@
       </div>
     </section>
 
+    <!-- 視圖 4: 資源下載專區 (Download View) -->
+    <section id="view-download" class="view-panel hidden">
+      <div class="max-w-4xl mx-auto space-y-6">
+        
+        <!-- 下載專區標題橫幅 -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 relative overflow-hidden shadow-2xl">
+          <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                  📥 資源下載中心
+                </span>
+                <span class="text-xs text-slate-400 font-mono">收錄 52 組主題 (Gemini 20 + ChatGPT 32)</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">離線學習手冊與記憶牌組下載</h2>
+              <p class="text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed">
+                將全部雙核心 AI 精華隨身帶著走！支援匯入 Obsidian、Notion、Logseq 筆記軟體，或直接匯入 Anki 進行高效間隔重複 (SRS) 複習，甚至二次開發自用。
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <button onclick="exportMarkdown()" class="px-5 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 transition active:scale-95 flex items-center gap-2">
+                <span>⚡</span> 一鍵下載 Markdown 筆記
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 大核心資源下載卡片群組 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <!-- 卡片 1: Markdown 筆記 -->
+          <div class="glass-card rounded-3xl p-6 border border-white/10 flex flex-col justify-between hover:border-indigo-500/40 transition">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl font-bold border border-indigo-500/30">
+                  📝
+                </div>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-white/10">.md 格式</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">精華學習手冊 (Markdown)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                完整收錄 52 組核心詞彙、精闢解析、使用情境及每組 4 句對照例句。完美相容 Obsidian、Notion、Typora 等 Markdown 筆記工具，便於搜尋與建立個人雙向連結知識庫。
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-white/10">
+              <button onclick="exportMarkdown()" class="w-full py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition flex items-center justify-center gap-2 shadow">
+                <span>📥</span> 下載 Markdown 學習筆記 (.md)
+              </button>
+              <a href="Gemini_英文學習手冊.md" target="_blank" class="w-full py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition flex items-center justify-center gap-2 border border-white/5">
+                <span>📖</span> 線上閱讀完整 Markdown 手冊
+              </a>
+            </div>
+          </div>
+
+          <!-- 卡片 2: Anki 牌組 CSV -->
+          <div class="glass-card rounded-3xl p-6 border border-white/10 flex flex-col justify-between hover:border-emerald-500/40 transition">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl font-bold border border-emerald-500/30">
+                  📇
+                </div>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-white/10">.csv 格式</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Anki 單字記憶卡牌組 (CSV)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                針對 Anki 專屬最佳化，正面為提問與情境提示，背面為核心片語、深入用法與 4 句對照例句，附帶標籤。可直接匯入 Anki 桌面版、iOS AnkiMobile 或 Android AnkiDroid。
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-white/10">
+              <button onclick="exportAnkiCSV()" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center justify-center gap-2 shadow">
+                <span>📥</span> 下載 Anki 牌組 (.csv)
+              </button>
+              <div class="text-[11px] text-slate-400 text-center">支援 Anki 自訂欄位對應與標籤自動分類</div>
+            </div>
+          </div>
+
+          <!-- 卡片 3: JSON 結構化資料 -->
+          <div class="glass-card rounded-3xl p-6 border border-white/10 flex flex-col justify-between hover:border-purple-500/40 transition">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl font-bold border border-purple-500/30">
+                  📦
+                </div>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-white/10">.json 格式</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">原始結構化資料庫 (JSON)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                完整保留 id、source、category、keywords、core_expression、context、explanation、synonyms、examples 欄位，適合開發者串接自建 API、LINE Bot 或大數據分析。
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-white/10">
+              <button onclick="exportJSON()" class="w-full py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs transition flex items-center justify-center gap-2 shadow">
+                <span>📥</span> 下載 JSON 資料庫 (.json)
+              </button>
+              <a href="data.json" target="_blank" class="w-full py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition flex items-center justify-center gap-2 border border-white/5">
+                <span>🔍</span> 直接檢視 data.json 原始檔案
+              </a>
+            </div>
+          </div>
+
+          <!-- 卡片 4: 個人進度與備份 -->
+          <div class="glass-card rounded-3xl p-6 border border-white/10 flex flex-col justify-between hover:border-amber-500/40 transition">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl font-bold border border-amber-500/30">
+                  ⭐
+                </div>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-white/10">個人記錄</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">學習進度備份與管理</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                隨時備份您在瀏覽器標記的已精通卡牌 (Mastered) 與星號收藏 (Starred)，避免清理瀏覽器快取時丟失進度，亦可隨時一鍵重新開始全新學習旅程。
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-white/10">
+              <button onclick="exportUserProgressJSON()" class="w-full py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs transition flex items-center justify-center gap-2 shadow">
+                <span>💾</span> 備份個人學習進度 (.json)
+              </button>
+              <button onclick="resetUserData()" class="w-full py-2 rounded-xl bg-red-950/40 hover:bg-red-900/40 text-red-400 text-xs font-medium transition flex items-center justify-center gap-2 border border-red-500/20">
+                <span>🔄</span> 重設目前所有精通與收藏標記
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 匯入操作指南手冊 -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 shadow-xl">
+          <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            <span>💡</span> 常用軟體匯入指南 (Import Tutorial)
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300">
+            <div class="p-4 rounded-2xl bg-slate-800/50 border border-white/5 space-y-2">
+              <p class="font-bold text-indigo-400 text-sm">📘 匯入 Obsidian / Notion</p>
+              <ol class="list-decimal list-inside space-y-1 text-slate-400 leading-relaxed">
+                <li>點擊上方【下載 Markdown 學習筆記】。</li>
+                <li>在 Obsidian 中直接將檔案拖入筆記 Vault 資料夾中。</li>
+                <li>在 Notion 中點擊「Import」選擇「Markdown & CSV」即可自動生成清晰層級筆記。</li>
+              </ol>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-800/50 border border-white/5 space-y-2">
+              <p class="font-bold text-emerald-400 text-sm">📇 匯入 Anki (電腦/手機)</p>
+              <ol class="list-decimal list-inside space-y-1 text-slate-400 leading-relaxed">
+                <li>點擊上方【下載 Anki 牌組 (.csv)】。</li>
+                <li>打開 Anki 桌面版，點擊下方「匯入檔案 (Import File)」。</li>
+                <li>欄位依序設為：欄位 1 ➔ Front、欄位 2 ➔ Back、欄位 3 ➔ Tags。</li>
+                <li>按「匯入」即可開始進行艾賓浩斯記憶複習！</li>
+              </ol>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-800/50 border border-white/5 space-y-2">
+              <p class="font-bold text-purple-400 text-sm">📊 Excel / Google 試算表</p>
+              <ol class="list-decimal list-inside space-y-1 text-slate-400 leading-relaxed">
+                <li>將 Anki CSV 檔案拖入 Excel 或 Google Sheets。</li>
+                <li>選擇編碼為「UTF-8」，以逗點 (Comma) 作為分隔符。</li>
+                <li>即可在試算表中進行自訂單字清單過濾、篩選與列印。</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <!-- 語音與自動播放設定 Modal -->
@@ -598,7 +766,7 @@
       </div>
 
       <div class="space-y-3 text-sm">
-        <p class="text-slate-300 text-xs">您可以將這 47 組完整的英文問答例句匯出為您喜愛的格式，隨時在各個筆記軟體或記憶卡中使用：</p>
+        <p class="text-slate-300 text-xs">您可以將這 52 組完整的英文問答例句匯出為您喜愛的格式，隨時在各個筆記軟體或記憶卡中使用：</p>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
           <button onclick="exportMarkdown()" class="p-3 rounded-2xl bg-slate-800/80 hover:bg-slate-700 text-left border border-white/5 transition group">
@@ -626,7 +794,7 @@
   </div>
 
   <!-- 載入結構化資料與核心應用程式邏輯 (加上版本戳記避免瀏覽器強效快取) -->
-  <script src="data.js?v=20261001_47"></script>
-  <script src="app.js?v=20261001_47"></script>
+  <script src="data.js?v=20261002_52"></script>
+  <script src="app.js?v=20261002_52"></script>
 </body>
 </html>

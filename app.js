@@ -56,6 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
   updatePlayModeUI();
   updateSourceFilterUI();
   renderStats();
+  populateCategoryFilter();
   renderCurrentCard();
   renderList(topicsData);
   startNewQuiz();
@@ -789,6 +790,25 @@ function renderList(items) {
   });
 }
 
+function populateCategoryFilter() {
+  const catSelect = document.getElementById('category-filter');
+  if (!catSelect) return;
+  const currentVal = catSelect.value || 'ALL';
+  const categories = Array.from(new Set(topicsData.map(t => t.category))).filter(Boolean).sort();
+  catSelect.innerHTML = '<option value="ALL">全部類別 (不限)</option>';
+  categories.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = cat;
+    catSelect.appendChild(opt);
+  });
+  if (categories.includes(currentVal)) {
+    catSelect.value = currentVal;
+  } else {
+    catSelect.value = 'ALL';
+  }
+}
+
 function filterList() {
   const query = document.getElementById('search-input').value.toLowerCase().trim();
   const cat = document.getElementById('category-filter').value;
@@ -989,39 +1009,57 @@ function toggleExportModal() {
 }
 
 function exportMarkdown() {
-  let md = '# 📚 Gemini 英文怎麼說：精選學習筆記\n\n';
-  md += '> 收錄您在 Gemini 中詢問過的「英文怎麼說」與完整情境例句。\n\n---\n\n';
+  let md = '# 📚 Gemini & ChatGPT 英文怎麼說：實戰精選學習手冊\n\n';
+  md += '> 雙核心 AI 彙整：收錄 ' + topicsData.length + ' 組職場實戰、成語俗諺與道地口語表達，含 4 組原汁原味對照例句。\n\n---\n\n';
   topicsData.forEach(t => {
     md += '## ' + t.id + '. ' + t.query + '\n';
+    md += '- **來源**：`' + (t.source || 'Gemini') + '`\n';
     md += '- **分類**：`' + t.category + '`\n';
     md += '- **核心表達**：**' + t.core_expression + '**\n';
+    md += '- **關鍵字**：`' + (t.keywords ? t.keywords.join(', ') : '') + '`\n';
     md += '- **使用情境**：' + t.context + '\n';
     md += '- **詳細解析**：' + t.explanation + '\n\n';
+    if (t.synonyms && t.synonyms.length > 0) {
+      md += '- **同義與進階補充**：' + t.synonyms.join(' / ') + '\n\n';
+    }
     md += '### 實戰例句：\n';
     t.examples.forEach((ex, idx) => {
       md += (idx + 1) + '. **' + ex.en + '**\n   - 中文：' + ex.zh + '\n   - 註記：' + (ex.note || '實用例句') + '\n';
     });
     md += '\n---\n\n';
   });
-  downloadFile(md, 'Gemini_英文怎麼說_學習筆記.md', 'text/markdown;charset=utf-8');
+  downloadFile(md, 'Gemini_ChatGPT_英文學習筆記.md', 'text/markdown;charset=utf-8');
 }
 
 function exportAnkiCSV() {
   let csv = 'Front,Back,Tags\n';
   topicsData.forEach(t => {
-    let front = '<b>' + t.query + '</b><br><small>' + t.context + '</small>';
+    let front = '<b>' + t.query + '</b><br><small>[' + (t.source || 'AI') + ' | ' + t.category + '] ' + t.context + '</small>';
     let back = '<h3>' + t.core_expression + '</h3><p>' + t.explanation + '</p><ul>';
     t.examples.forEach(ex => {
-      back += '<li><b>' + ex.en + '</b><br>' + ex.zh + '</li>';
+      back += '<li><b>' + ex.en + '</b><br>' + ex.zh + (ex.note ? ' <i>(' + ex.note + ')</i>' : '') + '</li>';
     });
     back += '</ul>';
-    csv += '"' + front.replace(/"/g, '""') + '","' + back.replace(/"/g, '""') + '","Gemini_English"\n';
+    let tag = (t.source === 'ChatGPT') ? 'ChatGPT_English' : 'Gemini_English';
+    csv += '"' + front.replace(/"/g, '""') + '","' + back.replace(/"/g, '""') + '","' + tag + '"\n';
   });
-  downloadFile(csv, 'Gemini_English_Anki.csv', 'text/csv;charset=utf-8');
+  downloadFile(csv, 'Gemini_ChatGPT_English_Anki.csv', 'text/csv;charset=utf-8');
 }
 
 function exportJSON() {
-  downloadFile(JSON.stringify(topicsData, null, 2), 'Gemini_English_Data.json', 'application/json;charset=utf-8');
+  downloadFile(JSON.stringify(topicsData, null, 2), 'Gemini_ChatGPT_English_Data.json', 'application/json;charset=utf-8');
+}
+
+function exportUserProgressJSON() {
+  const progressData = {
+    exportedAt: new Date().toISOString(),
+    totalTopics: topicsData.length,
+    masteredCount: userMastered.length,
+    masteredIds: userMastered,
+    starredCount: userStarred.length,
+    starredIds: userStarred
+  };
+  downloadFile(JSON.stringify(progressData, null, 2), 'My_English_Study_Progress.json', 'application/json;charset=utf-8');
 }
 
 function resetUserData() {
